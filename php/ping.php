@@ -35,7 +35,7 @@ if($httpcode == 200 || $httpcode == 302){
     return $var1;
 }};
 
-$ping = ping("212.71.238.228","82","3");
+$ping = ping("212.71.238.228","80","5");
 //echo $ping;
 
 $curl = curl("212.71.238.228");
