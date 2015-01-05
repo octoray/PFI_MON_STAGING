@@ -1,5 +1,6 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
-    <?php require("./php/ping.php"); ?>
+    <?php require("./php/ping.php");
+    date_default_timezone_set('Europe/London');?>
 <div class="wrapper">
     <table id="t01">
         <tr>
