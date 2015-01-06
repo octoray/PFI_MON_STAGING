@@ -2,11 +2,6 @@
 
 <div class="wrapper">
 
-<br>
-    <b>Health</b>
-
-    <b>Health</b>
-
     <table id="t01">
         <tr>
             <th>Time</th>
@@ -24,8 +19,10 @@
             <td>11</td>
         </tr>
 
-        <b>Health</b>
-
 </div>
+<br>
+<br>
+<br>
+<br>
 
 <?php require("./head_foot/footer_1.inc.php"); ?>
