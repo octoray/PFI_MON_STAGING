@@ -23,7 +23,18 @@ function curl($host) {
         return $var1;
     }};
 
-$curl_pfi_01 = curl("212.71.238.228");
-$curl_pfi_02 = curl("212.71.238.228");
-$curl_pfi_03 = curl("212.71.238.228");
-$curl_pfi_04 = curl("212.71.238.228");
+$curl_pfi_01 = curl("192.168.80.119");
+$curl_pfi_02 = curl("192.168.80.120");
+$curl_pfi_03 = curl("192.168.80.114");
+$curl_pfi_04 = curl("192.168.80.115");
+$curl_titanium = curl("192.168.60.25");
+$curl_chromium = curl("192.168.60.26");
+
+
+function colourcurl($curl) {
+    if($curl == "DOWN"){
+        echo "red";
+    } else {
+        echo "greenyellow";
+    }};
+?>
