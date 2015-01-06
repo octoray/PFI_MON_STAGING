@@ -2,9 +2,10 @@
 
 <div class="wrapper">
 
-    <h1>Health</h1>
+<br>
+    <h2>Health</h2>
 
-    <h1>Transaction Counts Success Vs failed</h1>
+    <h2>Transaction Counts Success Vs failed</h2>
 
     <table id="t01">
         <tr>
@@ -23,7 +24,7 @@
             <td>11</td>
         </tr>
 
-    <h1>Health</h1>
+    <h2>Health</h2>
 
 </div>
 
