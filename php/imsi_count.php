@@ -21,4 +21,5 @@ $row = mysql_fetch_array( $result );
 //echo $row;
 echo $row['date_time'];
 //echo " Age: ".$row['age'];
+mysql_close($dbhandle);
 ?>
