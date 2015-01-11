@@ -17,7 +17,7 @@ or die(mysql_error());
 // store the record of the "example" table into $row
 $row = mysql_fetch_array( $result );
 // Print out the contents of the entry
-
-echo "Name: ".$row['name'];
-echo " Age: ".$row['age'];
+print_r($row);
+//echo "Name: ".$row['name'];
+//echo " Age: ".$row['age'];
 ?>
