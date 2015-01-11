@@ -10,7 +10,7 @@ echo "Connected to MySQL<br>";
 
 mysql_select_db("PFI_MON") or die(mysql_error());
 
-$result = mysql_query("SELECT * FROM test")
+$result = mysql_query("SELECT * FROM test where id = '17'")
 or die(mysql_error());
 
 
