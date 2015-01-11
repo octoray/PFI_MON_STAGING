@@ -1,0 +1,41 @@
+function myFunction() {
+        var request = new sql.Request();
+        request.query(query1, function(err, recordset) {
+            // ... error checks
+
+            console.dir(recordset);
+            console.log(recordset[0]);
+            console.log(recordset[0].Amount);
+            connection.query('INSERT INTO test (value1, value2)VALUES("test2", "' + recordset[0].Amount + '");', function(err, rows, fields) {
+                if (err) throw err;
+                console.log('done');
+
+            });
+
+        });
+    }
+
+//END
+
+
+function myFunction2() {
+        var request = new sql.Request();
+        request.query(query1, function(err, recordset) {
+            // ... error checks
+
+            console.dir(recordset);
+            console.log(recordset[0]);
+            console.log(recordset[0].Amount);
+            connection.query('INSERT INTO test (value1, value2)VALUES("test2", "' + recordset[0].Amount + '");', function(err, rows, fields) {
+                if (err) throw err;
+                console.log('done');
+
+            });
+
+            connection.end(function(err) {
+                // The connection is terminated now
+            });
+        });
+    }
+
+//END

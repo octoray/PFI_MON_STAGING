@@ -1,0 +1,2 @@
+var query1 = 'SELECT count(*) as "Amount"FROM [PayForIt].[dbo].[Transaction](nolock)WHERE [TransactionStatusId] = 4 AND [NetworkId] != 4AND [Charged] >= DATEADD("mi", -1440, getdate());'
+var query2 = 'SELECT count(*) as "Amount2" FROM [PayForIt].[dbo].[SystemSetting]'
