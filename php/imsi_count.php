@@ -18,6 +18,7 @@ or die(mysql_error());
 $row = mysql_fetch_array( $result );
 // Print out the contents of the entry
 print_r($row);
-//echo "Name: ".$row['name'];
+echo $row;
+echo "Name: ".$row['date_time'];
 //echo " Age: ".$row['age'];
 ?>
