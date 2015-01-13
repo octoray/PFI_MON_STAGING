@@ -241,4 +241,3 @@ if(isset($_POST['host']))
 
 </div>
 
-<?php require("./head_foot/footer_1.inc.php"); ?>
