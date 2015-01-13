@@ -156,6 +156,6 @@ table#t01 tr:nth-child(odd) {
 }
 table#t01 th	{
     background-image: url('/images/footer_lodyas.png');
-    color: white;
+    color: black;
 }
 
