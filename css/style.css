@@ -80,7 +80,7 @@ a#cont_body {
     border-color: deepskyblue;
     font-size: 10px;
     color: #ffffff;
-    padding-top: 4px;
+    padding-top: 40px;
     margin: 0 auto -4em;
     background-image: url('/images/footer_lodyas.png');
 }
@@ -143,6 +143,7 @@ table {
 table, th, td {
     border: 1px solid deepskyblue;
     border-collapse: collapse;
+    color: #000000;
 }
 th, td {
     padding: 5px;
@@ -155,7 +156,6 @@ table#t01 tr:nth-child(odd) {
     background-color: darkgray;
 }
 table#t01 th	{
-    background-image: url('/images/footer_lodyas.png');
-    color: #ffffff;
+    color: #000000;
 }
 
