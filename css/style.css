@@ -159,3 +159,6 @@ table#t01 th	{
     color: #000000;
 }
 
+input, select, textarea{
+    color: #000;
+}
