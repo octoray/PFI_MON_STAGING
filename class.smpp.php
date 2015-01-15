@@ -13,8 +13,8 @@ $password = $_POST['password'];
 $s = new smpp();
 $s->debug=1;
 $s->open($host, $port, $system_id, $password);
-$message = iconv('Windows-1256','UTF-16BE',$message);
-//$message = iconv('UTF-8','ISO-8859-1',$message);
+//$message = iconv('Windows-1256','UTF-16BE',$message);
+$message = iconv('UTF-8','ISO-8859-1',$message);
 $s->send_long($src, $dst, $message);
 
 
