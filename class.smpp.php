@@ -78,7 +78,7 @@ class smpp {
         $data .= sprintf("%c%c%c", 0,0,0);
         $data .= sprintf("%s\0%s\0", "","");
         $data .= sprintf("%c%c", 0,0);
-        $data .= sprintf("%c%c", 8,0);
+        $data .= sprintf("%c%c", 3,0);
         $data .= sprintf("%c%s", strlen($short_message), $short_message);
         $data .= $optional;
 
