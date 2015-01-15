@@ -7,7 +7,7 @@ if(isset($_POST['host']))
 ?>
 <?php require("./head_foot/header_1.inc.php"); ?>
 
-<div class="wrapper">
+
 <p><li><h1>SMPP Post</h1></li>
 <br>
 <form name="htmlform" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
@@ -239,5 +239,4 @@ if(isset($_POST['host']))
     Internet (IP): <b>14</b><br>
 </li>
 
-</div>
 
