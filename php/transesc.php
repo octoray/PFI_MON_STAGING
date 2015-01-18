@@ -16,9 +16,9 @@ or die(mysql_error());
 
 // store the record of the "example" table into $row
 while($row = mysql_fetch_array($result1)){
-    $first = $row[0]['amount'];
+    //$first = $row[0]['amount'];
     //$second = $row[1]['amount'];
-    echo  $first;
+    print_r($result1);
     //echo  $row[2]['amount'];
 }
 
