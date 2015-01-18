@@ -136,8 +136,8 @@ table {
     width:50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
-    font-size: 15px;
+    margin-top: 1%;
+    font-size: 16px;
 
 }
 table, th, td {
@@ -146,7 +146,7 @@ table, th, td {
     color: #000000;
 }
 th, td {
-    padding: 5px;
+    padding: 3px;
     text-align: left;
 }
 table#t01 tr:nth-child(even) {
