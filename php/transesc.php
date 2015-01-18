@@ -9,19 +9,17 @@ or die("Unable to connect to MySQL");
 //echo "Connected to MySQL<br>";
 
 mysql_select_db("PFI_MON") or die(mysql_error());
-
+$r = array();
 // ESC Overview
 $result1 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%h-%i') AS 'time', amount FROM PFI_MON.overview_count where STATUS = '6' ORDER BY id DESC LIMIT 0, 6;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
-while($row = mysql_fetch_array($result1)){
-    //$first = $row[0]['amount'];
-    //$second = $row[1]['amount'];
-    print_r($result1);
-    //echo  $row[2]['amount'];
+while ($row = mysql_fetch_assoc($result1)) {
+    $r[] = $row;
 }
-
+echo $r[0]['amount'];
+echo $r[2]['amount'];
 // Print out the contents of the entry
 //print_r($row);
 //echo $row;
