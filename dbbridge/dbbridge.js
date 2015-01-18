@@ -16,6 +16,10 @@ sql.connect(config, function(err) {
     dbq1();
     dbq2();
     dbq3();
+    dbq4();
+    dbq5();
+    dbq6();
+
 
     // Query
     //sql.close();

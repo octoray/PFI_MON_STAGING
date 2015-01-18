@@ -58,7 +58,7 @@ request.query(query4, function(err, recordset) {
 // ... error checks
 
 console.log(recordset[0].amount);
-connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + recordset[0].amount + '");', function(err, rows, fields) {
+connection.query('INSERT INTO overview_count (status, amount)VALUES("8", "' + recordset[0].amount + '");', function(err, rows, fields) {
 if (err) throw err;
 console.log('done');
 
@@ -76,7 +76,7 @@ request.query(query5, function(err, recordset) {
 // ... error checks
 
 console.log(recordset[0].amount);
-connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + recordset[0].amount + '");', function(err, rows, fields) {
+connection.query('INSERT INTO overview_count (status, amount)VALUES("13", "' + recordset[0].amount + '");', function(err, rows, fields) {
 if (err) throw err;
 console.log('done');
 
@@ -94,7 +94,7 @@ request.query(query6, function(err, recordset) {
 // ... error checks
 
 console.log(recordset[0].amount);
-connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + recordset[0].amount + '");', function(err, rows, fields) {
+connection.query('INSERT INTO overview_count (status, amount)VALUES("19", "' + recordset[0].amount + '");', function(err, rows, fields) {
 if (err) throw err;
 console.log('done');
 
