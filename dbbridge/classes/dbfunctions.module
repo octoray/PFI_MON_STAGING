@@ -163,7 +163,7 @@ request.query(query10, function(err, recordset) {
 // ... error checks
 
 console.log(recordset[0].amount);
-connection.query('INSERT INTO overview_count (status, amount)VALUES("The underlying connection was forcibly closed", "' + recordset[0].amount + '");', function(err, rows, fields) {
+connection.query('INSERT INTO overview_momt (status, amount)VALUES("The underlying connection was forcibly closed", "' + recordset[0].amount + '");', function(err, rows, fields) {
 if (err) throw err;
 console.log('done');
 
@@ -180,7 +180,7 @@ request.query(query11, function(err, recordset) {
 // ... error checks
 
 console.log(recordset[0].amount);
-connection.query('INSERT INTO overview_count (status, amount)VALUES("The request was aborted", "' + recordset[0].amount + '");', function(err, rows, fields) {
+connection.query('INSERT INTO overview_momt (status, amount)VALUES("The request was aborted", "' + recordset[0].amount + '");', function(err, rows, fields) {
 if (err) throw err;
 console.log('done');
 
@@ -198,7 +198,7 @@ request.query(query12, function(err, recordset) {
 // ... error checks
 
 console.log(recordset[0].amount);
-connection.query('INSERT INTO overview_count (status, amount)VALUES("The operation has timed out", "' + recordset[0].amount + '");', function(err, rows, fields) {
+connection.query('INSERT INTO overview_momt (status, amount)VALUES("The operation has timed out", "' + recordset[0].amount + '");', function(err, rows, fields) {
 if (err) throw err;
 console.log('done');
 
