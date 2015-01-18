@@ -29,9 +29,6 @@ function dbq2() {
 
             });
 
-            connection.end(function(err) {
-                // The connection is terminated now
-            });
         });
     }
 
