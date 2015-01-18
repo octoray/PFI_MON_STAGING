@@ -49,6 +49,36 @@ or die(mysql_error());
 $result12 = mysql_query("SELECT * FROM overview_momt where status = 'The operation has timed out' order by id desc limit 1;")
 or die(mysql_error());
 
+
+// Other
+
+$result13 = mysql_query("SELECT * FROM overview_other where status = 'Pending/Stuck Transactions' order by id desc limit 1;")
+or die(mysql_error());
+
+$result14 = mysql_query("SELECT * FROM overview_other where status = 'ESC Site Hit Count' order by id desc limit 1;")
+or die(mysql_error());
+
+$result15 = mysql_query("SELECT * FROM overview_other where status = 'ESC Screenshots' order by id desc limit 1;")
+or die(mysql_error());
+
+$result16 = mysql_query("SELECT * FROM overview_other where status = 'IMSI Success' order by id desc limit 1;")
+or die(mysql_error());
+
+$result17 = mysql_query("SELECT * FROM overview_other where status = 'IMSI Failed' order by id desc limit 1;")
+or die(mysql_error());
+
+$result18 = mysql_query("SELECT * FROM overview_other where status = 'Successful STOPS' order by id desc limit 1;")
+or die(mysql_error());
+
+$result19 = mysql_query("SELECT * FROM overview_other where status = 'Failed STOPS' order by id desc limit 1;")
+or die(mysql_error());
+
+$result20 = mysql_query("SELECT * FROM overview_other where status = 'Successful Client Notification' order by id desc limit 1;")
+or die(mysql_error());
+
+$result21 = mysql_query("SELECT * FROM overview_other where status = 'Failed Client Notification' order by id desc limit 1;")
+or die(mysql_error());
+
 // store the record of the "example" table into $row
 $row1 = mysql_fetch_array( $result1 );
 $row2 = mysql_fetch_array( $result2 );
@@ -63,6 +93,16 @@ $row9 = mysql_fetch_array( $result9 );
 $row10 = mysql_fetch_array( $result10 );
 $row11 = mysql_fetch_array( $result11 );
 $row12 = mysql_fetch_array( $result12 );
+
+$row13 = mysql_fetch_array( $result13 );
+$row14 = mysql_fetch_array( $result14 );
+$row15 = mysql_fetch_array( $result15 );
+$row16 = mysql_fetch_array( $result16 );
+$row17 = mysql_fetch_array( $result17 );
+$row18 = mysql_fetch_array( $result18 );
+$row19 = mysql_fetch_array( $result19 );
+$row20 = mysql_fetch_array( $result20 );
+$row21 = mysql_fetch_array( $result21 );
 // Print out the contents of the entry
 //print_r($row);
 //echo $row;

@@ -80,6 +80,71 @@
             <td style="color: black;"><?php echo $row12['time']; ?></td>
         </tr>
     </table>
+
+
+    <h1>Other</h1>
+    <table id="t01">
+        <tr>
+            <th>Componant</th>
+            <th>Status</th>
+            <th>Amount</th>
+            <th>Last Upadted</th>
+        </tr>
+        <tr>
+            <td>ESC Transactions</td>
+            <td>Pending/Stuck Transactions</td>
+            <td style="color: black;"><?php echo $row13['amount']; ?></td>
+            <td style="color: black;"><?php echo $row13['time']; ?></td>
+        </tr>
+        <tr>
+            <td>ESC SIte Traffic</td>
+            <td>ESC Site Hits</td>
+            <td style="color: black;"><?php echo $row14['amount']; ?></td>
+            <td style="color: black;"><?php echo $row14['time']; ?></td>
+        </tr>
+        <tr>
+            <td>ESC</td>
+            <td>Screenshots</td>
+            <td style="color: black;"><?php echo $row15['amount']; ?></td>
+            <td style="color: black;"><?php echo $row15['time']; ?></td>
+        </tr>
+        <tr>
+            <td>IMSI</td>
+            <td>Successful IMSI</td>
+            <td style="color: black;"><?php echo $row16['amount']; ?></td>
+            <td style="color: black;"><?php echo $row16['time']; ?></td>
+        </tr>
+        <tr>
+            <td>IMSI</td>
+            <td>Failed IMSI</td>
+            <td style="color: black;"><?php echo $row17['amount']; ?></td>
+            <td style="color: black;"><?php echo $row17['time']; ?></td>
+        </tr>
+        <tr>
+            <td>STOPS</td>
+            <td>Successful STOPS</td>
+            <td style="color: black;"><?php echo $row18['amount']; ?></td>
+            <td style="color: black;"><?php echo $row18['time']; ?></td>
+        </tr>
+        <tr>
+            <td>STOPS</td>
+            <td>Failed STOPS</td>
+            <td style="color: black;"><?php echo $row19['amount']; ?></td>
+            <td style="color: black;"><?php echo $row19['time']; ?></td>
+        </tr>
+        <tr>
+            <td>Notifications</td>
+            <td>Successfully Sent Notifications</td>
+            <td style="color: black;"><?php echo $row20['amount']; ?></td>
+            <td style="color: black;"><?php echo $row20['time']; ?></td>
+        </tr>
+        <tr>
+            <td>Notifications</td>
+            <td>Failed To Send Notifications</td>
+            <td style="color: black;"><?php echo $row21['amount']; ?></td>
+            <td style="color: black;"><?php echo $row21['time']; ?></td>
+        </tr>
+    </table>
 </div>
 
 <?php require("./head_foot/footer_1.inc.php"); ?>

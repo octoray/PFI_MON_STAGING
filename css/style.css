@@ -138,7 +138,6 @@ table {
     margin-right: auto;
     margin-top: 1%;
     font-size: 16px;
-    padding-bottom: 2px;
 
 }
 table, th, td {
@@ -147,11 +146,11 @@ table, th, td {
     color: #000000;
 }
 th, td {
-    padding: 3px;
+    padding: 2px;
     text-align: left;
 }
 table#t01 tr:nth-child(even) {
-    background-color: #ffffff;
+    background-color: ThreeDDarkShadow;
 }
 table#t01 tr:nth-child(odd) {
     background-color: darkgray;
