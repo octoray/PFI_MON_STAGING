@@ -41,6 +41,45 @@
         </tr>
     </table>
 
+
+    <h1>MO / MT Overview</h1>
+    <table id="t01">
+        <tr>
+            <th>Status</th>
+            <th>Amount</th>
+            <th>Last Upadted</th>
+        </tr>
+        <tr>
+            <td>MO Successfully Recived</td>
+            <td style="color: black;"><?php echo $row7['amount']; ?></td>
+            <td style="color: black;"><?php echo $row7['time']; ?></td>
+        </tr>
+        <tr>
+            <td>MT's Delivered</td>
+            <td style="color: black;"><?php echo $row8['amount']; ?></td>
+            <td style="color: black;"><?php echo $row8['time']; ?></td>
+        </tr>
+        <tr>
+            <td>Sent MT, No Final DR Yet</td>
+            <td style="color: black;"><?php echo $row9['amount']; ?></td>
+            <td style="color: black;"><?php echo $row9['time']; ?></td>
+        </tr>
+        <tr>
+            <td>underlying connection forcibly closed</td>
+            <td style="color: black;"><?php echo $row10['amount']; ?></td>
+            <td style="color: black;"><?php echo $row10['time']; ?></td>
+        </tr>
+        <tr>
+            <td>The request was aborted</td>
+            <td style="color: black;"><?php echo $row11['amount']; ?></td>
+            <td style="color: black;"><?php echo $row11['time']; ?></td>
+        </tr>
+        <tr>
+            <td>The operation has timed out</td>
+            <td style="color: black;"><?php echo $row12['amount']; ?></td>
+            <td style="color: black;"><?php echo $row12['time']; ?></td>
+        </tr>
+
 </div>
 
 <?php require("./head_foot/footer_1.inc.php"); ?>
