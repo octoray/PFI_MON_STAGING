@@ -1,6 +1,6 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
 <?php require("./php/transesc.php"); ?>
-<script type="text/javascript" src="fusioncharts/charts/esc_trans.js"></script>
+<script type="text/javascript" src="fusioncharts/charts/esc_trans.php"></script>
 
 <div class="wrapper">
 
