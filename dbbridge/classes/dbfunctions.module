@@ -3,8 +3,7 @@ function dbq1() {
         request.query(query1, function(err, recordset) {
             // ... error checks
 
-            console.dir(recordset);
-            console.log(recordset[0]);
+
             console.log(recordset[0].Amount);
             connection.query('INSERT INTO overview_count (status, amount)VALUES("6", "' + recordset[0].Amount + '");', function(err, rows, fields) {
                 if (err) throw err;
@@ -23,8 +22,6 @@ function dbq2() {
         request.query(query2, function(err, recordset) {
             // ... error checks
 
-            console.dir(recordset);
-            console.log(recordset[0]);
             console.log(recordset[0].Amount);
             connection.query('INSERT INTO overview_count (status, amount)VALUES("4", "' + recordset[0].Amount + '");', function(err, rows, fields) {
                 if (err) throw err;
@@ -46,8 +43,6 @@ var request = new sql.Request();
 request.query(query3, function(err, recordset) {
 // ... error checks
 
-console.dir(recordset);
-console.log(recordset[0]);
 console.log(recordset[0].Amount);
 connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + recordset[0].Amount + '");', function(err, rows, fields) {
 if (err) throw err;
@@ -55,9 +50,9 @@ console.log('done');
 
 });
 
-connection.end(function(err) {
+//connection.end(function(err) {
 // The connection is terminated now
-});
+//});
 });
 }
 
