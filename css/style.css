@@ -157,8 +157,8 @@ table#t01 tr:nth-child(odd) {
     background-color: darkgray;
 }
 table#t01 th	{
-    color: #000000;
-    background-color: deepskyblue;
+    color: #ffffff;
+    background-image: url('/images/footer_lodyas.png');
 }
 
 input, select, textarea{
