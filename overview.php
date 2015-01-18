@@ -7,7 +7,7 @@
         <tr>
             <th>Status</th>
             <th>Amount</th>
-            <th>Last Upadted</th>
+            <th>Last Updated</th>
         </tr>
         <tr>
             <td>Billed Successfully</td>
@@ -41,13 +41,13 @@
         </tr>
     </table>
 
-
+<br>
     <h1>MO / MT Overview</h1>
     <table id="t01">
         <tr>
             <th>Status</th>
             <th>Amount</th>
-            <th>Last Upadted</th>
+            <th>Last Updated</th>
         </tr>
         <tr>
             <td>MO Successfully Recived</td>
@@ -81,14 +81,14 @@
         </tr>
     </table>
 
-
+    <br>
     <h1>Other</h1>
     <table id="t01">
         <tr>
             <th>Componant</th>
             <th>Status</th>
             <th>Amount</th>
-            <th>Last Upadted</th>
+            <th>Last Updated</th>
         </tr>
         <tr>
             <td>ESC Transactions</td>
