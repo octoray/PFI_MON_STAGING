@@ -11,7 +11,7 @@ or die("Unable to connect to MySQL");
 mysql_select_db("PFI_MON") or die(mysql_error());
 
 // ESC Overview
-$result1 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%h:%i') AS 'time', amount FROM PFI_MON.overview_countwhere STATUS = '6' ORDER BY id DESC LIMIT 0, 6;")
+$result1 = mysql_query("SELECT 	id, time, amount FROM PFI_MON.overview_countwhere STATUS = '6' ORDER BY id DESC LIMIT 0, 6;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
