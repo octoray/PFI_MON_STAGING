@@ -1,4 +1,4 @@
-function myFunction() {
+function dbq1() {
         var request = new sql.Request();
         request.query(query1, function(err, recordset) {
             // ... error checks
@@ -6,7 +6,7 @@ function myFunction() {
             console.dir(recordset);
             console.log(recordset[0]);
             console.log(recordset[0].Amount);
-            connection.query('INSERT INTO test (value1, value2)VALUES("test2", "' + recordset[0].Amount + '");', function(err, rows, fields) {
+            connection.query('INSERT INTO overview_count (status, amount)VALUES("6", "' + recordset[0].Amount + '");', function(err, rows, fields) {
                 if (err) throw err;
                 console.log('done');
 
@@ -18,15 +18,15 @@ function myFunction() {
 //END
 
 
-function myFunction2() {
+function dbq2() {
         var request = new sql.Request();
-        request.query(query1, function(err, recordset) {
+        request.query(query2, function(err, recordset) {
             // ... error checks
 
             console.dir(recordset);
             console.log(recordset[0]);
             console.log(recordset[0].Amount);
-            connection.query('INSERT INTO test (value1, value2)VALUES("test2", "' + recordset[0].Amount + '");', function(err, rows, fields) {
+            connection.query('INSERT INTO overview_count (status, amount)VALUES("4", "' + recordset[0].Amount + '");', function(err, rows, fields) {
                 if (err) throw err;
                 console.log('done');
 
@@ -37,5 +37,28 @@ function myFunction2() {
             });
         });
     }
+
+//END
+
+
+function dbq3() {
+var request = new sql.Request();
+request.query(query3, function(err, recordset) {
+// ... error checks
+
+console.dir(recordset);
+console.log(recordset[0]);
+console.log(recordset[0].Amount);
+connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + recordset[0].Amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+connection.end(function(err) {
+// The connection is terminated now
+});
+});
+}
 
 //END

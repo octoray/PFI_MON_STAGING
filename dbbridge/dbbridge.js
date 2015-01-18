@@ -13,8 +13,9 @@ sql.connect(config, function(err) {
     if (err)
         throw (err);
 
-    myFunction();
-    myFunction2();
+    dbq1();
+    dbq2();
+    dbq3();
 
     // Query
     //sql.close();
