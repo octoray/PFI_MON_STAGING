@@ -4,8 +4,8 @@ function dbq1() {
             // ... error checks
 
 
-            console.log(recordset[0].Amount);
-            connection.query('INSERT INTO overview_count (status, amount)VALUES("6", "' + recordset[0].Amount + '");', function(err, rows, fields) {
+            console.log(recordset[0].amount);
+            connection.query('INSERT INTO overview_count (status, amount)VALUES("6", "' + recordset[0].amount + '");', function(err, rows, fields) {
                 if (err) throw err;
                 console.log('done');
 
@@ -22,8 +22,8 @@ function dbq2() {
         request.query(query2, function(err, recordset) {
             // ... error checks
 
-            console.log(recordset[0].Amount);
-            connection.query('INSERT INTO overview_count (status, amount)VALUES("4", "' + recordset[0].Amount + '");', function(err, rows, fields) {
+            console.log(recordset[0].amount);
+            connection.query('INSERT INTO overview_count (status, amount)VALUES("4", "' + recordset[0].amount + '");', function(err, rows, fields) {
                 if (err) throw err;
                 console.log('done');
 
@@ -43,8 +43,8 @@ var request = new sql.Request();
 request.query(query3, function(err, recordset) {
 // ... error checks
 
-console.log(recordset[0].Amount);
-connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + recordset[0].Amount + '");', function(err, rows, fields) {
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + recordset[0].amount + '");', function(err, rows, fields) {
 if (err) throw err;
 console.log('done');
 
