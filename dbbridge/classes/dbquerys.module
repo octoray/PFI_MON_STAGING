@@ -12,7 +12,7 @@ var query10 = "select count(id) as amount  FROM [PayForIt].[dbo].[Message] where
 var query11 = "select count(id) as amount  FROM [PayForIt].[dbo].[Message] where Response = 'The request was aborted: The request was canceled.' and created  between dateadd(MINUTE,-10,getdate()) and getdate() and direction = 'MT';"
 var query12 = "select count(id) as amount  FROM [PayForIt].[dbo].[Message] where Response = 'The operation has timed out' and created  between dateadd(MINUTE,-10,getdate()) and getdate() and direction = 'MT';"
 
-var query13 = "SELECT count(id) as amount FROM [PayForIt].[dbo].[Transaction](nolock) WHERE [TransactionStatusId] = 4 AND [NetworkId] != 4 AND [Charged] >= DATEADD("mi", -1440, getdate());"
+var query13 = "SELECT count(id) as amount FROM [PayForIt].[dbo].[Transaction](nolock) WHERE [TransactionStatusId] = 4 AND [NetworkId] != 4 AND [Charged] >= DATEADD(MINUTE,-1440, getdate());"
 var query14 = "SELECT sum(eventcount) as amount FROM [PayForIt].[dbo].[ReportEvent] WHERE eventdate between dateadd(MINUTE,-62,getdate()) and getdate()and ReportEventTypeId in ('2','6');"
 var query15 = "SELECT count(id) as amount FROM [PayForIt].[dbo].[EscScreenshot] WHERE created between dateadd(MINUTE,-10,getdate()) and getdate();"
 var query16 = "select count(id) as amount FROM [PayForIt].[dbo].[NetworkLookup] where success = '1' and created between dateadd(MINUTE,-10,getdate()) and getdate();"
