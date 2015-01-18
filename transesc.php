@@ -22,7 +22,7 @@
                 },
                 "data": [
                     {
-                        "label": "'.$time1.'",
+                        "label": "'.$time6.'",
                         "value": "'.$amount6.'"
                     },
                     {
@@ -56,7 +56,12 @@
 </script>
 
 <div class="wrapper">
-
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div id="chartContainer_header" align="center" class="chart2"> ESC Transactions Last Hour </div>
     <div id="chartContainer" align="center"></div>
 
