@@ -1,4 +1,5 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
+<?php require("./php/transesc.php"); ?>
 <script type="text/javascript" src="fusioncharts/charts/esc_trans.js"></script>
 
 <div class="wrapper">

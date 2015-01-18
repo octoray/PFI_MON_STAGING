@@ -20,7 +20,7 @@ FusionCharts.ready(function(){
     },
 "data": [
                     {
-                        "label": "14:00",
+                        "label": "<?php echo $time1;?>",
                         "value": "320000"
                         },
                     {

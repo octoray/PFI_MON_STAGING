@@ -18,8 +18,19 @@ or die(mysql_error());
 while ($row = mysql_fetch_assoc($result1)) {
     $r[] = $row;
 }
-echo $r[0]['amount'];
-echo $r[2]['amount'];
+$amount1 = $r[0]['amount'];
+$amount2 = $r[1]['amount'];
+$amount3 = $r[2]['amount'];
+$amount4 = $r[3]['amount'];
+$amount5 = $r[4]['amount'];
+$amount6 = $r[5]['amount'];
+
+$time1 = $r[0]['time'];
+$time2 = $r[1]['time'];
+$time3 = $r[2]['time'];
+$time4 = $r[3]['time'];
+$time5 = $r[4]['time'];
+$time6 = $r[5]['time'];
 // Print out the contents of the entry
 //print_r($row);
 //echo $row;
