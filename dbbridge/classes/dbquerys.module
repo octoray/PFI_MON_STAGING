@@ -1,8 +1,8 @@
-var query1 = 'SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '6' and created  between dateadd(MINUTE,-10,getdate()) and getdate();'
-var query2 = 'SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '4' and created  between dateadd(MINUTE,-10,getdate()) and getdate();'
-var query3 = 'SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '7' and created  between dateadd(MINUTE,-10,getdate()) and getdate();'
-var query4 = 'SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '8' and created  between dateadd(MINUTE,-10,getdate()) and getdate();'
-var query5 = 'SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '13' and created  between dateadd(MINUTE,-10,getdate()) and getdate();'
-var query6 = 'SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '19' and created  between dateadd(MINUTE,-10,getdate()) and getdate();'
+var query1 = "SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '6' and created  between dateadd(MINUTE,-10,getdate()) and getdate();"
+var query2 = "SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '4' and created  between dateadd(MINUTE,-10,getdate()) and getdate();"
+var query3 = "SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '7' and created  between dateadd(MINUTE,-10,getdate()) and getdate();"
+var query4 = "SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '8' and created  between dateadd(MINUTE,-10,getdate()) and getdate();"
+var query5 = "SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '13' and created  between dateadd(MINUTE,-10,getdate()) and getdate();"
+var query6 = "SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '19' and created  between dateadd(MINUTE,-10,getdate()) and getdate();"
 
-var query7 = 'SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '7' and created  between dateadd(MINUTE,-10,getdate()) and getdate();'
+var query7 = "SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '7' and created  between dateadd(MINUTE,-10,getdate()) and getdate();"
