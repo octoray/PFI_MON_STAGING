@@ -45,11 +45,61 @@ connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + re
 if (err) throw err;
 console.log('done');
 
+    });
+
+});
+}
+
+//END
+
+function dbq4() {
+var request = new sql.Request();
+request.query(query4, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
 });
 
-//connection.end(function(err) {
-// The connection is terminated now
-//});
+});
+}
+
+//END
+
+
+function dbq5() {
+var request = new sql.Request();
+request.query(query5, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+//END
+
+
+function dbq6() {
+var request = new sql.Request();
+request.query(query6, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_count (status, amount)VALUES("7", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
 });
 }
 
