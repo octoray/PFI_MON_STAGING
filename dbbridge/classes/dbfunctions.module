@@ -206,3 +206,173 @@ console.log('done');
 
 });
 }
+
+
+//END
+
+
+function dbq13() {
+var request = new sql.Request();
+request.query(query13, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_other (status, amount)VALUES("Pending/Stuck Transactions", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+//END
+
+
+function dbq14() {
+var request = new sql.Request();
+request.query(query14, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_other (status, amount)VALUES("ESC Site Hit Count", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+
+//END
+
+
+function dbq15() {
+var request = new sql.Request();
+request.query(query15, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_other (status, amount)VALUES("ESC Screenshots", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+
+//END
+
+
+function dbq16() {
+var request = new sql.Request();
+request.query(query16, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_other (status, amount)VALUES("IMSI Success", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+
+//END
+
+
+function dbq17() {
+var request = new sql.Request();
+request.query(query17, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_other (status, amount)VALUES("IMSI Failed", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+
+//END
+
+
+function dbq18() {
+var request = new sql.Request();
+request.query(query18, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_other (status, amount)VALUES("Successful STOP'S", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+
+//END
+
+
+function dbq19() {
+var request = new sql.Request();
+request.query(query19, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_other (status, amount)VALUES("Failed STOP'S", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+
+//END
+
+
+function dbq20() {
+var request = new sql.Request();
+request.query(query20, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_other (status, amount)VALUES("Successful Client Notification", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+
+//END
+
+
+function dbq21() {
+var request = new sql.Request();
+request.query(query21, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_other (status, amount)VALUES("Failed Client Notification", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}

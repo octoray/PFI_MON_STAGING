@@ -25,6 +25,15 @@ sql.connect(config, function(err) {
     dbq10();
     dbq11();
     dbq12();
+    dbq13();
+    dbq14();
+    dbq15();
+    dbq16();
+    dbq17();
+    dbq18();
+    dbq19();
+    dbq20();
+    dbq21();
 
 
     // Query
