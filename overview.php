@@ -2,6 +2,7 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
 
 <div class="wrapper">
+    <br>
 <h1>ESC Billing Overview</h1>
     <table id="t01">
         <tr>
