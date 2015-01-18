@@ -17,5 +17,5 @@ sql.connect(config, function(err) {
     myFunction2();
 
     // Query
-    sql.close();
+    //sql.close();
 });

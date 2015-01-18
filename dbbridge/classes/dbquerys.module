@@ -1,2 +1,7 @@
-var query1 = 'SELECT count(*) as "Amount"FROM [PayForIt].[dbo].[Transaction](nolock)WHERE [TransactionStatusId] = 4 AND [NetworkId] != 4AND [Charged] >= DATEADD("mi", -1440, getdate());'
+var query1 = 'SELECT count(*) FROM [PayForIt].[dbo].[Transaction] where TransactionStatusId = '6' and created  between dateadd(MINUTE,-10,getdate()) and getdate();'
 var query2 = 'SELECT count(*) as "Amount2" FROM [PayForIt].[dbo].[SystemSetting]'
+var query3 =
+var query4 =
+var query5 =
+var query6 =
+var query7 =
