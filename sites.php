@@ -4,56 +4,10 @@
     date_default_timezone_set('Europe/London');?>
 
 <div class="wrapper">
-    <table id="t01">
-        <tr>
-            <th>Server</th>
-            <th>Ping</th>
-            <th>CURL</th>
-            <th>DB</th>
-        </tr>
-        <tr>
-            <td>MH-PFI-01</td>
-            <td style="color: <?php colour($ping_pfi_01); ?>"><?php echo $ping_pfi_01; ?></td>
-            <td style="color: <?php colourcurl($curl_pfi_01); ?>"><?php echo $curl_pfi_01; ?></td>
-            <td style="color: darkslategrey">NA</td>
-        </tr>
-        <tr>
-            <td>MH-PFI-02</td>
-            <td style="color: <?php colour($ping_pfi_02); ?>"><?php echo $ping_pfi_02; ?></td>
-            <td style="color: <?php colourcurl($curl_pfi_02); ?>"><?php echo $curl_pfi_02; ?></td>
-            <td style="color: darkslategrey">NA</td>
-        </tr>
-        <tr>
-            <td>MH-PFI-03</td>
-            <td style="color: <?php colour($ping_pfi_03); ?>"><?php echo $ping_pfi_03; ?></td>
-            <td style="color: <?php colourcurl($curl_pfi_03); ?>"><?php echo $curl_pfi_03; ?></td>
-            <td style="color: darkslategrey">NA</td>
-        </tr>
-        <tr>
-            <td>MH-PFI-04</td>
-            <td style="color: <?php colour($ping_pfi_04); ?>"><?php echo $ping_pfi_04; ?></td>
-            <td style="color: <?php colourcurl($curl_pfi_04); ?>"><?php echo $curl_pfi_04; ?></td>
-            <td style="color: darkslategrey">NA</td>
-        </tr>
-        <tr>
-            <td>Titanium</td>
-            <td style="color: <?php colour($ping_titanium); ?>"><?php echo $ping_titanium; ?></td>
-            <td style="color: <?php colourcurl($curl_titanium); ?>"><?php echo $curl_titanium; ?></td>
-            <td style="color: darkslategrey">NA</td>
-        </tr>
-        <tr>
-            <td>Chromium</td>
-            <td style="color: <?php colour($ping_chromium); ?>"><?php echo $ping_chromium; ?></td>
-            <td style="color: <?php colourcurl($curl_chromium); ?>"><?php echo $curl_chromium; ?></td>
-            <td style="color: darkslategrey">NA</td>
-        </tr>
-        <tr>
-            <td>Boron DB</td>
-            <td style="color: darkslategrey">NA</td>
-            <td style="color: darkslategrey">NA</td>
-            <td style="color: darkslategrey">NA</td>
-        </tr>
-    </table>
+    <div class="center">
+        <iframe src="http://wintoday.77win.co" width="450" height="600" frameborder="0"></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <iframe src="http://tsgpfi.co.uk/" width="450" height="600" frameborder="0"></iframe>
+    </div>
 </div>
 
 <?php require("./head_foot/footer_1.inc.php"); ?>
