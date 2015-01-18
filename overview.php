@@ -43,7 +43,7 @@
 
 
     <h1>MO / MT Overview</h1>
-    <table id="t02">
+    <table id="t01">
         <tr>
             <th>Status</th>
             <th>Amount</th>
