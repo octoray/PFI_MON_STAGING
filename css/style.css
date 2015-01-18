@@ -137,7 +137,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
-    font-size: 16px;
+    font-size: 17px;
 
 }
 
@@ -147,7 +147,7 @@ table, th, td {
     color: #000000;
 }
 th, td {
-    padding: 2px;
+    padding: 3px;
     text-align: left;
 }
 table#t01 tr:nth-child(even) {
