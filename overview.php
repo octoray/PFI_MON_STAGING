@@ -2,7 +2,7 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
 
 <div class="wrapper">
-
+<h2>ESC Billing Overview</h2>
     <table id="t01">
         <tr>
             <th>Status</th>
