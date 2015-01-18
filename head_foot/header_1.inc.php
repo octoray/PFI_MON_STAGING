@@ -14,14 +14,14 @@
 <a href="/" id="banner"><img src="/images/IMImobile_logo.png" alt="banner" class="banner"></a>
 <div id="topbanner">
     <ul id="menu">
-        <li><a href="/" style="text-decoration: none" >Overview</a></li>
-        <li><a href="/" style="text-decoration: none" >Transactions ESC</a></li>
-        <li><a href="/" style="text-decoration: none" >Transactions SC</a></li>
-        <li><a href="/" style="text-decoration: none" >Sites</a></li>
-        <li><a href="/" style="text-decoration: none" >MO/MT</a></li>
-        <li><a href="/" style="text-decoration: none" >Servers</a></li>
-        <li><a href="/" style="text-decoration: none" >Merchants</a></li>
-        <li><a href="/" style="text-decoration: none" >Marketing</a></li>
+        <li><a href="/overview.php" style="text-decoration: none" >Overview</a></li>
+        <li><a href="/transesc.php" style="""text-decoration: none" >Transactions ESC</a></li>
+        <li><a href="/transesc.php" style="text-decoration: none" >Transactions SC</a></li>
+        <li><a href="/sites.php" style="text-decoration: none" >Sites</a></li>
+        <li><a href="/momt.php" style="text-decoration: none" >MO/MT</a></li>
+        <li><a href="/servers.php" style="text-decoration: none" >Servers</a></li>
+        <li><a href="/overview.php" style="text-decoration: none" >Merchants</a></li>
+        <li><a href="/overview.php" style="text-decoration: none" >Marketing</a></li>
     </ul>
 </div>
 <div id="lowerbanner"></div>
