@@ -6,31 +6,35 @@ $hostname = "localhost";
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password)
 or die("Unable to connect to MySQL");
-echo "Connected to MySQL<br>";
+//echo "Connected to MySQL<br>";
 
 mysql_select_db("PFI_MON") or die(mysql_error());
 
-$result = mysql_query("SELECT * FROM overview_count where status = '6' order by id desc limit 1;")
+$result1 = mysql_query("SELECT * FROM overview_count where status = '6' order by id desc limit 1;")
 or die(mysql_error());
 
-$result2 = mysql_query("SELECT * FROM overview_count where id = '2'")
+$result2 = mysql_query("SELECT * FROM overview_count where status = '4' order by id desc limit 1;")
 or die(mysql_error());
 
-$result2 = mysql_query("SELECT * FROM overview_count where id = '2'")
+$result3 = mysql_query("SELECT * FROM overview_count where status = '7' order by id desc limit 1;")
 or die(mysql_error());
 
-$result2 = mysql_query("SELECT * FROM overview_count where id = '2'")
+$result4 = mysql_query("SELECT * FROM overview_count where status = '8' order by id desc limit 1;")
 or die(mysql_error());
 
-$result2 = mysql_query("SELECT * FROM overview_count where id = '2'")
+$result5 = mysql_query("SELECT * FROM overview_count where status = '13' order by id desc limit 1;")
 or die(mysql_error());
 
-$result2 = mysql_query("SELECT * FROM overview_count where id = '2'")
+$result6 = mysql_query("SELECT * FROM overview_count where status = '19' order by id desc limit 1;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
-$row = mysql_fetch_array( $result );
+$row1 = mysql_fetch_array( $result1 );
 $row2 = mysql_fetch_array( $result2 );
+$row3 = mysql_fetch_array( $result3 );
+$row4 = mysql_fetch_array( $result4 );
+$row5 = mysql_fetch_array( $result5 );
+$row6 = mysql_fetch_array( $result6 );
 // Print out the contents of the entry
 //print_r($row);
 //echo $row;
