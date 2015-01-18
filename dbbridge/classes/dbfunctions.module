@@ -103,4 +103,106 @@ console.log('done');
 });
 }
 
+
 //END
+
+function dbq7() {
+var request = new sql.Request();
+request.query(query7, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_momt (status, amount)VALUES("MO Successful", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+//END
+
+function dbq8() {
+var request = new sql.Request();
+request.query(query8, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_momt (status, amount)VALUES("MT Delivered", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+//END
+
+function dbq9() {
+var request = new sql.Request();
+request.query(query9, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_momt (status, amount)VALUES("Sent, No Final DR Yet", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+//END
+
+function dbq10() {
+var request = new sql.Request();
+request.query(query10, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_count (status, amount)VALUES("The underlying connection was forcibly closed", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+//END
+
+function dbq11() {
+var request = new sql.Request();
+request.query(query11, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_count (status, amount)VALUES("The request was aborted", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
+
+//END
+
+
+function dbq12() {
+var request = new sql.Request();
+request.query(query12, function(err, recordset) {
+// ... error checks
+
+console.log(recordset[0].amount);
+connection.query('INSERT INTO overview_count (status, amount)VALUES("The operation has timed out", "' + recordset[0].amount + '");', function(err, rows, fields) {
+if (err) throw err;
+console.log('done');
+
+});
+
+});
+}
