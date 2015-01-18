@@ -311,7 +311,7 @@ request.query(query18, function(err, recordset) {
 // ... error checks
 
 console.log(recordset[0].amount);
-connection.query('INSERT INTO overview_other (status, amount)VALUES("Successful STOP'S", "' + recordset[0].amount + '");', function(err, rows, fields) {
+connection.query('INSERT INTO overview_other (status, amount)VALUES("Successful STOPS", "' + recordset[0].amount + '");', function(err, rows, fields) {
 if (err) throw err;
 console.log('done');
 
@@ -330,7 +330,7 @@ request.query(query19, function(err, recordset) {
 // ... error checks
 
 console.log(recordset[0].amount);
-connection.query('INSERT INTO overview_other (status, amount)VALUES("Failed STOP'S", "' + recordset[0].amount + '");', function(err, rows, fields) {
+connection.query('INSERT INTO overview_other (status, amount)VALUES("Failed STOPS", "' + recordset[0].amount + '");', function(err, rows, fields) {
 if (err) throw err;
 console.log('done');
 
