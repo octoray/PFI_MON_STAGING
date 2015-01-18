@@ -43,7 +43,7 @@
 
 
     <h1>MO / MT Overview</h1>
-    <table id="t01">
+    <table id="t02">
         <tr>
             <th>Status</th>
             <th>Amount</th>
@@ -79,7 +79,7 @@
             <td style="color: black;"><?php echo $row12['amount']; ?></td>
             <td style="color: black;"><?php echo $row12['time']; ?></td>
         </tr>
-
+    </table>
 </div>
 
 <?php require("./head_foot/footer_1.inc.php"); ?>
