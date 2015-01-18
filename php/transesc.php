@@ -38,7 +38,7 @@ $c1_time6 = $r1[5]['time'];
 
 // chart2
 $r2 = array();
-$result2 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%h:%i') AS 'time', amount FROM PFI_MON.overview_count where STATUS <> '6' ORDER BY id DESC LIMIT 0, 6;")
+$result2 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%h:%i') AS 'time', amount FROM PFI_MON.overview_count where STATUS = '13' ORDER BY id DESC LIMIT 0, 6;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
