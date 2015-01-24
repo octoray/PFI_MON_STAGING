@@ -110,6 +110,7 @@
             {
                "startvalue": "5",
                "color": "#1aaf5d",
+               "thickness": "4",
                "valueOnRight": "1",
                "tooltext": "Average Last Hour",
                "displayvalue": "Average"
