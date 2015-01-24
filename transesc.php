@@ -65,7 +65,7 @@
         "dataSource":  {
            "chart": {
               "caption": "MO/MT Failed",
-              "subCaption": "MO/MT Failed",
+              "subCaption": "Failures",
               "xAxisname": "Time",
               "yAxisName": "Amount",
               "numberPrefix": "",
@@ -97,94 +97,94 @@
            ],
            "dataset": [
               {
-                 "seriesname": "Sent MT, No Final DR Yet",
+                 "seriesname": "Sent MT, No DR",
                  "data": [
                     {
-                       "value": "10000"
+                       "value": "10"
                     },
                     {
-                       "value": "11500"
+                       "value": "20"
                     },
                     {
-                       "value": "12500"
+                       "value": "10"
                     },
                     {
-                       "value": "15000"
+                       "value": "50"
                     },
                     {
-                       "value": "12500"
+                       "value": "2"
                     },
                     {
-                       "value": "12500"
+                       "value": "4"
                     }
                  ]
               },
               {
-                 "seriesname": "The request was aborted",
+                 "seriesname": "request aborted",
                  "data": [
                     {
-                       "value": "9000"
+                       "value": "7"
                     },
                     {
-                       "value": "11500"
+                       "value": "2"
                     },
                     {
-                       "value": "11400"
+                       "value": "1"
                     },
                     {
-                       "value": "18000"
+                       "value": "0"
                     },
                     {
-                       "value": "12500"
+                       "value": "0"
                     },
                     {
-                       "value": "12500"
+                       "value": "30"
                     }
                  ]
               },
               {
-                 "seriesname": "The operation has timed out",
+                 "seriesname": "timed out",
                  "data": [
                     {
-                       "value": "9000"
+                       "value": "12"
                     },
                     {
-                       "value": "11500"
+                       "value": "13"
                     },
                     {
-                       "value": "11400"
+                       "value": "19"
                     },
                     {
-                       "value": "18000"
+                       "value": "2"
                     },
                     {
-                       "value": "12500"
+                       "value": "40"
                     },
                     {
-                       "value": "12500"
+                       "value": "51"
                     }
                  ]
               },
               {
-                 "seriesname": "underlying connection forcibly closed",
+                 "seriesname": "connection forcibly closed",
                  "data": [
                     {
-                       "value": "25400"
+                       "value": "23"
                     },
                     {
-                       "value": "29800"
+                       "value": "32"
                     },
                     {
-                       "value": "21800"
+                       "value": "43"
                     },
                     {
-                       "value": "26800"
+                       "value": "34"
                     },
                     {
-                       "value": "12500"
+                       "value": "1"
                     },
                     {
-                       "value": "12500"
+                       "value": "10"
                     }
                  ]
               }
