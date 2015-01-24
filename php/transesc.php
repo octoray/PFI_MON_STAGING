@@ -139,6 +139,19 @@ $c6_amount3 = $r6[2]['amount'];
 $c6_amount4 = $r6[3]['amount'];
 $c6_amount5 = $r6[4]['amount'];
 $c6_amount6 = $r6[5]['amount'];
+
+
+//trend
+$r7 = array();
+$result7 = mysql_query("SELECT AVG(amount) as 'trend' FROM  `PFI_MON`.`overview_count` WHERE STATUS = '6' AND TIME >= NOW() - INTERVAL 11 MINUTE;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row7 = mysql_fetch_assoc($result7)) {
+    $r7[] = $row7;
+}
+$trend = $r7[0]['trend'];
+
 mysql_close($dbhandle);
 ?>
 

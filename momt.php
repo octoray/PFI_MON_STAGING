@@ -45,7 +45,21 @@
                          "label": "'.$c1_time1.'",
                          "value": "'.$c1_amount1.'"
                      }
-                 ]
+                                ],
+   "trendlines": [
+      {
+         "line": [
+            {
+               "startvalue": "5",
+               "color": "#1aaf5d",
+               "thickness": "2",
+               "valueOnRight": "1",
+               "tooltext": "Average Last Hour",
+               "displayvalue": "Average"
+            }
+         ]
+      }
+   ]
              }
 
          });
