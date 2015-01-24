@@ -58,7 +58,7 @@ $c2_time3 = $r2[2]['time'];
 $c2_time4 = $r2[3]['time'];
 $c2_time5 = $r2[4]['time'];
 $c2_time6 = $r2[5]['time'];
-mysql_close($dbhandle);
+
 
 
 
@@ -77,7 +77,7 @@ $c3_amount3 = $r3[2]['amount'];
 $c3_amount4 = $r3[3]['amount'];
 $c3_amount5 = $r3[4]['amount'];
 $c3_amount6 = $r3[5]['amount'];
-mysql_close($dbhandle);
+
 
 
 
@@ -97,7 +97,7 @@ $c4_amount3 = $r4[2]['amount'];
 $c4_amount4 = $r4[3]['amount'];
 $c4_amount5 = $r4[4]['amount'];
 $c4_amount6 = $r4[5]['amount'];
-mysql_close($dbhandle);
+
 
 
 
@@ -118,7 +118,7 @@ $c5_amount3 = $r5[2]['amount'];
 $c5_amount4 = $r5[3]['amount'];
 $c5_amount5 = $r5[4]['amount'];
 $c5_amount6 = $r5[5]['amount'];
-mysql_close($dbhandle);
+
 
 
 
@@ -140,8 +140,6 @@ $c6_amount4 = $r6[3]['amount'];
 $c6_amount5 = $r6[4]['amount'];
 $c6_amount6 = $r6[5]['amount'];
 mysql_close($dbhandle);
-
-
 ?>
 
 
