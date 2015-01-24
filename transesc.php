@@ -64,27 +64,33 @@
         "dataFormat": "json",
         "dataSource":  {
            "chart": {
-              "caption": "Comparison of Quarterly Revenue",
-              "subCaption": "Harrys SuperMart",
-              "xAxisname": "Quarter",
-              "yAxisName": "Revenues (In USD)",
-              "numberPrefix": "$",
+              "caption": "MO/MT Failed",
+              "subCaption": "MO/MT Failed",
+              "xAxisname": "Time",
+              "yAxisName": "Amount",
+              "numberPrefix": "",
               "theme": "ocean"
            },
            "categories": [
               {
                  "category": [
                     {
-                       "label": "Q1"
+                       "label": "14:00"
                     },
                     {
-                       "label": "Q2"
+                       "label": "14:00"
                     },
                     {
-                       "label": "Q3"
+                       "label": "14:00"
                     },
                     {
-                       "label": "Q4"
+                       "label": "14:00"
+                    },
+                    {
+                       "label": "14:00"
+                    },
+                    {
+                       "label": "14:00"
                     }
                  ]
               }
@@ -104,6 +110,12 @@
                     },
                     {
                        "value": "15000"
+                    },
+                    {
+                       "value": "12500"
+                    },
+                    {
+                       "value": "12500"
                     }
                  ]
               },
@@ -121,11 +133,40 @@
                     },
                     {
                        "value": "18000"
+                    },
+                    {
+                       "value": "12500"
+                    },
+                    {
+                       "value": "12500"
                     }
                  ]
               },
               {
-                 "seriesname": "underlying connection forcibly closedr",
+                 "seriesname": "The operation has timed out",
+                 "data": [
+                    {
+                       "value": "9000"
+                    },
+                    {
+                       "value": "11500"
+                    },
+                    {
+                       "value": "11400"
+                    },
+                    {
+                       "value": "18000"
+                    },
+                    {
+                       "value": "12500"
+                    },
+                    {
+                       "value": "12500"
+                    }
+                 ]
+              },
+              {
+                 "seriesname": "underlying connection forcibly closed",
                  "data": [
                     {
                        "value": "25400"
@@ -138,6 +179,12 @@
                     },
                     {
                        "value": "26800"
+                    },
+                    {
+                       "value": "12500"
+                    },
+                    {
+                       "value": "12500"
                     }
                  ]
               }
