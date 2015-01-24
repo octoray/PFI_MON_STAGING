@@ -59,7 +59,7 @@
     var multiseriesChart = new FusionCharts({
         "type": "MSLine",
         "renderAt": "chartContainer",
-        "width": "500",
+        "width": "1200",
         "height": "300",
         "dataFormat": "json",
         "dataSource":  {
@@ -69,7 +69,7 @@
               "xAxisname": "Quarter",
               "yAxisName": "Revenues (In USD)",
               "numberPrefix": "$",
-              "theme": "fint"
+              "theme": "ocean"
            },
            "categories": [
               {
