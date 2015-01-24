@@ -15,6 +15,10 @@
                     "xAxisName": "Time",
                     "yAxisName": "Amount",
                     "canvasBgAlpha": "0",
+                    "logoURL": "/images/Vitruvian_Man_Outline_50x50.png",
+                  "logoAlpha": "40",
+                  "logoScale": "110",
+                  "logoPosition": "TR",
                     "bgColor": "EEEEEE,CCCCCC",
                     "bgratio": "60,40",
                     "bgAlpha": "70,80",
@@ -83,6 +87,10 @@
               "xAxisname": "Time",
               "yAxisName": "Amount",
               "numberPrefix": "",
+              "logoURL": "/images/Vitruvian_Man_Outline_50x50.png",
+                  "logoAlpha": "40",
+                  "logoScale": "110",
+                  "logoPosition": "TR",
               "theme": "ocean"
            },
            "categories": [
