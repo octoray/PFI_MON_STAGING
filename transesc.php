@@ -55,74 +55,81 @@
 
 </script>
 <script type="text/javascript">
-    <?php echo 'FusionCharts.ready(function(){
-         var revenueChart = new FusionCharts({
-             type: "column2d",
-             renderAt: "chartContainer",
-             width: "1200",
-             height: "300",
-             dataFormat: "json",
-             dataSource: {
-                 "chart": {
-                     "caption": "ESC Failed At Network Last Hour",
-                     "subCaption": "",
-                     "xAxisName": "Time",
-                     "yAxisName": "Amount",
-                     "canvasBgAlpha": "0",
-                     "bgColor": "EEEEEE,CCCCCC",
-                     "logoURL": "/images/Vitruvian_Man_Outline_50x50.png",
-                     "logoAlpha": "40",
-                     "logoScale": "110",
-                     "logoPosition": "TR",
-                     "bgratio": "60,40",
-                     "bgAlpha": "70,80",
-                     "theme": "ocean"
-                 },
+    <?php echo 'FusionCharts.ready(function () {
+    var multiseriesChart = new FusionCharts({
+        "type": "mscolumn2d",
+        "renderAt": "chartContainer",
+        "width": "500",
+        "height": "300",
+        "dataFormat": "json",
+        "dataSource":  {
+           "chart": {
+              "caption": "Comparison of Quarterly Revenue",
+              "subCaption": "Harrys SuperMart",
+              "xAxisname": "Quarter",
+              "yAxisName": "Revenues (In USD)",
+              "numberPrefix": "$",
+              "theme": "fint"
+           },
+           "categories": [
+              {
+                 "category": [
+                    {
+                       "label": "Q1"
+                    },
+                    {
+                       "label": "Q2"
+                    },
+                    {
+                       "label": "Q3"
+                    },
+                    {
+                       "label": "Q4"
+                    }
+                 ]
+              }
+           ],
+           "dataset": [
+              {
+                 "seriesname": "Previous Year",
                  "data": [
-                     {
-                         "label": "'.$c2_time6.'",
-                         "value": "'.$c2_amount6.'"
-                     },
-                     {
-                         "label": "'.$c2_time5.'",
-                         "value": "'.$c2_amount5.'"
-                     },
-                     {
-                         "label": "'.$c2_time4.'",
-                         "value": "'.$c2_amount4.'"
-                     },
-                     {
-                         "label": "'.$c2_time3.'",
-                         "value": "'.$c2_amount3.'"
-                     },
-                     {
-                         "label": "'.$c2_time2.'",
-                         "value": "'.$c2_amount2.'"
-                     },
-                     {
-                         "label": "'.$c2_time1.'",
-                         "value": "'.$c2_amount1.'"
-                     }
-                 ],
-   "trendlines": [
-      {
-         "line": [
-            {
-               "startvalue": "5",
-               "color": "#1aaf5d",
-               "thickness": "4",
-               "valueOnRight": "1",
-               "tooltext": "Average Last Hour",
-               "displayvalue": "Average"
-            }
-         ]
-      }
-   ]
-             }
+                    {
+                       "value": "10000"
+                    },
+                    {
+                       "value": "11500"
+                    },
+                    {
+                       "value": "12500"
+                    },
+                    {
+                       "value": "15000"
+                    }
+                 ]
+              },
+              {
+                 "seriesname": "Current Year",
+                 "data": [
+                    {
+                       "value": "25400"
+                    },
+                    {
+                       "value": "29800"
+                    },
+                    {
+                       "value": "21800"
+                    },
+                    {
+                       "value": "26800"
+                    }
+                 ]
+              }
+           ]
+        }
+    });
 
-         });
-         revenueChart.render("chartContainer2");
-     });'
+    multiseriesChart.render();
+});'
  ?>
 
 </script>
