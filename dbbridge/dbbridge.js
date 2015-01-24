@@ -37,5 +37,5 @@ sql.connect(config, function(err) {
 
 
     // Query
-    //sql.close();
+    sql.close();
 });
