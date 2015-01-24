@@ -104,7 +104,7 @@
                           "label": "'.$c1_time2.'"
                        },
                        {
-                          "label": "'.$c1_time1.'0"
+                          "label": "'.$c1_time1.'"
                        }
                     ]
                  }
@@ -114,22 +114,22 @@
                     "seriesname": "Sent MT, No DR",
                     "data": [
                        {
-                          "value": "'.$c2_time6.'"
+                          "value": "'.$c2_amount6.'"
                        },
                        {
-                          "value": "'.$c2_time5.'"
+                          "value": "'.$c2_amount5.'"
                        },
                        {
-                          "value": "'.$c2_time4.'"
+                          "value": "'.$c2_amount4.'"
                        },
                        {
-                          "value": "'.$c2_time3.'"
+                          "value": "'.$c2_amount3.'"
                        },
                        {
-                          "value": "'.$c2_time2.'"
+                          "value": "'.$c2_amount2.'"
                        },
                        {
-                          "value": "'.$c2_time1.'"
+                          "value": "'.$c2_amount1.'"
                        }
                     ]
                  },
@@ -137,22 +137,22 @@
                     "seriesname": "request aborted",
                     "data": [
                        {
-                          "value": "'.$c3_time6.'"
+                          "value": "'.$c3_amount6.'"
                        },
                        {
-                          "value": "'.$c3_time5.'"
+                          "value": "'.$c3_amount5.'"
                        },
                        {
-                          "value": "'.$c3_time4.'"
+                          "value": "'.$c3_amount4.'"
                        },
                        {
-                          "value": "'.$c3_time3.'"
+                          "value": "'.$c3_amount3.'"
                        },
                        {
-                          "value": "'.$c3_time2.'"
+                          "value": "'.$c3_amount2.'"
                        },
                        {
-                          "value": "'.$c3_time1.'"
+                          "value": "'.$c3_amount1.'"
                        }
                     ]
                  },
@@ -160,22 +160,22 @@
                     "seriesname": "timed out",
                     "data": [
                        {
-                          "value": "'.$c4_time6.'"
+                          "value": "'.$c4_amount6.'"
                        },
                        {
-                          "value": "'.$c4_time5.'"
+                          "value": "'.$c4_amount5.'"
                        },
                        {
-                          "value": "'.$c4_time4.'"
+                          "value": "'.$c4_amount4.'"
                        },
                        {
-                          "value": "'.$c4_time3.'"
+                          "value": "'.$c4_amount3.'"
                        },
                        {
-                          "value": "'.$c4_time2.'"
+                          "value": "'.$c4_amount2.'"
                        },
                        {
-                          "value": "'.$c4_time1.'"
+                          "value": "'.$c4_amount1.'"
                        }
                     ]
                  },
@@ -183,22 +183,22 @@
                     "seriesname": "connection forcibly closed",
                     "data": [
                        {
-                          "value": "'.$c5_time6.'"
+                          "value": "'.$c5_amount6.'"
                        },
                        {
-                          "value": "'.$c5_time5.'"
+                          "value": "'.$c5_amount5.'"
                        },
                        {
-                          "value": "'.$c5_time4.'"
+                          "value": "'.$c5_amount4.'"
                        },
                        {
-                          "value": "'.$c5_time3.'"
+                          "value": "'.$c5_amount3.'"
                        },
                        {
-                          "value": "'.$c5_time2.'"
+                          "value": "'.$c5_amount2.'"
                        },
                        {
-                          "value": "'.$c5_time1.'"
+                          "value": "'.$c5_amount1.'"
                        }
                     ]
                  }
