@@ -103,7 +103,20 @@
                          "label": "'.$c2_time1.'",
                          "value": "'.$c2_amount1.'"
                      }
-                 ]
+                 ],
+   "trendlines": [
+      {
+         "line": [
+            {
+               "startvalue": "5",
+               "color": "#1aaf5d",
+               "valueOnRight": "1",
+               "tooltext": "Quarterly sales target was $startDataValue",
+               "displayvalue": "Target - $175K"
+            }
+         ]
+      }
+   ]
              }
 
          });
