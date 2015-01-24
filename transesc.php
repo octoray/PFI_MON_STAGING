@@ -70,7 +70,7 @@
                      "yAxisName": "Amount",
                      "canvasBgAlpha": "0",
                      "bgColor": "EEEEEE,CCCCCC",
-                     "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
+                     "logoURL": "/images/Vitruvian_Man_Outline_50x50.png",
                      "logoAlpha": "40",
                      "logoScale": "110",
                      "logoPosition": "TR",
@@ -111,8 +111,8 @@
                "startvalue": "5",
                "color": "#1aaf5d",
                "valueOnRight": "1",
-               "tooltext": "Quarterly sales target was $startDataValue",
-               "displayvalue": "Target - $175K"
+               "tooltext": "Average Last Hour",
+               "displayvalue": "Average"
             }
          ]
       }
