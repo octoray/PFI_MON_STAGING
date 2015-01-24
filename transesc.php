@@ -57,7 +57,7 @@
 <script type="text/javascript">
     <?php echo 'FusionCharts.ready(function () {
     var multiseriesChart = new FusionCharts({
-        "type": "msline2d",
+        "type": "MSLine",
         "renderAt": "chartContainer",
         "width": "500",
         "height": "300",
