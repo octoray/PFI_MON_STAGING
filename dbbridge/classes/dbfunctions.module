@@ -377,4 +377,8 @@ console.log('done');
 
 });
 
+connection.end(function(err) {
+// The connection is terminated now
+});
+
 }
