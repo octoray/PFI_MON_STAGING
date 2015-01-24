@@ -372,9 +372,7 @@ connection.query('INSERT INTO overview_other (status, amount)VALUES("Failed Clie
 if (err) throw err;
 console.log('done');
 
-connection.end(function(err) {
-// The connection is terminated now
-});
+
 });
 
 });
