@@ -91,7 +91,7 @@
            ],
            "dataset": [
               {
-                 "seriesname": "Previous Year",
+                 "seriesname": "Sent MT, No Final DR Yet",
                  "data": [
                     {
                        "value": "10000"
@@ -108,7 +108,24 @@
                  ]
               },
               {
-                 "seriesname": "Current Year",
+                 "seriesname": "The request was aborted",
+                 "data": [
+                    {
+                       "value": "9000"
+                    },
+                    {
+                       "value": "11500"
+                    },
+                    {
+                       "value": "11400"
+                    },
+                    {
+                       "value": "18000"
+                    }
+                 ]
+              },
+              {
+                 "seriesname": "underlying connection forcibly closedr",
                  "data": [
                     {
                        "value": "25400"
