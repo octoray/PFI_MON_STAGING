@@ -73,7 +73,7 @@
                      "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
                      "logoAlpha": "40",
                      "logoScale": "110",
-                     "logoPosition": "TR"
+                     "logoPosition": "TR",
                      "bgratio": "60,40",
                      "bgAlpha": "70,80",
                      "theme": "ocean"
