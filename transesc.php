@@ -64,8 +64,8 @@
         "dataFormat": "json",
         "dataSource":  {
            "chart": {
-              "caption": "MO/MT Failed",
-              "subCaption": "Failures",
+              "caption": "Transaction Failed",
+              "subCaption": "",
               "xAxisname": "Time",
               "yAxisName": "Amount",
               "numberPrefix": "",
@@ -97,7 +97,7 @@
            ],
            "dataset": [
               {
-                 "seriesname": "Sent MT, No DR",
+                 "seriesname": "Submitted,No Response",
                  "data": [
                     {
                        "value": "10"
@@ -120,7 +120,7 @@
                  ]
               },
               {
-                 "seriesname": "request aborted",
+                 "seriesname": "Unkown Error",
                  "data": [
                     {
                        "value": "7"
@@ -143,7 +143,7 @@
                  ]
               },
               {
-                 "seriesname": "timed out",
+                 "seriesname": "Pending",
                  "data": [
                     {
                        "value": "12"
@@ -166,7 +166,30 @@
                  ]
               },
               {
-                 "seriesname": "connection forcibly closed",
+                 "seriesname": "Failed At Network",
+                 "data": [
+                    {
+                       "value": "12"
+                    },
+                    {
+                       "value": "13"
+                    },
+                    {
+                       "value": "19"
+                    },
+                    {
+                       "value": "2"
+                    },
+                    {
+                       "value": "40"
+                    },
+                    {
+                       "value": "51"
+                    }
+                 ]
+              },
+              {
+                 "seriesname": "Network Error",
                  "data": [
                     {
                        "value": "23"
@@ -185,7 +208,8 @@
                     },
                     {
                        "value": "10"
-                    }
+                    },
+
                  ]
               }
            ]

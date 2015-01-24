@@ -16,14 +16,15 @@
     <ul id="menu">
         <li><a href="/overview.php" style="text-decoration: none" >Overview</a></li>
         <li><a href="/transesc.php" style="text-decoration: none" >Transactions</a></li>
-        <li><a href="/transesc.php" style="text-decoration: none" >MO/MT</a></li>
-        <li><a href="/transesc.php" style="text-decoration: none" >IMSI</a></li>
-        <li><a href="/transesc.php" style="text-decoration: none" >STOPS</a></li>
-        <li><a href="/transesc.php" style="text-decoration: none" >Notifications</a></li>
-        <li><a href="/overview.php" style="text-decoration: none" >Merchants</a></li>
-        <li><a href="/overview.php" style="text-decoration: none" >Marketing</a></li>
+        <li><a href="/momt.php" style="text-decoration: none" >MO/MT</a></li>
+        <li><a href="/imsi.php" style="text-decoration: none" >IMSI</a></li>
+        <li><a href="/stops.php" style="text-decoration: none" >STOPS</a></li>
+        <li><a href="/notif.php" style="text-decoration: none" >Notifications</a></li>
+        <li><a href="/merchant.php" style="text-decoration: none" >Merchants</a></li>
+        <li><a href="/marketing.php" style="text-decoration: none" >Marketing</a></li>
         <li><a href="/sites.php" style="text-decoration: none" >Sites</a></li>
         <li><a href="/servers.php" style="text-decoration: none" >Servers</a></li>
+        <li><a href="/servers.php" style="text-decoration: none" >Admin</a></li>
     </ul>
 </div>
 <div id="lowerbanner"></div>

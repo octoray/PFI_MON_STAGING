@@ -55,57 +55,146 @@
 
 </script>
 <script type="text/javascript">
-    <?php echo 'FusionCharts.ready(function(){
-         var revenueChart = new FusionCharts({
-             type: "column2d",
-             renderAt: "chartContainer",
-             width: "1200",
-             height: "300",
-             dataFormat: "json",
-             dataSource: {
-                 "chart": {
-                     "caption": "MO Recived",
-                     "subCaption": "",
-                     "xAxisName": "Time",
-                     "yAxisName": "Amount",
-                     "canvasBgAlpha": "0",
-                     "bgColor": "EEEEEE,CCCCCC",
-                     "bgratio": "60,40",
-                     "bgAlpha": "70,80",
-                     "theme": "ocean"
+    <?php echo 'FusionCharts.ready(function () {
+       var multiseriesChart = new FusionCharts({
+           "type": "MSLine",
+           "renderAt": "chartContainer",
+           "width": "1200",
+           "height": "300",
+           "dataFormat": "json",
+           "dataSource":  {
+              "chart": {
+                 "caption": "MO/MT Failed",
+                 "subCaption": "Failures",
+                 "xAxisname": "Time",
+                 "yAxisName": "Amount",
+                 "numberPrefix": "",
+                 "theme": "ocean"
+              },
+              "categories": [
+                 {
+                    "category": [
+                       {
+                          "label": "14:00"
+                       },
+                       {
+                          "label": "14:00"
+                       },
+                       {
+                          "label": "14:00"
+                       },
+                       {
+                          "label": "14:00"
+                       },
+                       {
+                          "label": "14:00"
+                       },
+                       {
+                          "label": "14:00"
+                       }
+                    ]
+                 }
+              ],
+              "dataset": [
+                 {
+                    "seriesname": "Sent MT, No DR",
+                    "data": [
+                       {
+                          "value": "10"
+                       },
+                       {
+                          "value": "20"
+                       },
+                       {
+                          "value": "10"
+                       },
+                       {
+                          "value": "50"
+                       },
+                       {
+                          "value": "2"
+                       },
+                       {
+                          "value": "4"
+                       }
+                    ]
                  },
-                 "data": [
-                     {
-                         "label": "'.$c2_time6.'",
-                         "value": "'.$c2_amount6.'"
-                     },
-                     {
-                         "label": "'.$c2_time5.'",
-                         "value": "'.$c2_amount5.'"
-                     },
-                     {
-                         "label": "'.$c2_time4.'",
-                         "value": "'.$c2_amount4.'"
-                     },
-                     {
-                         "label": "'.$c2_time3.'",
-                         "value": "'.$c2_amount3.'"
-                     },
-                     {
-                         "label": "'.$c2_time2.'",
-                         "value": "'.$c2_amount2.'"
-                     },
-                     {
-                         "label": "'.$c2_time1.'",
-                         "value": "'.$c2_amount1.'"
-                     }
-                 ]
-             }
+                 {
+                    "seriesname": "request aborted",
+                    "data": [
+                       {
+                          "value": "7"
+                       },
+                       {
+                          "value": "2"
+                       },
+                       {
+                          "value": "1"
+                       },
+                       {
+                          "value": "0"
+                       },
+                       {
+                          "value": "0"
+                       },
+                       {
+                          "value": "30"
+                       }
+                    ]
+                 },
+                 {
+                    "seriesname": "timed out",
+                    "data": [
+                       {
+                          "value": "12"
+                       },
+                       {
+                          "value": "13"
+                       },
+                       {
+                          "value": "19"
+                       },
+                       {
+                          "value": "2"
+                       },
+                       {
+                          "value": "40"
+                       },
+                       {
+                          "value": "51"
+                       }
+                    ]
+                 },
+                 {
+                    "seriesname": "connection forcibly closed",
+                    "data": [
+                       {
+                          "value": "23"
+                       },
+                       {
+                          "value": "32"
+                       },
+                       {
+                          "value": "43"
+                       },
+                       {
+                          "value": "34"
+                       },
+                       {
+                          "value": "1"
+                       },
+                       {
+                          "value": "10"
+                       }
+                    ]
+                 }
+              ]
+           }
+       });
 
-         });
-         revenueChart.render("chartContainer2");
-     });'
- ?>
+       multiseriesChart.render("chartContainer2");
+   });'
+    ?>
 
 </script>
 <div class="wrapper">
