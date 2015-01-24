@@ -10,7 +10,7 @@
           dataFormat: "json",
           dataSource: {
               "chart": {
-                  "caption": "ESC Failed At Network Last Hour",
+                  "caption": "IMSI Success Last Hour",
                   "subCaption": "",
                   "xAxisName": "Time",
                   "yAxisName": "Amount",
@@ -82,7 +82,7 @@
          dataFormat: "json",
          dataSource: {
              "chart": {
-                 "caption": "ESC Failed At Network Last Hour",
+                 "caption": "IMSI Failed Last Hour",
                  "subCaption": "",
                  "xAxisName": "Time",
                  "yAxisName": "Amount",

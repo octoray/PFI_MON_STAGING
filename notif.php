@@ -10,7 +10,7 @@
           dataFormat: "json",
           dataSource: {
               "chart": {
-                  "caption": "STOP Success Last Hour",
+                  "caption": "Client Notifications Successful Last Hour",
                   "subCaption": "",
                   "xAxisName": "Time",
                   "yAxisName": "Amount",
@@ -82,7 +82,7 @@
          dataFormat: "json",
          dataSource: {
              "chart": {
-                 "caption": "STOP Failed Last Hour",
+                 "caption": "Client Notifications Failed Last Hour",
                  "subCaption": "",
                  "xAxisName": "Time",
                  "yAxisName": "Amount",
