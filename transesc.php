@@ -75,139 +75,139 @@
               {
                  "category": [
                     {
-                       "label": "14:00"
+                       "label": "'.$c2_time6.'"
                     },
                     {
-                       "label": "14:00"
+                       "label": "'.$c2_time5.'"
                     },
                     {
-                       "label": "14:00"
+                       "label": "'.$c2_time4.'"
                     },
                     {
-                       "label": "14:00"
+                       "label": "'.$c2_time3.'"
                     },
                     {
-                       "label": "14:00"
+                       "label": "'.$c2_time2.'"
                     },
                     {
-                       "label": "14:00"
+                       "label": "'.$c2_time1.'"
                     }
                  ]
               }
            ],
            "dataset": [
               {
-                 "seriesname": "Submitted,No Response",
+                 "seriesname": "Submitted,No Response ",
                  "data": [
                     {
-                       "value": "10"
+                       "value": "'.$c2_amount6.'"
                     },
                     {
-                       "value": "20"
+                       "value": "'.$c2_amount5.'"
                     },
                     {
-                       "value": "10"
+                       "value": "'.$c2_amount4.'"
                     },
                     {
-                       "value": "50"
+                       "value": "'.$c2_amount3.'"
                     },
                     {
-                       "value": "2"
+                       "value": "'.$c2_amount2.'"
                     },
                     {
-                       "value": "4"
+                       "value": "'.$c2_amount1.'"
                     }
                  ]
               },
               {
-                 "seriesname": "Unkown Error",
+                 "seriesname": "Unkown Error ",
                  "data": [
                     {
-                       "value": "7"
+                       "value": "'.$c3_amount6.'"
                     },
                     {
-                       "value": "2"
+                       "value": "'.$c3_amount5.'"
                     },
                     {
-                       "value": "1"
+                       "value": "'.$c3_amount4.'"
                     },
                     {
-                       "value": "0"
+                       "value": "'.$c3_amount3.'"
                     },
                     {
-                       "value": "0"
+                       "value": "'.$c3_amount2.'"
                     },
                     {
-                       "value": "30"
+                       "value": "'.$c3_amount1.'"
                     }
                  ]
               },
               {
-                 "seriesname": "Pending",
+                 "seriesname": "Pending ",
                  "data": [
                     {
-                       "value": "12"
+                       "value": "'.$c4_amount6.'"
                     },
                     {
-                       "value": "13"
+                       "value": "'.$c4_amount5.'"
                     },
                     {
-                       "value": "19"
+                       "value": "'.$c4_amount4.'"
                     },
                     {
-                       "value": "2"
+                       "value": "'.$c4_amount3.'"
                     },
                     {
-                       "value": "40"
+                       "value": "'.$c4_amount2.'"
                     },
                     {
-                       "value": "51"
+                       "value": "'.$c4_amount1.'"
                     }
                  ]
               },
               {
-                 "seriesname": "Failed At Network",
+                 "seriesname": "Failed At Network ",
                  "data": [
                     {
-                       "value": "12"
+                       "value": "'.$c5_amount6.'"
                     },
                     {
-                       "value": "13"
+                       "value": "'.$c5_amount5.'"
                     },
                     {
-                       "value": "19"
+                       "value": "'.$c5_amount4.'"
                     },
                     {
-                       "value": "2"
+                       "value": "'.$c5_amount3.'"
                     },
                     {
-                       "value": "40"
+                       "value": "'.$c5_amount2.'"
                     },
                     {
-                       "value": "51"
+                       "value": "'.$c5_amount1.'"
                     }
                  ]
               },
               {
-                 "seriesname": "Network Error",
+                 "seriesname": "Network Error ",
                  "data": [
                     {
-                       "value": "23"
+                       "value": "'.$c6_amount6.'"
                     },
                     {
-                       "value": "32"
+                       "value": "'.$c6_amount5.'"
                     },
                     {
-                       "value": "43"
+                       "value": "'.$c6_amount4.'"
                     },
                     {
-                       "value": "34"
+                       "value": "'.$c6_amount3.'"
                     },
                     {
-                       "value": "1"
+                       "value": "'.$c6_amount2.'"
                     },
                     {
-                       "value": "10"
+                       "value": "'.$c6_amount1.'"
                     },
 
                  ]
@@ -223,10 +223,10 @@
 </script>
 <div class="wrapper">
 <br><BR>
-    <div id="chartContainer_header" align="center" class="chart2"> ESC Billed Succesfully Last Hour </div>
+    <div id="chartContainer_header" align="center" class="chart2"> Billed Successfully Last Hour </div>
     <div id="chartContainer" align="center"></div>
     <br><BR>
-    <div id="chartContainer_header" align="center" class="chart2"> ESC Failed At Network Last Hour </div>
+    <div id="chartContainer_header" align="center" class="chart2"> Failed Last Hour </div>
     <div id="chartContainer2" align="center"></div>
 
 </div>

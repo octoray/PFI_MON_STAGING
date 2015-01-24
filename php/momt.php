@@ -11,7 +11,7 @@ or die("Unable to connect to MySQL");
 mysql_select_db("PFI_MON") or die(mysql_error());
 $r1 = array();
 // chart1
-$result1 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%h:%i') AS 'time', amount FROM PFI_MON.overview_momt WHERE STATUS = 'MT Delivered' ORDER BY id DESC LIMIT 0, 6;")
+$result1 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_momt WHERE STATUS = 'MT Delivered' ORDER BY id DESC LIMIT 0, 6;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -38,7 +38,7 @@ $c1_time6 = $r1[5]['time'];
 
 // chart2
 $r2 = array();
-$result2 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%h:%i') AS 'time', amount FROM PFI_MON.overview_momt WHERE STATUS = 'MO Successful' ORDER BY id DESC LIMIT 0, 6;")
+$result2 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_momt WHERE STATUS = 'MO Successful' ORDER BY id DESC LIMIT 0, 6;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
