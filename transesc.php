@@ -128,7 +128,7 @@
         }
     });
 
-    multiseriesChart.render();
+    multiseriesChart.render("chartContainer2");
 });'
  ?>
 
