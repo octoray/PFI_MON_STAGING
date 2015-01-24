@@ -110,7 +110,7 @@ $c5_amount6 = $r5[5]['amount'];
 
 
 $r6 = array();
-$result6 = mysql_query("SELECT AVG(amount) AS 'trend' FROM  `PFI_MON`.`overview_momt` WHERE STATUS = 'MT Delivered' AND TIME >= NOW() - INTERVAL 10 MINUTE;")
+$result6 = mysql_query("SELECT AVG(amount) AS 'trend' FROM  `PFI_MON`.`overview_momt` WHERE STATUS = 'MT Delivered' AND TIME >= NOW() - INTERVAL 60 MINUTE;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
