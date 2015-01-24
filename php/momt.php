@@ -38,7 +38,7 @@ $c1_time6 = $r1[5]['time'];
 
 // chart2
 $r2 = array();
-$result2 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_momt WHERE STATUS = 'MO Successful' ORDER BY id DESC LIMIT 0, 6;")
+$result2 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_momt WHERE STATUS = 'Sent, No Final DR Yet' ORDER BY id DESC LIMIT 0, 6;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -52,11 +52,72 @@ $c2_amount4 = $r2[3]['amount'];
 $c2_amount5 = $r2[4]['amount'];
 $c2_amount6 = $r2[5]['amount'];
 
-$c2_time1 = $r2[0]['time'];
-$c2_time2 = $r2[1]['time'];
-$c2_time3 = $r2[2]['time'];
-$c2_time4 = $r2[3]['time'];
-$c2_time5 = $r2[4]['time'];
-$c2_time6 = $r2[5]['time'];
+
+// chart3
+$r3 = array();
+$result3 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_momt WHERE STATUS = 'The request was aborted' ORDER BY id DESC LIMIT 0, 6;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row3 = mysql_fetch_assoc($result3)) {
+    $r3[] = $row3;
+}
+$c3_amount1 = $r3[0]['amount'];
+$c3_amount2 = $r3[1]['amount'];
+$c3_amount3 = $r3[2]['amount'];
+$c3_amount4 = $r3[3]['amount'];
+$c3_amount5 = $r3[4]['amount'];
+$c3_amount6 = $r3[5]['amount'];
+
+
+
+
+// chart4
+$r4 = array();
+$result4 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_momt WHERE STATUS = 'The operation has timed out' ORDER BY id DESC LIMIT 0, 6;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row4 = mysql_fetch_assoc($result4)) {
+    $r4[] = $row4;
+}
+$c4_amount1 = $r4[0]['amount'];
+$c4_amount2 = $r4[1]['amount'];
+$c4_amount3 = $r4[2]['amount'];
+$c4_amount4 = $r4[3]['amount'];
+$c4_amount5 = $r4[4]['amount'];
+$c4_amount6 = $r4[5]['amount'];
+
+
+
+
+// chart5
+$r5 = array();
+$result5 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_momt WHERE STATUS = 'The underlying connection was forcibly closed' ORDER BY id DESC LIMIT 0, 6;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row5 = mysql_fetch_assoc($result5)) {
+    $r5[] = $row5;
+}
+$c5_amount1 = $r5[0]['amount'];
+$c5_amount2 = $r5[1]['amount'];
+$c5_amount3 = $r5[2]['amount'];
+$c5_amount4 = $r5[3]['amount'];
+$c5_amount5 = $r5[4]['amount'];
+$c5_amount6 = $r5[5]['amount'];
+
+
+
+$r6 = array();
+$result6 = mysql_query("SELECT AVG(amount) AS 'trend' FROM  `PFI_MON`.`overview_momt` WHERE STATUS = 'MT Delivered' AND TIME >= NOW() - INTERVAL 10 MINUTE;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row6 = mysql_fetch_assoc($result6)) {
+    $r6[] = $row6;
+}
+$trend = $r6[0]['trend'];
+
 mysql_close($dbhandle);
 ?>

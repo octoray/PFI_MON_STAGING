@@ -50,7 +50,7 @@
       {
          "line": [
             {
-               "startvalue": "5",
+               "startvalue": "'.$trend.'",
                "color": "#1aaf5d",
                "thickness": "2",
                "valueOnRight": "1",
@@ -89,22 +89,22 @@
                  {
                     "category": [
                        {
-                          "label": "14:00"
+                          "label": "'.$c1_time6.'"
                        },
                        {
-                          "label": "14:00"
+                          "label": "'.$c1_time5.'"
                        },
                        {
-                          "label": "14:00"
+                          "label": "'.$c1_time4.'"
                        },
                        {
-                          "label": "14:00"
+                          "label": "'.$c1_time3.'"
                        },
                        {
-                          "label": "14:00"
+                          "label": "'.$c1_time2.'"
                        },
                        {
-                          "label": "14:00"
+                          "label": "'.$c1_time1.'0"
                        }
                     ]
                  }
@@ -114,22 +114,22 @@
                     "seriesname": "Sent MT, No DR",
                     "data": [
                        {
-                          "value": "10"
+                          "value": "'.$c2_time6.'"
                        },
                        {
-                          "value": "20"
+                          "value": "'.$c2_time5.'"
                        },
                        {
-                          "value": "10"
+                          "value": "'.$c2_time4.'"
                        },
                        {
-                          "value": "50"
+                          "value": "'.$c2_time3.'"
                        },
                        {
-                          "value": "2"
+                          "value": "'.$c2_time2.'"
                        },
                        {
-                          "value": "4"
+                          "value": "'.$c2_time1.'"
                        }
                     ]
                  },
@@ -137,22 +137,22 @@
                     "seriesname": "request aborted",
                     "data": [
                        {
-                          "value": "7"
+                          "value": "'.$c3_time6.'"
                        },
                        {
-                          "value": "2"
+                          "value": "'.$c3_time5.'"
                        },
                        {
-                          "value": "1"
+                          "value": "'.$c3_time4.'"
                        },
                        {
-                          "value": "0"
+                          "value": "'.$c3_time3.'"
                        },
                        {
-                          "value": "0"
+                          "value": "'.$c3_time2.'"
                        },
                        {
-                          "value": "30"
+                          "value": "'.$c3_time1.'"
                        }
                     ]
                  },
@@ -160,22 +160,22 @@
                     "seriesname": "timed out",
                     "data": [
                        {
-                          "value": "12"
+                          "value": "'.$c4_time6.'"
                        },
                        {
-                          "value": "13"
+                          "value": "'.$c4_time5.'"
                        },
                        {
-                          "value": "19"
+                          "value": "'.$c4_time4.'"
                        },
                        {
-                          "value": "2"
+                          "value": "'.$c4_time3.'"
                        },
                        {
-                          "value": "40"
+                          "value": "'.$c4_time2.'"
                        },
                        {
-                          "value": "51"
+                          "value": "'.$c4_time1.'"
                        }
                     ]
                  },
@@ -183,22 +183,22 @@
                     "seriesname": "connection forcibly closed",
                     "data": [
                        {
-                          "value": "23"
+                          "value": "'.$c5_time6.'"
                        },
                        {
-                          "value": "32"
+                          "value": "'.$c5_time5.'"
                        },
                        {
-                          "value": "43"
+                          "value": "'.$c5_time4.'"
                        },
                        {
-                          "value": "34"
+                          "value": "'.$c5_time3.'"
                        },
                        {
-                          "value": "1"
+                          "value": "'.$c5_time2.'"
                        },
                        {
-                          "value": "10"
+                          "value": "'.$c5_time1.'"
                        }
                     ]
                  }
