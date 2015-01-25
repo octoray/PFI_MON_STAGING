@@ -33,15 +33,18 @@
             "color": [
                 {
                     "minValue": "0",
-                    "maxValue": "2"
+                    "maxValue": "2",
+                    "code": "#3399FF"
                 },
                 {
                     "minValue": "2",
-                    "maxValue": "4"
+                    "maxValue": "4",
+                    "code": "#0000FF"
                 },
                 {
                     "minValue": "4",
-                    "maxValue": "6"
+                    "maxValue": "6",
+                    "code": "#000066"
                 }
             ]
         },
@@ -86,15 +89,18 @@
                 "color": [
                     {
                         "minValue": "0",
-                        "maxValue": "2"
+                        "maxValue": "2".
+                        "code": "#3399FF"
                     },
                     {
                         "minValue": "2",
-                        "maxValue": "4"
+                        "maxValue": "4",
+                        "code": "#0000FF"
                     },
                     {
                         "minValue": "4",
-                        "maxValue": "6"
+                        "maxValue": "6",
+                        "code": "#000066"
                     }
                 ]
             },
