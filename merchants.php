@@ -9,38 +9,38 @@
             height: '100',
             dataFormat: 'json',
             dataSource: {
-                "chart": {
-                    "caption": "Customer satisfaction score",
-                    "subcaption": "Current week - Bakersfield Central",
-                    "subcaptionFontBold": "0",
-                    "lowerLimit": "0",
-                    "upperLimit": "100",
-                    "lowerLimitDisplay": "Bad",
-                    "upperLimitDisplay": "Good",
-                    "numberSuffix": "%",
-                    "showValue": "0",
-                    "showBorder": "0",
-                    "bgColor": "#000000",
-                    "showShadow": "0",
-                    "tickMarkDistance": "5"
+            "chart": {
+            "caption": "Fuel Level Indicator",
+                "lowerLimit": "0",
+                "upperLimit": "100",
+                "lowerLimitDisplay": "Empty",
+                "upperLimitDisplay": "Full",
+                "numberSuffix": "%",
+                "valueFontSize": "12",
+                "showhovereffect": "1",
+                "ledSize": "5",
+                "ledGap": "1",
+                "ChartBottomMargin": "20",
+                "theme": "fint"
+        },
+            "colorRange": {
+            "color": [
+                {
+                    "minValue": "0",
+                    "maxValue": "45"
                 },
-                "colorRange": {
-                    "color": [{
-                        "minValue": "0",
-                        "maxValue": "45",
-                        "code": "#8e0000"
-                    }, {
-                        "minValue": "45",
-                        "maxValue": "75",
-                        "code": "#f2c500"
-                    }, {
-                        "minValue": "75",
-                        "maxValue": "100",
-                        "code": "#1aaf5d"
-                    }]
+                {
+                    "minValue": "45",
+                    "maxValue": "75"
                 },
-                "value": "92"
-            }
+                {
+                    "minValue": "75",
+                    "maxValue": "100"
+                }
+            ]
+        },
+            "value": "92"
+        }
         })
             .render("chartContainer");
     });
