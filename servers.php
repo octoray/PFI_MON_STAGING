@@ -163,7 +163,7 @@
                     }
                 ]
             },
-                "value": "'.$led_pfi_03.'"
+                "value": "5"
             }
             })
                 .render("chartContainer3");
