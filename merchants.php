@@ -6,11 +6,14 @@
             type: 'hled',
             renderAt: 'chart-container',
             width: '800',
-            height: '200',
+            height: '150',
             dataFormat: 'json',
             dataSource: {
             "chart": {
             "caption": "Fuel Level Indicator",
+                "captionFontColor": "#FFFFFF",
+                "subcaptionFontColor": "#FFFFFF",
+                "baseFontColor": "#FFFFFF",
                 "lowerLimit": "0",
                 "upperLimit": "100",
                 "lowerLimitDisplay": "Empty",
@@ -21,6 +24,7 @@
                 "ledSize": "5",
                 "ledGap": "1",
                 "ChartBottomMargin": "20",
+                "bgAlpha": "0",
                 "theme": "fint"
         },
             "colorRange": {
