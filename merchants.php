@@ -5,8 +5,8 @@
         var csChart = new FusionCharts({
             type: 'hled',
             renderAt: 'chart-container',
-            width: '400',
-            height: '150',
+            width: '800',
+            height: '100',
             dataFormat: 'json',
             dataSource: {
                 "chart": {
@@ -20,7 +20,7 @@
                     "numberSuffix": "%",
                     "showValue": "0",
                     "showBorder": "0",
-                    "bgColor": "#ffffff",
+                    "bgColor": "#000000",
                     "showShadow": "0",
                     "tickMarkDistance": "5"
                 },
