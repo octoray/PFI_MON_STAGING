@@ -11,7 +11,7 @@ or die("Unable to connect to MySQL");
 mysql_select_db("PFI_MON") or die(mysql_error());
 $r1 = array();
 // chart1
-$result1 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_other WHERE STATUS = 'IMSI Success' ORDER BY id DESC LIMIT 0, 6;")
+$result1 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_other WHERE STATUS = 'Successful Client Notification' ORDER BY id DESC LIMIT 0, 6;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -38,7 +38,7 @@ $c1_time6 = $r1[5]['time'];
 
 // chart2
 $r2 = array();
-$result2 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_other WHERE STATUS = 'IMSI Failed' ORDER BY id DESC LIMIT 0, 6;")
+$result2 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_other WHERE STATUS = 'Failed Client Notification' ORDER BY id DESC LIMIT 0, 6;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -62,7 +62,7 @@ $c2_time6 = $r2[5]['time'];
 
 
 $r6 = array();
-$result6 = mysql_query("SELECT AVG(amount) AS 'trend' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'IMSI Success' AND TIME >= NOW() - INTERVAL 60 MINUTE;")
+$result6 = mysql_query("SELECT AVG(amount) AS 'trend' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'Successful Client Notification' AND TIME >= NOW() - INTERVAL 60 MINUTE;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -73,7 +73,7 @@ $trendgood = $r6[0]['trend'];
 
 
 $r7 = array();
-$result7 = mysql_query("SELECT AVG(amount) AS 'trend' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'IMSI Failed' AND TIME >= NOW() - INTERVAL 60 MINUTE;")
+$result7 = mysql_query("SELECT AVG(amount) AS 'trend' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'Failed Client Notification' AND TIME >= NOW() - INTERVAL 60 MINUTE;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
