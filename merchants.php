@@ -45,7 +45,7 @@
                 }
             ]
         },
-            "value": "45"
+            "value": "0.34"
         }
         })
             .render("chartContainer");
