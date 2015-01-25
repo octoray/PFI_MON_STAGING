@@ -331,7 +331,7 @@
             <td style="color: darkslategrey">NA</td>
         </tr>
     </table>
-<br>
+<br> <br>
 <div id="chartContainer" align="center"></div>
 <div id="chartContainer2" align="center"></div>
 <div id="chartContainer3" align="center"></div>
