@@ -8,8 +8,8 @@
    var multiseriesChart = new FusionCharts({
        "type": "MSLine",
        "renderAt": "chartContainer",
-       "width": "800",
-       "height": "200",
+       "width": "1200",
+       "height": "300",
        "dataFormat": "json",
        "dataSource":  {
           "chart": {
@@ -49,22 +49,22 @@
                 "seriesname": "HITS",
                 "data": [
                    {
-                      "value": "'.$c2_amount6.'"
+                      "value": "'.$c1_amount6.'"
                    },
                    {
-                      "value": "'.$c2_amount5.'"
+                      "value": "'.$c1_amount5.'"
                    },
                    {
-                      "value": "'.$c2_amount4.'"
+                      "value": "'.$c1_amount4.'"
                    },
                    {
-                      "value": "'.$c2_amount3.'"
+                      "value": "'.$c1_amount3.'"
                    },
                    {
-                      "value": "'.$c2_amount2.'"
+                      "value": "'.$c1_amount2.'"
                    },
                    {
-                      "value": "'.$c2_amount1.'"
+                      "value": "'.$c1_amount1.'"
                    }
                 ]
              }
@@ -84,10 +84,10 @@
     <div id="chartContainer" align="center"></div>
     <br>
     <h1>Client sites (if these fail to load or show errors. Raise to TSG)</h1>
-    <br><br>
+    <br>
     <div class="center">
-        <iframe src="http://wintoday.77win.co" width="250" height="400" frameborder="0"></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <iframe src="http://tsgpfi.co.uk/" width="250" height="400" frameborder="0"></iframe>
+        <iframe src="http://wintoday.77win.co" width="200" height="400" frameborder="0"></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <iframe src="http://tsgpfi.co.uk/" width="200" height="400" frameborder="0"></iframe>
     </div>
 </div>
 
