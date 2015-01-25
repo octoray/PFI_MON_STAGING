@@ -17,10 +17,10 @@ function pingDomain($domain){
     echo round($status, 2);
 }
 
-pingDomain("192.168.80.119");
-pingDomain("192.168.80.120");
-pingDomain("192.168.80.114");
-pingDomain("192.168.80.115");
+//pingDomain("192.168.80.119");
+//pingDomain("192.168.80.120");
+//pingDomain("192.168.80.114");
+//pingDomain("192.168.80.115");
 
 ?>
 
