@@ -215,7 +215,7 @@
                     }
                 ]
             },
-                "value": "4.84"
+                "value": "6"
             }
             })
                 .render("chartContainer4");
