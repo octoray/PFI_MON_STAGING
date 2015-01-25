@@ -24,7 +24,7 @@
                 "ledSize": "5",
                 "ledGap": "1",
                 "ChartBottomMargin": "20",
-                "bgAlpha": "0",
+                "bgAlpha": "100",
                 "theme": "fint"
         },
             "colorRange": {
