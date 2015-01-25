@@ -151,7 +151,7 @@
                     }
                 ]
             },
-                "value": "1.34"
+                "value": "4.84"
             }
             })
                 .render("chartContainer3");
