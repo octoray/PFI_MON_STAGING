@@ -6,7 +6,7 @@
             type: 'hled',
             renderAt: 'chart-container',
             width: '700',
-            height: '120',
+            height: '140',
             dataFormat: 'json',
             dataSource: {
             "chart": {
