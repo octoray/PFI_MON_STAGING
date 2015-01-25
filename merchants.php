@@ -10,7 +10,7 @@
             dataFormat: 'json',
             dataSource: {
             "chart": {
-            "caption": "Fuel Level Indicator",
+            "caption": "MH-PFI-01 Response time",
                 "captionFontColor": "#FFFFFF",
                 "subcaptionFontColor": "#FFFFFF",
                 "baseFontColor": "#FFFFFF",

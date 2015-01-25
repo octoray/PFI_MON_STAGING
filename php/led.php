@@ -4,8 +4,8 @@
 function ping($host,$port,$timeout){
     $starttime = microtime(true);
     $fp = fsockopen($host, $port, $errno, $errstr, $timeout);
-    $stoptime  = microtime(true);
     if (!$fp) {
+        $stoptime  = microtime(true);
         $status = ($stoptime - $starttime) * 1000;
         echo $status;
     }};
