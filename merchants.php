@@ -133,7 +133,7 @@
                     "ChartBottomMargin": "20",
                     "bgAlpha": "100",
                     "bgColor": "#000000",
-                    "theme": "fint"
+                    "theme": "ocean"
             },
                 "colorRange": {
                 "color": [
