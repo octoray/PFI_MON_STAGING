@@ -133,17 +133,19 @@
                     "ChartBottomMargin": "20",
                     "bgAlpha": "100",
                     "bgColor": "#000000",
-                    "theme": "ocean"
+                    "theme": "fint"
             },
                 "colorRange": {
                 "color": [
                     {
                         "minValue": "0",
-                        "maxValue": "2"
+                        "maxValue": "2",
+                        "code": "#8e0000"
                     },
                     {
                         "minValue": "2",
-                        "maxValue": "4"
+                        "maxValue": "4",
+                        "code": "#8e0000"
                     },
                     {
                         "minValue": "4",
