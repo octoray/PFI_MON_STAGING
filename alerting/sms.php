@@ -3,7 +3,7 @@ $url = 'http://172.16.10.31:8081/win-smsgwweb/winmt';
 //extract($_POST);
 
 //$url = $_POST["url"];
-$c1_time6 = 'bob';
+
 //$ch = curl_init($url);
 //curl_setopt($ch, CURLOPT_HEADER, 0);
 //curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -11,8 +11,8 @@ $c1_time6 = 'bob';
 //curl_setopt($ch, CURLOPT_URL, $url);
 //curl_setopt($ch, CURLOPT_POST, 1);
 
-$new = '<?xml version="1.0" standalone="no"?>
-<!DOCTYPE WIN_DELIVERY_2_SMS SYSTEM "winbound_messages_v1.dtd">
+$new = htmlspecialchars('<?xml version=\"1.0\" standalone=\"no\"?>
+<!DOCTYPE WIN_DELIVERY_2_SMS SYSTEM \"winbound_messages_v1.dtd\">
 <WIN_DELIVERY_2_SMS>
   <!-- E.g. minimal set of elements -->
   <SMSMESSAGE>
@@ -25,7 +25,8 @@ $new = '<?xml version="1.0" standalone="no"?>
 <DELIVERYRECEIPT>13</DELIVERYRECEIPT>
     <SOURCE_ADDR>447537403097</SOURCE_ADDR>
   </SMSMESSAGE>
-  </WIN_DELIVERY_2_SMS>';
+  </WIN_DELIVERY_2_SMS>'
+, ENT_QUOTES);
 
 echo $new;
 
