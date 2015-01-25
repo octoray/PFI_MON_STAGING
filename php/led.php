@@ -15,6 +15,8 @@ function pingDomain($domain){
         $status = floor($status);
     }
     echo $status;
+    echo $starttime;
+    echo $stoptime;
 }
 
 pingDomain("192.168.80.119");
