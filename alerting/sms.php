@@ -75,6 +75,7 @@ $new1 = '<?xml version="1.0" standalone="no"?>
   <!-- E.g. minimal set of elements -->
   <SMSMESSAGE>
     <DESTINATION_ADDR>+447961832063</DESTINATION_ADDR>
+    <DESTINATION_ADDR>+447768240407</DESTINATION_ADDR>
     <TEXT><![CDATA['.$word1.']]></TEXT>
     <TRANSACTIONID>0123456789</TRANSACTIONID>
     <TYPEID>2</TYPEID>
@@ -92,6 +93,7 @@ $new2 = '<?xml version="1.0" standalone="no"?>
   <!-- E.g. minimal set of elements -->
   <SMSMESSAGE>
     <DESTINATION_ADDR>+447961832063</DESTINATION_ADDR>
+    <DESTINATION_ADDR>+447768240407</DESTINATION_ADDR>
     <TEXT><![CDATA['.$word2.']]></TEXT>
     <TRANSACTIONID>0123456789</TRANSACTIONID>
     <TYPEID>2</TYPEID>
@@ -109,6 +111,7 @@ $new3 = '<?xml version="1.0" standalone="no"?>
   <!-- E.g. minimal set of elements -->
   <SMSMESSAGE>
     <DESTINATION_ADDR>+447961832063</DESTINATION_ADDR>
+    <DESTINATION_ADDR>+447768240407</DESTINATION_ADDR>
     <TEXT><![CDATA['.$word3.']]></TEXT>
     <TRANSACTIONID>0123456789</TRANSACTIONID>
     <TYPEID>2</TYPEID>
@@ -126,6 +129,7 @@ $new4 = '<?xml version="1.0" standalone="no"?>
   <!-- E.g. minimal set of elements -->
   <SMSMESSAGE>
     <DESTINATION_ADDR>+447961832063</DESTINATION_ADDR>
+    <DESTINATION_ADDR>+447768240407</DESTINATION_ADDR>
     <TEXT><![CDATA['.$word4.']]></TEXT>
     <TRANSACTIONID>0123456789</TRANSACTIONID>
     <TYPEID>2</TYPEID>
