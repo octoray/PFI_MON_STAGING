@@ -3,6 +3,7 @@ $url = 'http://172.16.10.31:8081/win-smsgwweb/winmt';
 //extract($_POST);
 
 //$url = $_POST["url"];
+$c1_time6 = 'bob';
 
 //$ch = curl_init($url);
 //curl_setopt($ch, CURLOPT_HEADER, 0);
