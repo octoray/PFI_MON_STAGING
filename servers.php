@@ -47,7 +47,7 @@
                     {
                         "minValue": "4",
                         "maxValue": "6",
-                        "code": "#8e0000"
+                        "code": "#FF0000"
                     }
                 ]
             },
@@ -103,7 +103,7 @@
                     {
                         "minValue": "4",
                         "maxValue": "6",
-                        "code": "#9900FF"
+                        "code": "#FF0000"
                     }
                 ]
             },
@@ -163,7 +163,7 @@
                     }
                 ]
             },
-                "value": "5"
+                "value": "'.$led_pfi_03.'"
             }
             })
                 .render("chartContainer3");
@@ -214,7 +214,7 @@
                     {
                         "minValue": "4",
                         "maxValue": "6",
-                        "code": "#000066"
+                        "code": "#FF0000"
                     }
                 ]
             },
@@ -269,7 +269,7 @@
                     {
                         "minValue": "4",
                         "maxValue": "6",
-                        "code": "#000066"
+                        "code": "#FF0000"
                     }
                 ]
             },
