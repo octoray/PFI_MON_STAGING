@@ -14,7 +14,8 @@ function pingDomain($domain){
         $status = ($stoptime - $starttime) * 1000;
     }
 
-    echo round($status, 2);
+    $var1 = round($status, 2);
+    echo $var1;
 }
 
 pingDomain("192.168.80.119")
