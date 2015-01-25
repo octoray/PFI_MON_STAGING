@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+<script type="text/javascript" src="fusioncharts/fusioncharts.charts.js"></script>
 <script type="text/javascript" src="fusioncharts/fusioncharts.widgets.js"></script>
+<script type="text/javascript" src="fusioncharts/fusioncharts.powercharts.js"></script>
 <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.carbon.js"></script>
 <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.ocean.js"></script>
 <script src="/js/jquery-2.1.1.min.js"></script>
