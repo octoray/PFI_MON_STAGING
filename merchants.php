@@ -5,8 +5,8 @@
         var csChart = new FusionCharts({
             type: 'hled',
             renderAt: 'chart-container',
-            width: '800',
-            height: '150',
+            width: '700',
+            height: '120',
             dataFormat: 'json',
             dataSource: {
             "chart": {
@@ -33,10 +33,10 @@
             "color": [
                 {
                     "minValue": "0",
-                    "maxValue": "45"
+                    "maxValue": "35"
                 },
                 {
-                    "minValue": "45",
+                    "minValue": "35",
                     "maxValue": "75"
                 },
                 {
@@ -45,7 +45,7 @@
                 }
             ]
         },
-            "value": "92"
+            "value": "45"
         }
         })
             .render("chartContainer");
