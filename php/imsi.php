@@ -38,7 +38,7 @@ $c1_time6 = $r1[5]['time'];
 
 // chart2
 $r2 = array();
-$result2 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_momt WHERE STATUS = 'IMSI Failed' ORDER BY id DESC LIMIT 0, 6;")
+$result2 = mysql_query("SELECT 	id, DATE_FORMAT(TIME,'%k:%i') AS 'time', amount FROM PFI_MON.overview_other WHERE STATUS = 'IMSI Failed' ORDER BY id DESC LIMIT 0, 6;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
