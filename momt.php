@@ -215,7 +215,7 @@
     <br><BR>
     <div id="chartContainer_header" align="center" class="chart2"> MT Delivered Successfully Last Hour</div>
     <div id="chartContainer" align="center"></div>
-    <br><BR>
+    <br>
     <div id="chartContainer_header" align="center" class="chart2"> MO Recived Successfully Last Hour</div>
     <div id="chartContainer2" align="center"></div>
 
