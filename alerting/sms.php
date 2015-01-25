@@ -29,7 +29,7 @@ $new = htmlspecialchars('<?xml version="1.0" standalone="no"?>
   </WIN_DELIVERY_2_SMS>'
 , ENT_QUOTES);
 
-//echo $new;
+echo $new;
 
 $post = array(
     'User'=>('david'),
@@ -45,12 +45,12 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $query);
 
 $runy = curl_exec($ch);
 $info = curl_getinfo($ch);
-// echo $info['url'];
-// echo $info['body'];
-// echo $info['request_header'];
+echo $info['url'];
+echo $info['body'];
+echo $info['request_header'];
 
 
-// echo $runy;
+echo $runy;
 
 
 ?>
