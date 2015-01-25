@@ -18,7 +18,7 @@ $new = htmlspecialchars('<?xml version="1.0" standalone="no"?>
   <!-- E.g. minimal set of elements -->
   <SMSMESSAGE>
     <DESTINATION_ADDR>+447961832063</DESTINATION_ADDR>
-    <TEXT>'.$c1_time6.'</TEXT>
+    <TEXT><![CDATA['.$c1_time6.']]></TEXT>
     <TRANSACTIONID>0123456789</TRANSACTIONID>
     <TYPEID>2</TYPEID>
     <SERVICEID>46</SERVICEID>
@@ -45,10 +45,13 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $query);
 
 $runy = curl_exec($ch);
 $info = curl_getinfo($ch);
+echo '<br>';
 echo $info['url'];
+echo '<br>';
 echo $info['body'];
+echo '<br>';
 echo $info['request_header'];
-
+echo '<br>';
 
 echo $runy;
 
