@@ -54,8 +54,8 @@
    {
       "line": [
          {
-            "startvalue": "5",
-            "color": "'.$trendgood.'",
+            "startvalue": "'.$trendgood.'",
+            "color": "#1aaf5d",
             "thickness": "2",
             "valueOnRight": "1",
             "tooltext": "Average Last Hour",
@@ -126,8 +126,8 @@
   {
      "line": [
         {
-           "startvalue": "5",
-           "color": "'.$trendbad.'",
+           "startvalue": "'.$trendbad.'",
+           "color": "#1aaf5d",
            "thickness": "2",
            "valueOnRight": "1",
            "tooltext": "Average Last Hour",
