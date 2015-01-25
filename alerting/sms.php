@@ -11,13 +11,13 @@ $c1_time6 = 'bob';
 //curl_setopt($ch, CURLOPT_URL, $url);
 //curl_setopt($ch, CURLOPT_POST, 1);
 
-$new = "<?xml version=\"1.0\" standalone=\"no\"?>
-<!DOCTYPE WIN_DELIVERY_2_SMS SYSTEM \"winbound_messages_v1.dtd\">
+$new = '<?xml version="1.0" standalone="no"?>
+<!DOCTYPE WIN_DELIVERY_2_SMS SYSTEM "winbound_messages_v1.dtd">
 <WIN_DELIVERY_2_SMS>
   <!-- E.g. minimal set of elements -->
   <SMSMESSAGE>
     <DESTINATION_ADDR>+14088396711</DESTINATION_ADDR>
-    <TEXT><".$c1_time6."></TEXT>
+    <TEXT><'.$c1_time6.'></TEXT>
     <TRANSACTIONID>111222371</TRANSACTIONID>
     <TYPEID>2</TYPEID>
     <SERVICEID>1</SERVICEID>
@@ -25,8 +25,7 @@ $new = "<?xml version=\"1.0\" standalone=\"no\"?>
 <DELIVERYRECEIPT>13</DELIVERYRECEIPT>
     <SOURCE_ADDR>447537403097</SOURCE_ADDR>
   </SMSMESSAGE>
-  </WIN_DELIVERY_2_SMS>"
-, ENT_QUOTES);
+  </WIN_DELIVERY_2_SMS>';
 
 echo $new;
 
