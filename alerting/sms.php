@@ -12,7 +12,7 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_POST, 1);
 
-$new = htmlspecialchars('<?xml version="1.0" standalone="no"?>
+$new = '<?xml version="1.0" standalone="no"?>
 <!DOCTYPE WIN_DELIVERY_2_SMS SYSTEM "winbound_messages_v1.dtd">
 <WIN_DELIVERY_2_SMS>
   <!-- E.g. minimal set of elements -->
@@ -26,8 +26,7 @@ $new = htmlspecialchars('<?xml version="1.0" standalone="no"?>
 <DELIVERYRECEIPT>13</DELIVERYRECEIPT>
     <SOURCE_ADDR>PFIMONITOR</SOURCE_ADDR>
   </SMSMESSAGE>
-  </WIN_DELIVERY_2_SMS>'
-, ENT_QUOTES);
+  </WIN_DELIVERY_2_SMS>';
 
 echo $new;
 
