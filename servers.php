@@ -2,7 +2,7 @@
     <?php require("./php/ping.php");
     require("./php/curl.php");
     require("./php/led.php");
-    date_default_timezone_set('Europe/London');?>
+?>
 <script type="text/javascript">
     <?php   echo 'FusionCharts.ready(function () {
             var csChart = new FusionCharts({
@@ -273,7 +273,7 @@
                     }
                 ]
             },
-                "value": "'.pingDomain("192.168.60.25").'"
+                "value": "10"
             }
             })
                 .render("chartContainer5");
@@ -331,10 +331,11 @@
             <td style="color: darkslategrey">NA</td>
         </tr>
     </table>
-</div>
+
 <div id="chartContainer" align="center"></div>
 <div id="chartContainer2" align="center"></div>
 <div id="chartContainer3" align="center"></div>
 <div id="chartContainer4" align="center"></div>
 <div id="chartContainer5" align="center"></div>
+</div>
 <?php require("./head_foot/footer_1.inc.php"); ?>
