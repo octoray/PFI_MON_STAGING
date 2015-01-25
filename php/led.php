@@ -15,7 +15,9 @@ function pingDomain($domain){
         $status = floor($status);
     }
     echo $status;
+    echo "<br>";
     echo $starttime;
+    echo "<br>";
     echo $stoptime;
 }
 
