@@ -8,8 +8,8 @@
     <h1>Client sites (if these fail to load or show errors. Raise to TSG)</h1>
     <br><br>
     <div class="center">
-        <iframe src="http://wintoday.77win.co" width="450" height="600" frameborder="0"></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <iframe src="http://tsgpfi.co.uk/" width="450" height="600" frameborder="0"></iframe>
+        <iframe src="http://wintoday.77win.co" width="250" height="400" frameborder="0"></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <iframe src="http://tsgpfi.co.uk/" width="250" height="400" frameborder="0"></iframe>
     </div>
 </div>
 
