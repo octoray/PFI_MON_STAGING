@@ -47,7 +47,7 @@
                     {
                         "minValue": "4",
                         "maxValue": "6",
-                        "code": "#000066"
+                        "code": "#8e0000"
                     }
                 ]
             },
@@ -103,7 +103,7 @@
                     {
                         "minValue": "4",
                         "maxValue": "6",
-                        "code": "#000066"
+                        "code": "#9900FF"
                     }
                 ]
             },
@@ -159,7 +159,7 @@
                     {
                         "minValue": "4",
                         "maxValue": "6",
-                        "code": "#000066"
+                        "code": "#FF0000"
                     }
                 ]
             },
