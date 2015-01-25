@@ -19,6 +19,7 @@
                 "lowerLimitDisplay": "Empty",
                 "upperLimitDisplay": "Full",
                 "numberSuffix": "%",
+                "showBorder": "0",
                 "valueFontSize": "12",
                 "showhovereffect": "1",
                 "ledSize": "5",
@@ -53,7 +54,6 @@
 
 <div class="wrapper">
     <br><BR>
-    <div id="chartContainer_header" align="center" class="chart2"> ESC Billed Succesfully Last Hour </div>
     <div id="chartContainer" align="center"></div>
     <br>
 
