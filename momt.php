@@ -213,10 +213,10 @@
 </script>
 <div class="wrapper">
     <br><BR>
-    <div id="chartContainer_header" align="center" class="chart2"> MT Delivered Succesfully Last Hour</div>
+    <div id="chartContainer_header" align="center" class="chart2"> MT Delivered Successfully Last Hour</div>
     <div id="chartContainer" align="center"></div>
     <br><BR>
-    <div id="chartContainer_header" align="center" class="chart2"> MO Recived Succesfully Last Hour</div>
+    <div id="chartContainer_header" align="center" class="chart2"> MO Recived Successfully Last Hour</div>
     <div id="chartContainer2" align="center"></div>
 
 </div>
