@@ -218,7 +218,7 @@
                     }
                 ]
             },
-                "value": "'.pingDomain("192.168.80.115").'"
+                "value": "'.pingDomain("192.168.80.115");.'"
             }
             })
                 .render("chartContainer4");
