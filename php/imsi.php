@@ -52,6 +52,13 @@ $c2_amount4 = $r2[3]['amount'];
 $c2_amount5 = $r2[4]['amount'];
 $c2_amount6 = $r2[5]['amount'];
 
+$c2_time1 = $r2[0]['time'];
+$c2_time2 = $r2[1]['time'];
+$c2_time3 = $r2[2]['time'];
+$c2_time4 = $r2[3]['time'];
+$c2_time5 = $r2[4]['time'];
+$c2_time6 = $r2[5]['time'];
+
 
 
 $r6 = array();
