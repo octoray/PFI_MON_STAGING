@@ -14,14 +14,19 @@ function pingDomain($domain){
         $status = ($stoptime - $starttime) * 1000;
     }
 
-    $var1 = round($status, 2);
-    echo $var1;
+    echo round($status, 2);
 }
 
-pingDomain("192.168.80.119")
+//pingDomain("192.168.80.119")
 //pingDomain("192.168.80.120");
 //pingDomain("192.168.80.114");
 //pingDomain("192.168.80.115");
+
+$led_pfi_01 = pingDomain("192.168.80.119");
+$led_pfi_02 = pingDomain("192.168.80.120");
+$led_pfi_03 = pingDomain("192.168.80.114");
+$led_pfi_04 = pingDomain("192.168.80.115");
+$led_titanium = pingDomain("192.168.60.25");
 
 ?>
 

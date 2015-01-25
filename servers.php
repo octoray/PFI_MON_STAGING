@@ -51,7 +51,7 @@
                     }
                 ]
             },
-                "value": "'.pingDomain("192.168.80.119").'"
+                "value": "'.$led_pfi_01.'"
             }
             })
                 .render("chartContainer");
@@ -107,7 +107,7 @@
                     }
                 ]
             },
-                "value": "'.pingDomain("192.168.80.120").'"
+                "value": "'.$led_pfi_02.'"
             }
             })
                 .render("chartContainer2");
@@ -163,7 +163,7 @@
                     }
                 ]
             },
-                "value": "'.pingDomain("192.168.80.114").'"
+                "value": "'.$led_pfi_03.'"
             }
             })
                 .render("chartContainer3");
@@ -218,7 +218,7 @@
                     }
                 ]
             },
-                "value": "'.pingDomain("192.168.80.115").'"
+                "value": "'.$led_pfi_04.'"
             }
             })
                 .render("chartContainer4");
@@ -235,7 +235,7 @@
                 dataFormat: "json",
                 dataSource: {
                 "chart": {
-                "caption": "MH-PFI-04 Response time",
+                "caption": "Titanium Response time",
                     "captionFontColor": "#FFFFFF",
                     "subcaptionFontColor": "#FFFFFF",
                     "baseFontColor": "#FFFFFF",
@@ -273,7 +273,7 @@
                     }
                 ]
             },
-                "value": "10"
+                "value": "3"
             }
             })
                 .render("chartContainer5");
