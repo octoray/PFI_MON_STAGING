@@ -12,6 +12,8 @@ function pingDomain($domain){
     else {
         fclose($file);
         $status = ($stoptime - $starttime) * 1000;
+        $status2 = ($stoptime - $starttime);
+        $status3 = ($stoptime - $starttime) * 10;
         $status = floor($status);
     }
     echo $status;
@@ -19,6 +21,10 @@ function pingDomain($domain){
     echo $starttime;
     echo "<br>";
     echo $stoptime;
+    echo "<br>";
+    echo $status2;
+    echo "<br>";
+    echo $status3;
 }
 
 pingDomain("192.168.80.119");
