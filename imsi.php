@@ -1,5 +1,5 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
-<?php require("./php/transesc.php"); ?>
+<?php require("./php/imsi.php"); ?>
 <script type="text/javascript">
     <?php echo 'FusionCharts.ready(function(){
       var revenueChart = new FusionCharts({
@@ -26,28 +26,28 @@
               },
               "data": [
                   {
-                      "label": "'.$c2_time6.'",
-                      "value": "'.$c2_amount6.'"
+                      "label": "'.$c1_time6.'",
+                      "value": "'.$c1_amount6.'"
                   },
                   {
-                      "label": "'.$c2_time5.'",
-                      "value": "'.$c2_amount5.'"
+                      "label": "'.$c1_time5.'",
+                      "value": "'.$c1_amount5.'"
                   },
                   {
-                      "label": "'.$c2_time4.'",
-                      "value": "'.$c2_amount4.'"
+                      "label": "'.$c1_time4.'",
+                      "value": "'.$c1_amount4.'"
                   },
                   {
-                      "label": "'.$c2_time3.'",
-                      "value": "'.$c2_amount3.'"
+                      "label": "'.$c1_time3.'",
+                      "value": "'.$c1_amount3.'"
                   },
                   {
-                      "label": "'.$c2_time2.'",
-                      "value": "'.$c2_amount2.'"
+                      "label": "'.$c1_time2.'",
+                      "value": "'.$c1_amount2.'"
                   },
                   {
-                      "label": "'.$c2_time1.'",
-                      "value": "'.$c2_amount1.'"
+                      "label": "'.$c1_time1.'",
+                      "value": "'.$c1_amount1.'"
                   }
               ],
 "trendlines": [
@@ -55,8 +55,8 @@
       "line": [
          {
             "startvalue": "5",
-            "color": "#1aaf5d",
-            "thickness": "4",
+            "color": "'.$trendgood.'",
+            "thickness": "2",
             "valueOnRight": "1",
             "tooltext": "Average Last Hour",
             "displayvalue": "Average"
@@ -127,8 +127,8 @@
      "line": [
         {
            "startvalue": "5",
-           "color": "#1aaf5d",
-           "thickness": "4",
+           "color": "'.$trendbad.'",
+           "thickness": "2",
            "valueOnRight": "1",
            "tooltext": "Average Last Hour",
            "displayvalue": "Average"
