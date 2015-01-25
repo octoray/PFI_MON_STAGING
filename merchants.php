@@ -1,13 +1,13 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
 
 <script type="text/javascript">
-    FusionCharts.ready(function () {
+<?php   echo 'FusionCharts.ready(function () {
         var csChart = new FusionCharts({
-            type: 'hled',
-            renderAt: 'chart-container',
-            width: '700',
-            height: '140',
-            dataFormat: 'json',
+            type: "hled",
+            renderAt: "chart-container",
+            width: "700",
+            height: "140",
+            dataFormat: "json",
             dataSource: {
             "chart": {
             "caption": "MH-PFI-01 Response time",
@@ -49,7 +49,7 @@
         }
         })
             .render("chartContainer");
-    });
+    });';?>
 </script>
 
 <div class="wrapper">
