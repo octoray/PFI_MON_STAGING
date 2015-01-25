@@ -1,5 +1,7 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
 <div class="wrapper">
-    <iframe src="http://mh-pfi-mon-01.win.local:10000/" width="800" height="600" frameborder="0"></iframe>
+    <div class="center">
+        <iframe src="http://tsgpfi.co.uk/" width="280" height="400" frameborder="0"></iframe>
+    </div>
 </div>
 <?php require("./head_foot/footer_1.inc.php"); ?>
