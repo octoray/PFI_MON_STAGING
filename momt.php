@@ -83,7 +83,7 @@
                  "xAxisname": "Time",
                  "yAxisName": "Amount",
                  "numberPrefix": "",
-                 "theme": "carbon"
+                 "theme": "ocean"
               },
               "categories": [
                  {
