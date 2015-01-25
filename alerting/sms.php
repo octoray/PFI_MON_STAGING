@@ -43,7 +43,7 @@ $word2 = 'NO Successfull PFI Screenshots in last 30 minutes!';
 
 // sms3
 $r3 = array();
-$result3 = mysql_query("SELECT SUM(amount) AS 'amoun' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'ESC Site Hit Count' AND TIME >= NOW() - INTERVAL 33 MINUTE;")
+$result3 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'ESC Site Hit Count' AND TIME >= NOW() - INTERVAL 33 MINUTE;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -56,7 +56,7 @@ $word3 = 'PFI ESC Site hits 0 in last 30 minutes!';
 
 // sms4
 $r4 = array();
-$result4 = mysql_query("SELECT SUM(amount) AS 'amoun' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'Pending/Stuck Transactions' AND TIME >= NOW() - INTERVAL 33 MINUTE;")
+$result4 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'Pending/Stuck Transactions' AND TIME >= NOW() - INTERVAL 33 MINUTE;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
