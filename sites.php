@@ -3,6 +3,7 @@
     require("./php/curl.php");
     require("./php/sites.php");
     date_default_timezone_set('Europe/London');?>
+
 <script type="text/javascript">
 <?php echo 'FusionCharts.ready(function () {
    var multiseriesChart = new FusionCharts({
