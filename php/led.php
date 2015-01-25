@@ -8,30 +8,20 @@ function pingDomain($domain){
     $stoptime  = microtime(true);
     $status    = 0;
 
-    if (!$file) $status = -1;  // Site is down
+    if (!$file) $status = 3;  // Site is down
     else {
         fclose($file);
         $status = ($stoptime - $starttime) * 1000;
-        $status2 = ($stoptime - $starttime);
-        $status3 = ($stoptime - $starttime) * 10;
-        $status4 = ($stoptime - $starttime) * 1000;
-        $status = floor($status);
     }
-    echo $status;
+
+    echo round($status, 2);
     echo "<br>";
-    echo $starttime;
-    echo "<br>";
-    echo $stoptime;
-    echo "<br>";
-    echo round($status2, 2);
-    echo "<br>";
-    echo round($status3, 2);
-    echo "<br>";
-    echo round($status4, 2);
 }
 
 pingDomain("192.168.80.119");
-
+pingDomain("192.168.80.120");
+pingDomain("192.168.80.114");
+pingDomain("192.168.80.115");
 
 ?>
 
