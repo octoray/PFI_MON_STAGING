@@ -1,16 +1,23 @@
 <?php
 
 // PING
-function ping($host,$port,$timeout){
+// Function to check response time
+function pingDomain($domain){
     $starttime = microtime(true);
-    $fp = fsockopen($host, $port, $errno, $errstr, $timeout);
-    if (!$fp) {
-        $stoptime  = microtime(true);
-        $status = ($stoptime - $starttime) * 1000;
-        echo $status;
-    }};
+    $file      = fsockopen ($domain, 80, $errno, $errstr, 10);
+    $stoptime  = microtime(true);
+    $status    = 0;
 
-ping("192.168.80.119","80","5");
+    if (!$file) $status = -1;  // Site is down
+    else {
+        fclose($file);
+        $status = ($stoptime - $starttime) * 1000;
+        $status = floor($status);
+    }
+    echo $status;
+}
+
+pingDomain("192.168.80.119");
 
 
 ?>
