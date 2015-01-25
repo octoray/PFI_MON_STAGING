@@ -22,7 +22,7 @@
                   "logoPosition": "TR",
                   "bgratio": "60,40",
                   "bgAlpha": "70,80",
-                  "theme": "zune"
+                  "theme": "ocean"
               },
               "data": [
                   {
