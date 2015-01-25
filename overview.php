@@ -42,7 +42,7 @@
         </tr>
     </table>
 
-<br>
+
     <h1>MO / MT Overview</h1>
     <table id="t01">
         <tr>
@@ -82,7 +82,7 @@
         </tr>
     </table>
 
-    <br>
+
     <h1>Other</h1>
     <table id="t01">
         <tr>
