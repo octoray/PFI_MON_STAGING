@@ -79,18 +79,18 @@ $new2 = '<?xml version="1.0" standalone="no"?>
 
 
 function sendmessage($xml) {
-$ch = curl_init($url);
+$ch = curl_init('http://172.16.10.31:8081/win-smsgwweb/winmt');
 curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_URL, 'http://172.16.10.31:8081/win-smsgwweb/winmt');
 curl_setopt($ch, CURLOPT_POST, 1);
 
 $post = array(
     'User'=>('david'),
     'Password'=>('david'),
     'RequestID'=>('123456789'),
-    'TargetURL'=>($url),
+    'TargetURL'=>('http://172.16.10.31:8081/win-smsgwweb/winmt'),
     'WIN_XML'=>($xml)
 );
 
