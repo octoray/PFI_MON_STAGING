@@ -56,7 +56,7 @@ $word3 = 'PFI ESC Site hits 0 in last 30 minutes!';
 
 // sms4
 $r4 = array();
-$result4 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'Pending/Stuck Transactions' AND TIME >= NOW() - INTERVAL 33 MINUTE;")
+$result4 = mysql_query("SELECT AVG(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'Pending/Stuck Transactions' AND TIME >= NOW() - INTERVAL 33 MINUTE;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -194,7 +194,7 @@ if($amount3 < "1"){
     echo "nothing to send";
 };
 
-if($amount4 > "49"){
+if($amount4 > "29"){
     sendmessage($new4);
 } else {
     echo "nothing to send";
