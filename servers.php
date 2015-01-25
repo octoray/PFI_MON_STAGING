@@ -9,7 +9,7 @@
                 type: "hled",
                 renderAt: "chart-container",
                 width: "700",
-                height: "120",
+                height: "130",
                 dataFormat: "json",
                 dataSource: {
                 "chart": {
@@ -65,7 +65,7 @@
                 type: "hled",
                 renderAt: "chart-container",
                 width: "700",
-                height: "120",
+                height: "130",
                 dataFormat: "json",
                 dataSource: {
                 "chart": {
@@ -121,7 +121,7 @@
                 type: "hled",
                 renderAt: "chart-container",
                 width: "700",
-                height: "120",
+                height: "130",
                 dataFormat: "json",
                 dataSource: {
                 "chart": {
@@ -176,7 +176,7 @@
                 type: "hled",
                 renderAt: "chart-container",
                 width: "700",
-                height: "120",
+                height: "130",
                 dataFormat: "json",
                 dataSource: {
                 "chart": {
@@ -231,7 +231,7 @@
                 type: "hled",
                 renderAt: "chart-container",
                 width: "700",
-                height: "120",
+                height: "130",
                 dataFormat: "json",
                 dataSource: {
                 "chart": {
