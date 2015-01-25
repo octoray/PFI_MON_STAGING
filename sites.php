@@ -8,8 +8,8 @@
    var multiseriesChart = new FusionCharts({
        "type": "MSLine",
        "renderAt": "chartContainer",
-       "width": "1200",
-       "height": "300",
+       "width": "1000",
+       "height": "220",
        "dataFormat": "json",
        "dataSource":  {
           "chart": {
