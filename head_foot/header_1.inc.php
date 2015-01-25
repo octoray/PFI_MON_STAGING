@@ -27,7 +27,7 @@
         <li><a href="/marketing.php" style="text-decoration: none" >Marketing</a></li>
         <li><a href="/sites.php" style="text-decoration: none" >Sites</a></li>
         <li><a href="/servers.php" style="text-decoration: none" >Servers</a></li>
-        <li><a href="/servers.php" style="text-decoration: none" >Admin</a></li>
+        <li><a href="/admin.php" style="text-decoration: none" >Admin</a></li>
     </ul>
 </div>
 <div id="lowerbanner"></div>

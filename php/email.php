@@ -7,4 +7,5 @@ $msg = wordwrap($msg,70);
 
 // send email
 mail("david.wintour@gmail.com","My subject",$msg);
+echo "done";
 ?>
