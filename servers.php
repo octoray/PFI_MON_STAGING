@@ -336,6 +336,5 @@
 <div id="chartContainer2" align="center"></div>
 <div id="chartContainer3" align="center"></div>
 <div id="chartContainer4" align="center"></div>
-<div id="chartContainer5" align="center"></div>
 </div>
 <?php require("./head_foot/footer_1.inc.php"); ?>
