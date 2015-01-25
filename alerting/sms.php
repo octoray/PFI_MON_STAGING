@@ -112,11 +112,15 @@ echo $runy;
 }
 
     if($amount1 < "1"){
-        function sendmessage($new1);
-    };
+        sendmessage($new1);
+    } else {
+    echo "nothing to send";
+};
 
 if($amount2 < "1"){
-    function sendmessage($new2);
-    };
+    sendmessage($new2);
+    } else {
+    echo "nothing to send";
+};
 
 ?>
