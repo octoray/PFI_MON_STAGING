@@ -15,7 +15,7 @@
                 "subcaptionFontColor": "#FFFFFF",
                 "baseFontColor": "#FFFFFF",
                 "lowerLimit": "0",
-                "upperLimit": "100",
+                "upperLimit": "6",
                 "lowerLimitDisplay": "Empty",
                 "upperLimitDisplay": "Full",
                 "numberSuffix": "%",
@@ -33,15 +33,15 @@
             "color": [
                 {
                     "minValue": "0",
-                    "maxValue": "35"
+                    "maxValue": "2"
                 },
                 {
-                    "minValue": "35",
-                    "maxValue": "75"
+                    "minValue": "2",
+                    "maxValue": "4"
                 },
                 {
-                    "minValue": "75",
-                    "maxValue": "100"
+                    "minValue": "4",
+                    "maxValue": "6"
                 }
             ]
         },
