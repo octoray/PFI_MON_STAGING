@@ -16,6 +16,10 @@
                      "yAxisName": "Amount",
                      "canvasBgAlpha": "0",
                      "bgColor": "EEEEEE,CCCCCC",
+                     "logoURL": "/images/Vitruvian_Man_Outline_50x50.png",
+                     "logoAlpha": "40",
+                     "logoScale": "110",
+                     "logoPosition": "TR",
                      "bgratio": "60,40",
                      "bgAlpha": "70,80",
                      "theme": "ocean"
@@ -213,10 +217,10 @@
 </script>
 <div class="wrapper">
     <br><BR>
-    <div id="chartContainer_header" align="center" class="chart2"> MT Delivered Successfully Last Hour</div>
+    <div id="chartContainer_header" align="center" class="chart2"> Success Last Hour</div>
     <div id="chartContainer" align="center"></div>
     <br>
-    <div id="chartContainer_header" align="center" class="chart2"> MO Recived Successfully Last Hour</div>
+    <div id="chartContainer_header" align="center" class="chart2"> Failed Last Hour</div>
     <div id="chartContainer2" align="center"></div>
 
 </div>

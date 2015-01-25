@@ -81,10 +81,10 @@
 </script>
 <div class="wrapper">
     <br><BR>
-    <div id="chartContainer_header" align="center" class="chart2"> ESC Billed Succesfully Last Hour </div>
+    <div id="chartContainer_header" align="center" class="chart2"> ESC Site Hits Last Hour </div>
     <div id="chartContainer" align="center"></div>
     <br>
-    <h1>Client sites (if these fail to load or show errors. Raise to TSG)</h1>
+    <h1>Client sites (If these fail to load check ESC services/Applications)</h1>
     <br>
     <div class="center">
         <iframe src="http://wintoday.77win.co" width="280" height="400" frameborder="0"></iframe>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

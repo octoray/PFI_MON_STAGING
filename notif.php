@@ -146,10 +146,10 @@
 </script>
 <div class="wrapper">
     <br><BR>
-    <div id="chartContainer_header" align="center" class="chart2"> ESC Billed Succesfully Last Hour </div>
+    <div id="chartContainer_header" align="center" class="chart2"> Success Last Hour </div>
     <div id="chartContainer" align="center"></div>
     <br><BR>
-    <div id="chartContainer_header" align="center" class="chart2"> ESC Failed At Network Last Hour </div>
+    <div id="chartContainer_header" align="center" class="chart2"> Failed Last Hour </div>
     <div id="chartContainer2" align="center"></div>
 
 </div>
