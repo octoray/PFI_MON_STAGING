@@ -279,7 +279,13 @@
                 .render("chartContainer5");
         });';?>
 </script>
-
+</script>
+<script type="text/javascript">
+    window.setInterval(customRedirect, 30000);
+function customRedirect() {
+    window.location = "http://mh-pfi-mon-01.win.local:81/overview.php";
+}
+</script>
 <div class="wrapper">
     <table id="t01">
         <tr>

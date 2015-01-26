@@ -143,10 +143,10 @@
  });'
 ?>
 </script>
-    <script type="text/javascript">
-        window.setInterval(customRedirect, 3000);
+<script type="text/javascript">
+        window.setInterval(customRedirect, 30000);
     function customRedirect() {
-        window.location = "http://www.google.com";
+        window.location = "http://mh-pfi-mon-01.win.local:81/stop.php";
     }
 </script>
 <div class="wrapper">

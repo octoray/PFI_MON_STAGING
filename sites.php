@@ -77,7 +77,12 @@
    multiseriesChart.render("chartContainer");
 });'
 ?>
-
+</script>
+<script type="text/javascript">
+    window.setInterval(customRedirect, 30000);
+    function customRedirect() {
+        window.location = "http://mh-pfi-mon-01.win.local:81/servers.php";
+    }
 </script>
 <div class="wrapper">
     <br><BR>

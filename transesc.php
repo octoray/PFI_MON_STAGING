@@ -241,7 +241,12 @@
     multiseriesChart.render("chartContainer2");
 });'
  ?>
-
+</script>
+<script type="text/javascript">
+    window.setInterval(customRedirect, 30000);
+    function customRedirect() {
+        window.location = "http://mh-pfi-mon-01.win.local:81/momt.php";
+    }
 </script>
 <div class="wrapper">
 <br><BR>
