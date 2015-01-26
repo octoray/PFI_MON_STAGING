@@ -144,7 +144,7 @@
 ?>
 
 </script>
-<div class="wrapper">
+<div class="wrapper" onLoad="setTimeout(location.href='http://www.newpage.com', '2000')">
     <br><BR>
     <div id="chartContainer_header" align="center" class="chart2"> Success Last Hour </div>
     <div id="chartContainer" align="center"></div>
