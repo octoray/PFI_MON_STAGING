@@ -142,13 +142,14 @@
      revenueChart.render("chartContainer2");
  });'
 ?>
+</script>
     <script type="text/javascript">
         window.setInterval(customRedirect, 3000);
     function customRedirect() {
         window.location = "http://www.google.com";
     }
 </script>
-<div class="wrapper" >
+<div class="wrapper">
     <br><BR>
     <div id="chartContainer_header" align="center" class="chart2"> Success Last Hour </div>
     <div id="chartContainer" align="center"></div>
