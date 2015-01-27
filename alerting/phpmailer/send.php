@@ -35,10 +35,10 @@ $mail->Body    =
 	<meta name="viewport" content="width=device-width"/>
 	<style>
 	body{
-    width:100% !important;
-    min-width: 100%;
-  -webkit-text-size-adjust:100%;
-  -ms-text-size-adjust:100%;
+    width:50% !important;
+    min-width: 20%;
+  -webkit-text-size-adjust:50%;
+  -ms-text-size-adjust:50%;
   margin:0;
   padding:0;
   text-align: center;
