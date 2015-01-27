@@ -14,7 +14,7 @@ or die("Unable to connect to MySQL");
 mysql_select_db("PFI_MON") or die(mysql_error());
 $r1 = array();
 // chart1
-$result1 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_count` WHERE STATUS = '6' AND TIME >= NOW() - INTERVAL 33 MINUTE;")
+$result1 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_count` WHERE STATUS = '6' AND TIME >= NOW() - INTERVAL 45 MINUTE;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -22,7 +22,7 @@ while ($row = mysql_fetch_assoc($result1)) {
     $r1[] = $row;
 }
 $amount1 = $r1[0]['amount'];
-$word1 = 'NO Successfull PFI tranactions in last 30 minutes!';
+$word1 = 'NO Successfull PFI tranactions in last 45 minutes!';
 
 
 // sms2
