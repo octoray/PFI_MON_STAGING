@@ -25,11 +25,21 @@ $mail->addCC('tsg@imimobile.com');
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$myFile = "/usr/share/nginx/staging/PFI_MON_STAGING/alerting/phpmailer/email.html";
-$fh = fopen($myFile, 'w') or die("can't open file");
+
 
 $mail->Subject = 'Here is the subject';
-$mail->Body    = $fh;
+$mail->Body    = '<!DOCTYPE html>
+<html>
+<head>
+    <title>PFI MonitorEmail</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<img src="http://www.tsgpficontent.co.uk/images/IMImobile_logo.png align="middle">
+<b>PFI Alert Test</b>
+<p>Test alert 1</p>
+</body>
+</html>';
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {
