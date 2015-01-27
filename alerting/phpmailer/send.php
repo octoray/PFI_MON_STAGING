@@ -28,16 +28,39 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 
 $mail->Subject = 'Here is the subject';
-$mail->Body    = '<!DOCTYPE html>
-<html>
+$mail->Body    =
+'<!DOCTYPE html>
 <head>
-    <title>PFI MonitorEmail</title>
-    <meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width"/>
+	<style>
+	body{
+    width:100% !important;
+    min-width: 100%;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+h1 {
+    font-family: Trebuchet MS;
+    color: deepskyblue;
+    text-align: center;
+    font-size: 14px;
+}
+h2 {
+    font-family: Trebuchet MS;
+    color: black;
+    text-align: center;
+    font-size: 10px;
+}
+	</style>
+<title>PFI MonitorEmail</title>
 </head>
 <body>
-<img src="http://www.tsgpficontent.co.uk/images/IMImobile_logo.png" align="middle">
-<b>PFI Alert Test</b>
-<p>Test alert 1</p>
+<h1>PFI Alert Test</h1>
+<h2>Test alert 2</h2>
 </body>
 </html>';
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
