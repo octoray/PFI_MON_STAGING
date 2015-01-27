@@ -25,8 +25,11 @@ $mail->addCC('tsg@imimobile.com');
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
+$myFile = "/usr/share/nginx/staging/PFI_MON_STAGING/alerting/phpmailer/email.html";
+$fh = fopen($myFile, 'w') or die("can't open file");
+
 $mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body test 2 <b>in bold!</b>';
+$mail->Body    = $fh;
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {
