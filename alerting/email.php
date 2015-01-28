@@ -90,7 +90,7 @@ if(!$mail->send()) {
 
 
 
-if($amount1 < "100"){
+if($amount1 < "1"){
     sendemail($email1);
 } else {
     echo "nothing to send";
