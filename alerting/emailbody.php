@@ -120,8 +120,8 @@ $email2 =
       h4 {
         font-family: Trebuchet MS;
         color: #0000ff;
-        font-size: 10px;
-        word-wrap:break-word;
+        width: 70%;
+        word-break: break-all;
     }
 
         </style>
