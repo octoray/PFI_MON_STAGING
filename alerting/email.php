@@ -16,9 +16,9 @@ $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 
 $mail->Port = 25;                                    // TCP port to connect to
 
 $mail->From = 'david.wintour@gmail.com';
-$mail->FromName = 'test';
+$mail->FromName = 'PFI Monitor';
 $mail->addAddress('david.wintour@imimobile.com', 'Joe User');     // Add a recipient
-$mail->addAddress('davidwintour@imimobile.com');               // Name is optional
+//$mail->addAddress('davidwintour@imimobile.com');               // Name is optional
 // $mail->addReplyTo('info@example.com', 'Information');
 $mail->addCC('tsg@imimobile.com');
 //$mail->addBCC('bcc@example.com');
