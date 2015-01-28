@@ -153,6 +153,7 @@ if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
+    echo "<br>";
     echo 'Message has been sent';
 }};
 
@@ -162,6 +163,7 @@ if(!$mail->send()) {
 if($amount1 < "1000"){
     sendemail($email1);
 } else {
+    echo "<br>";
     echo "nothing to send";
 };
 
@@ -169,18 +171,21 @@ if($amount1 < "1000"){
 if($amount2 < "10000"){
     sendemail($email2);
 } else {
+    echo "<br>";
     echo "nothing to send";
 };
 
 if($amount3 < "10000"){
     sendemail($email3);
 } else {
+    echo "<br>";
     echo "nothing to send";
 };
 
 if($amount4 < "1000"){
     sendemail($email1);
 } else {
+    echo "<br>";
     echo "nothing to send";
 };
 
@@ -188,6 +193,7 @@ if($amount4 < "1000"){
 if($amount5 < "10000"){
     sendemail($email2);
 } else {
+    echo "<br>";
     echo "nothing to send";
 };
 
@@ -195,12 +201,14 @@ if($amount5 < "10000"){
 if($amount6 < "10000"){
     sendemail($email1);
 } else {
+    echo "<br>";
     echo "nothing to send";
 };
 
 if($amount7 < "10000"){
     sendemail($email1);
 } else {
+    echo "<br>";
     echo "nothing to send";
 };
 
