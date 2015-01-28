@@ -17,7 +17,7 @@ or die("Unable to connect to MySQL");
 //echo "Connected to MySQL<br>";
 
 
-//sms1
+//email1
 mysql_select_db("PFI_MON") or die(mysql_error());
 $r1 = array();
 // chart1
@@ -32,7 +32,7 @@ $amount1 = $r1[0]['amount'];
 $word1 = 'NO Successfull PFI tranactions in last 45 minutes!';
 
 
-// sms2
+// email2
 $r2 = array();
 $result2 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'ESC Screenshots' AND TIME >= NOW() - INTERVAL 45 MINUTE;")
 or die(mysql_error());
@@ -48,7 +48,7 @@ $word2 = 'NO Successfull PFI Screenshots in last 45 minutes!';
 
 
 
-// sms3
+// email3
 $r3 = array();
 $result3 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'ESC Site Hit Count' AND TIME >= NOW() - INTERVAL 30 MINUTE;")
 or die(mysql_error());
@@ -61,7 +61,7 @@ $amount3 = $r3[0]['amount'];
 $word3 = 'PFI ESC Site hits 0 in last 30 minutes!';
 
 
-// sms4
+// email4
 $r4 = array();
 $result4 = mysql_query("SELECT AVG(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'Pending/Stuck Transactions' AND TIME >= NOW() - INTERVAL 45 MINUTE;")
 or die(mysql_error());
@@ -74,6 +74,45 @@ $amount4 = $r4[0]['amount'];
 $word4 = 'PFI Pending Transaction count high! '.$amount4.' in last 45 minutes!';
 
 
+
+// email5
+$r5 = array();
+$result5 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_momt` WHERE STATUS = 'MT Delivered' AND TIME >= NOW() - INTERVAL 60 MINUTE;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row5 = mysql_fetch_assoc($result5)) {
+    $r5[] = $row5;
+}
+$amount5 = $r5[0]['amount'];
+$word5 = 'no mt delivered last hour';
+
+
+
+// email6
+$r6 = array();
+$result6 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'ESC Site Hit Count' AND TIME >= NOW() - INTERVAL 20 MINUTE;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row6 = mysql_fetch_assoc($result6)) {
+    $r6[] = $row6;
+}
+$amount6 = $r6[0]['amount'];
+$word6 = 'site hits last 20 mins';
+
+
+// email7
+$r7 = array();
+$result7 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'ESC Screenshots' AND TIME >= NOW() - INTERVAL 60 MINUTE;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row7 = mysql_fetch_assoc($result7)) {
+    $r7[] = $row7;
+}
+$amount7 = $r7[0]['amount'];
+$word7 = 'Screenshots last 60 mins';
 
 
 
@@ -128,18 +167,38 @@ if($amount1 < "1000"){
 
 
 if($amount2 < "10000"){
-    sendemail($email1);
+    sendemail($email2);
 } else {
     echo "nothing to send";
 };
 
 if($amount3 < "10000"){
+    sendemail($email3);
+} else {
+    echo "nothing to send";
+};
+
+if($amount4 < "1000"){
     sendemail($email1);
 } else {
     echo "nothing to send";
 };
 
-if($amount4 < "`000"){
+
+if($amount5 < "10000"){
+    sendemail($email2);
+} else {
+    echo "nothing to send";
+};
+
+
+if($amount6 < "10000"){
+    sendemail($email1);
+} else {
+    echo "nothing to send";
+};
+
+if($amount7 < "10000"){
     sendemail($email1);
 } else {
     echo "nothing to send";
