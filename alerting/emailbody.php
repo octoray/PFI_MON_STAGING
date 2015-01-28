@@ -35,6 +35,7 @@ $email1 =
         font-family: Trebuchet MS;
         color: #0000ff;
         font-size: 10px;
+        max-width: 15;
     }
 
         </style>
