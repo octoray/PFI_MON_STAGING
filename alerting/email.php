@@ -139,7 +139,7 @@ if($amount3 < "10000"){
     echo "nothing to send";
 };
 
-if($amount4 = "0"){
+if($amount4 < "`000"){
     sendemail($email1);
 } else {
     echo "nothing to send";
