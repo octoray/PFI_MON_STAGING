@@ -128,7 +128,7 @@ $email2 =
     <title>PFI MonitorEmail2</title>
     </head>
     <body>
-    <h1>PFI Alert Test</h1>
+    <h1>PFI Alert Test2</h1>
     <h2>
     Transaction Count Alert:
     </h2>
@@ -137,7 +137,8 @@ $email2 =
     Please check on boron for latest traffic using:
     </h3>
     <h4>
-    SELECT  top 100
+    <pre width="10">
+ SELECT  top 100
 		pfi.id,
 		pfi.msisdn,
 		stat1.Description as 2Flow Type",
@@ -157,6 +158,7 @@ $email2 =
   full outer join [PayForIt].[dbo].[Network] stat3 on pfi.networkid = stat3.id
   where 1=1
   order by pfi.created desc
+</pre>
   </h4>
 
   <h3>
