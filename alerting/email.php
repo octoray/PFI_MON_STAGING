@@ -3,7 +3,7 @@
 require("./phpmailer/PHPMailerAutoload.php");
 require("emailbody.php");
 
-echo $email1;
+
 
 //MYSQL
 
@@ -77,7 +77,7 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 
 $mail->Subject = 'Here is the subject';
-$mail->Body    = $email1;
+$mail->Body    = $body;
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {
