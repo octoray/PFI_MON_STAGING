@@ -8,7 +8,8 @@ $email1 =
         <style>
         body{
         width:50% !important;
-        min-width: 20%;
+        min-width: 0%;
+        max-width: 50;
       -webkit-text-size-adjust:50%;
       -ms-text-size-adjust:50%;
       margin:0;
