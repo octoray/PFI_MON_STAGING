@@ -153,8 +153,11 @@ if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo "<br>";
     echo 'Message has been sent';
+    echo "<br>";
+    echo $body;
+    echo "<br>";
+    echo "<br>";
 }};
 
 
