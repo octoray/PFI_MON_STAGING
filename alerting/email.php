@@ -3,6 +3,7 @@
 require("./phpmailer/PHPMailerAutoload.php");
 require("emailbody.php");
 
+echo $email1;
 
 //MYSQL
 
