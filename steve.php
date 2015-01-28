@@ -71,6 +71,8 @@ $steve =
         "isCca": true
     }';
 
+$data_string = json_encode($steve);
+echo $steve;
 
 function sendmessage($input) {
     $ch = curl_init('192.168.240.3');
