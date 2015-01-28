@@ -35,7 +35,8 @@ $email1 =
         font-family: Trebuchet MS;
         color: #0000ff;
         font-size: 10px;
-        max-width: 15;
+        width:100px;
+        word-wrap:break-word;
     }
 
         </style>
@@ -120,10 +121,11 @@ $email2 =
         font-family: Trebuchet MS;
         color: #0000ff;
         font-size: 10px;
+        word-wrap:break-word;
     }
 
         </style>
-    <title>PFI MonitorEmail</title>
+    <title>PFI MonitorEmail2</title>
     </head>
     <body>
     <h1>PFI Alert Test</h1>
