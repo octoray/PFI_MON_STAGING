@@ -72,19 +72,19 @@ $steve =
 }';
 
 
-
 function sendmessage($input) {
     $ch = curl_init('http://o2bannerstaging.wincast.com/basket/');
-    curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_setopt($ch, CURLOPT_HTTPHEADER,'Authorization: Basic bzI6bzI=');
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_URL, 'http://o2bannerstaging.wincast.com/basket/');
-    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $input);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            'Authorization: Basic bzI6bzI=',
+            'Content-Type: application/json',
+            'Content-Length: ' . strlen($input))
+    );
 
-    $query = http_build_query($input);
+//    $query = http_build_query($input);
 
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $query);
 
     $runy = curl_exec($ch);
     $info = curl_getinfo($ch);
