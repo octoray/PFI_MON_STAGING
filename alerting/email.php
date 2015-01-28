@@ -29,11 +29,12 @@ while ($row = mysql_fetch_assoc($result1)) {
     $r1[] = $row;
 }
 $amount1 = $r1[0]['amount'];
+$word1 = 'NO Successfull PFI tranactions in last 45 minutes!';
 
 
 // sms2
 $r2 = array();
-$result2 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'ESC Screenshots' AND TIME >= NOW() - INTERVAL 33 MINUTE;")
+$result2 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'ESC Screenshots' AND TIME >= NOW() - INTERVAL 45 MINUTE;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -41,7 +42,36 @@ while ($row2 = mysql_fetch_assoc($result2)) {
     $r2[] = $row2;
 }
 $amount2 = $r2[0]['amount'];
-$word2 = 'NO Successfull PFI Screenshots in last 30 minutes!';
+$word2 = 'NO Successfull PFI Screenshots in last 45 minutes!';
+
+
+
+
+
+// sms3
+$r3 = array();
+$result3 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'ESC Site Hit Count' AND TIME >= NOW() - INTERVAL 30 MINUTE;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row3 = mysql_fetch_assoc($result3)) {
+    $r3[] = $row3;
+}
+$amount3 = $r3[0]['amount'];
+$word3 = 'PFI ESC Site hits 0 in last 30 minutes!';
+
+
+// sms4
+$r4 = array();
+$result4 = mysql_query("SELECT AVG(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'Pending/Stuck Transactions' AND TIME >= NOW() - INTERVAL 45 MINUTE;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row4 = mysql_fetch_assoc($result4)) {
+    $r4[] = $row4;
+}
+$amount4 = $r4[0]['amount'];
+$word4 = 'PFI Pending Transaction count high! '.$amount4.' in last 45 minutes!';
 
 
 
@@ -97,5 +127,22 @@ if($amount1 < "1"){
 };
 
 
+if($amount2 < "1"){
+    sendemail($email2);
+} else {
+    echo "nothing to send";
+};
+
+if($amount3 < "1"){
+    sendemail($email3);
+} else {
+    echo "nothing to send";
+};
+
+if($amount4 > "29"){
+    sendemail($email4);
+} else {
+    echo "nothing to send";
+};
 
 ?>
