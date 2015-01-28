@@ -86,7 +86,7 @@ function sendmessage($input) {
     );
 
 //    $query = http_build_query($input);
-
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $input);
 
     $runy = curl_exec($ch);
     $info = curl_getinfo($ch);
