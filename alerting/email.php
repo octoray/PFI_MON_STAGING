@@ -3,6 +3,52 @@
 require("./phpmailer/PHPMailerAutoload.php");
 require("emailbody.php");
 
+
+//MYSQL
+
+$username = "pfimonuser";
+$password = "Fa6rUCha";
+$hostname = "localhost";
+
+//connection to the database
+$dbhandle = mysql_connect($hostname, $username, $password)
+or die("Unable to connect to MySQL");
+//echo "Connected to MySQL<br>";
+
+
+//sms1
+mysql_select_db("PFI_MON") or die(mysql_error());
+$r1 = array();
+// chart1
+$result1 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_count` WHERE STATUS = '6' AND TIME >= NOW() - INTERVAL 45 MINUTE;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row = mysql_fetch_assoc($result1)) {
+    $r1[] = $row;
+}
+$amount1 = $r1[0]['amount'];
+
+
+// sms2
+$r2 = array();
+$result2 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_other` WHERE STATUS = 'ESC Screenshots' AND TIME >= NOW() - INTERVAL 33 MINUTE;")
+or die(mysql_error());
+
+// store the record of the "example" table into $row
+while ($row2 = mysql_fetch_assoc($result2)) {
+    $r2[] = $row2;
+}
+$amount2 = $r2[0]['amount'];
+$word2 = 'NO Successfull PFI Screenshots in last 30 minutes!';
+
+
+
+
+
+
+function sendemail($body) {
+
 $mail = new PHPMailer;
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
@@ -38,5 +84,17 @@ if(!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
     echo 'Message has been sent';
-}
+}};
+
+
+
+
+if($amount1 < "100"){
+    sendemail($email1);
+} else {
+    echo "nothing to send";
+};
+
+
+
 ?>
