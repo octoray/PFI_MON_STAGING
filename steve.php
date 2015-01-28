@@ -75,7 +75,7 @@ $data_string = json_encode($steve);
 echo $steve;
 
 function sendmessage($input) {
-    $ch = curl_init('http://o2bannerstaging.wincast.com/basket/');
+    $ch = curl_init('http://o2bannerstaging.wincast.com/basket');
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
     curl_setopt($ch, CURLOPT_POSTFIELDS, $input);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -86,7 +86,7 @@ function sendmessage($input) {
     );
 
 //    $query = http_build_query($input);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $input);
+    //curl_setopt($ch, CURLOPT_POSTFIELDS, $input);
 
     $runy = curl_exec($ch);
     $info = curl_getinfo($ch);
