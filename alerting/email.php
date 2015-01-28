@@ -129,7 +129,7 @@ $mail->SMTPAuth = true;                               // Enable SMTP authenticat
 $mail->Username = 'david.wintour@gmail.com';                 // SMTP username
 $mail->Password = 'Rtfm123456789';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 25;                                    // TCP port to connect to
+$mail->Port = 587;                                    // TCP port to connect to
 
 $mail->From = 'david.wintour@gmail.com';
 $mail->FromName = 'PFI Monitor';
