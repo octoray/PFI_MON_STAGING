@@ -128,19 +128,19 @@ if($amount1 < "1000"){
 
 
 if($amount2 < "10000"){
-    sendemail($email2);
+    sendemail($email1);
 } else {
     echo "nothing to send";
 };
 
 if($amount3 < "10000"){
-    sendemail($email3);
+    sendemail($email1);
 } else {
     echo "nothing to send";
 };
 
 if($amount4 = "0"){
-    sendemail($email4);
+    sendemail($email1);
 } else {
     echo "nothing to send";
 };
