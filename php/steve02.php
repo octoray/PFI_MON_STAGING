@@ -74,12 +74,12 @@ $steve =
 
 
 function sendmessage($input) {
-    $ch = curl_init('http://172.16.10.31:8081/win-smsgwweb/winmt');
+    $ch = curl_init('http://o2bannerstaging.wincast.com/basket/');
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_setopt($ch, CURLOPT_HTTPHEADER,'Authorization: Basic bzI6bzI=');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_URL, 'http://172.16.10.31:8081/win-smsgwweb/winmt');
+    curl_setopt($ch, CURLOPT_URL, 'http://o2bannerstaging.wincast.com/basket/');
     curl_setopt($ch, CURLOPT_POST, 1);
 
     $query = http_build_query($input);
