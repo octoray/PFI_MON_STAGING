@@ -13,7 +13,7 @@ $email1 =
       -ms-text-size-adjust:50%;
       margin:0;
       padding:0;
-      text-align: center;
+      text-align: left;
     }
     h1 {
         font-family: Trebuchet MS;
