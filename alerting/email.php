@@ -120,26 +120,26 @@ if(!$mail->send()) {
 
 
 
-if($amount1 < "1"){
+if($amount1 < "1000"){
     sendemail($email1);
 } else {
     echo "nothing to send";
 };
 
 
-if($amount2 < "1"){
+if($amount2 < "10000"){
     sendemail($email2);
 } else {
     echo "nothing to send";
 };
 
-if($amount3 < "1"){
+if($amount3 < "10000"){
     sendemail($email3);
 } else {
     echo "nothing to send";
 };
 
-if($amount4 > "29"){
+if($amount4 = "0"){
     sendemail($email4);
 } else {
     echo "nothing to send";
