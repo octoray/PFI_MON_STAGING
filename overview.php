@@ -20,19 +20,19 @@
             <td>Billed Successfully</td>
             <td style="color: black;"><?php echo $row1['amount']; ?></td>
             <td style="color: black;"><?php echo $row1['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="70%" height="70%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_green.png" width="50%" height="50%"></td>
         </tr>
         <tr>
             <td>Submitted Charge, No Response</td>
             <td style="color: black;"><?php echo $row2['amount']; ?></td>
             <td style="color: black;"><?php echo $row2['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="80%" height="80%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_green.png" width="40%" height="40%"></td>
         </tr>
         <tr>
             <td>Unkown Error</td>
             <td style="color: black;"><?php echo $row3['amount']; ?></td>
             <td style="color: black;"><?php echo $row3['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="60%" height="60%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_green.png" width="30%" height="30%"></td>
         </tr>
         <tr>
             <td>Processing Payment, Pending</td>
