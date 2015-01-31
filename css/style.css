@@ -158,10 +158,10 @@ table#t01 tr:nth-child(odd) {
     background-color: ThreeDDarkShadow;
 }
 table#t01 th	{
-    color: greenyellow;
+    color: #ffffff;
     background-image: url('/images/footer_lodyas.png');
 }
 
 input, select, textarea{
-    color: greenyellow;
+    color: #ffffff;
 }
