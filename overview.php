@@ -20,37 +20,37 @@
             <td>Billed Successfully</td>
             <td style="color: black;"><?php echo $row1['amount']; ?></td>
             <td style="color: black;"><?php echo $row1['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="5%" height="5%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_green.png" width="70%" height="70%"></td>
         </tr>
         <tr>
             <td>Submitted Charge, No Response</td>
             <td style="color: black;"><?php echo $row2['amount']; ?></td>
             <td style="color: black;"><?php echo $row2['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="5%" height="5%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_green.png" width="80%" height="80%"></td>
         </tr>
         <tr>
             <td>Unkown Error</td>
             <td style="color: black;"><?php echo $row3['amount']; ?></td>
             <td style="color: black;"><?php echo $row3['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="5%" height="5%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_green.png" width="60%" height="60%"></td>
         </tr>
         <tr>
             <td>Processing Payment, Pending</td>
             <td style="color: black;"><?php echo $row4['amount']; ?></td>
             <td style="color: black;"><?php echo $row4['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_yellow.png" width="5%" height="5%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_green.png" width="80%" height="80%"></td>
         </tr>
         <tr>
             <td>Failed At Network</td>
             <td style="color: black;"><?php echo $row5['amount']; ?></td>
             <td style="color: black;"><?php echo $row5['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="5%" height="5%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_green.png" width="80%" height="80%"></td>
         </tr>
         <tr>
             <td>Network Error</td>
             <td style="color: black;"><?php echo $row6['amount']; ?></td>
             <td style="color: black;"><?php echo $row6['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_red.png" width="5%" height="5%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_green.png" width="80%" height="80%"></td>
         </tr>
     </table>
 
