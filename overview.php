@@ -27,7 +27,7 @@
             <td>Submitted Charge, No Response</td>
             <td style="color: black;"><?php echo $row2['amount']; ?></td>
             <td style="color: black;"><?php echo $row2['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="25%" height="30%"></td>
+            <td style="color: black;"><<?php warning_error($row2['amount']); ?>></td>
         </tr>
         <tr>
             <td>Unkown Error</td>
