@@ -32,7 +32,7 @@
             <td>Unkown Error</td>
             <td style="color: black;"><?php echo $row3['amount']; ?></td>
             <td style="color: black;"><?php echo $row3['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="25%" height="30%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_red.png" width="25%" height="30%"></td>
         </tr>
         <tr>
             <td>Processing Payment, Pending</td>
@@ -44,7 +44,7 @@
             <td>Failed At Network</td>
             <td style="color: black;"><?php echo $row5['amount']; ?></td>
             <td style="color: black;"><?php echo $row5['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="25%" height="30%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_yellow.png" width="25%" height="30%"></td>
         </tr>
         <tr>
             <td>Network Error</td>
