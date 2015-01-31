@@ -1,4 +1,5 @@
 <?php require("./php/overview.php"); ?>
+<?php require("./php/warning.php"); ?>
 <?php require("./head_foot/header_1.inc.php"); ?>
 <script type="text/javascript">
     window.setInterval(customRedirect, 30000);
@@ -20,7 +21,7 @@
             <td>Billed Successfully</td>
             <td style="color: black;"><?php echo $row1['amount']; ?></td>
             <td style="color: black;"><?php echo $row1['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="25%" height="30%"></td>
+            <td style="color: black;"><<?php warning_success($row1['amount']); ?>></td>
         </tr>
         <tr>
             <td>Submitted Charge, No Response</td>
