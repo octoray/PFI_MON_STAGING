@@ -20,7 +20,7 @@
             <td>Billed Successfully</td>
             <td style="color: black;"><?php echo $row1['amount']; ?></td>
             <td style="color: black;"><?php echo $row1['time']; ?></td>
-            <td style="color: black;"><img src="/images/button_glossy_green.png" width="10%" height="10%"></td>
+            <td style="color: black;"><img src="/images/button_glossy_green.png" width="5%" height="5%"></td>
         </tr>
         <tr>
             <td>Submitted Charge, No Response</td>
