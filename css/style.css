@@ -145,7 +145,7 @@ table {
 table, th, td {
     border: 1px solid deepskyblue;
     border-collapse: collapse;
-    color: #000000;
+    color: #ffffff;
 }
 th, td {
     padding: 3px;
@@ -155,7 +155,7 @@ table#t01 tr:nth-child(even) {
     background-color: ThreeDDarkShadow;
 }
 table#t01 tr:nth-child(odd) {
-    background-color: darkgray;
+    background-color: ThreeDDarkShadow;
 }
 table#t01 th	{
     color: #ffffff;
@@ -163,5 +163,5 @@ table#t01 th	{
 }
 
 input, select, textarea{
-    color: #000;
+    color: #ffffff;
 }
