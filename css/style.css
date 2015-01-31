@@ -145,7 +145,7 @@ table {
 table, th, td {
     border: 1px solid deepskyblue;
     border-collapse: collapse;
-    color: #ffffff;
+    color: greenyellow;
 }
 th, td {
     padding: 3px;
@@ -158,10 +158,10 @@ table#t01 tr:nth-child(odd) {
     background-color: ThreeDDarkShadow;
 }
 table#t01 th	{
-    color: #ffffff;
+    color: greenyellow;
     background-image: url('/images/footer_lodyas.png');
 }
 
 input, select, textarea{
-    color: #ffffff;
+    color: greenyellow;
 }
