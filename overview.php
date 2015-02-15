@@ -7,6 +7,13 @@
         window.location = "http://mh-pfi-mon-01.win.local:81/transesc.php";
     }
 </script>
+<script type="text/javascript">
+$(document).ready(function(){
+if ($("#bsuc").text() < "30") {
+$("p").css("background-color", "red");
+};
+});
+</script>
 <div class="wrapper">
     <br>
 <h1>ESC Billing Overview</h1>
@@ -19,19 +26,19 @@
         </tr>
         <tr>
             <td>Billed Successfully</td>
-            <td style="color: black;"><?php echo $row1['amount']; ?></td>
+            <td style="color: black;" id="bsuc"><?php echo $row1['amount']; ?></td>
             <td style="color: black;"><?php echo $row1['time']; ?></td>
             <td style="color: black;"><<?php warning_success($row1['amount']); ?>></td>
         </tr>
         <tr>
             <td>Submitted Charge, No Response</td>
-            <td style="color: black;"><?php echo $row2['amount']; ?></td>
+            <td style="color: black;" id="subf"><?php echo $row2['amount']; ?></td>
             <td style="color: black;"><?php echo $row2['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row2['amount']); ?>></td>
         </tr>
         <tr>
             <td>Unkown Error</td>
-            <td style="color: black;"><?php echo $row3['amount']; ?></td>
+            <td style="color: black;" id="netf"><?php echo $row3['amount']; ?></td>
             <td style="color: black;"><?php echo $row3['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row3['amount']); ?>></td>
         </tr>
