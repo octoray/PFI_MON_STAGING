@@ -1,18 +1,12 @@
 <?php require("./php/overview.php"); ?>
 <?php require("./php/warning.php"); ?>
 <?php require("./head_foot/header_1.inc.php"); ?>
+<script type="text/javascript" src="js/chnagecolour.js"></script>
 <script type="text/javascript">
     window.setInterval(customRedirect, 30000);
     function customRedirect() {
         window.location = "http://mh-pfi-mon-01.win.local:81/transesc.php";
     }
-</script>
-<script type="text/javascript">
-$(document).ready(function(){
-if ($("#bsuc").text() < "30") {
-$(".wrapper").css("background-color", "red");
-};
-});
 </script>
 <div class="wrapper">
     <br>
