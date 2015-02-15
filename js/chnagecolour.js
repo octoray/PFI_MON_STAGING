@@ -1,42 +1,53 @@
 $(document).ready(function(){
-    var number = parseInt($("#fail1").text(), 10);
     if ($("#bsuc").text() < "1") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if (number >= "9") {
+    var number1 = parseInt($("#fail1").text());
+    if (number1 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail2").text() >= "9") {
+    var number2 = parseInt($("#fail2").text());
+    if if (number2 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail3").text() >= "9") {
+    var number3 = parseInt($("#fail3").text());
+    if if (number3 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail4").text() >= "9") {
+    var number4 = parseInt($("#fail4").text());
+    if if (number4 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail5").text() >= "9") {
+    var number5 = parseInt($("#fail5").text());
+    if if (number5 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail6").text() >= "9") {
+    var number6 = parseInt($("#fail6").text());
+    if if (number6 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail7").text() >= "9") {
+    var number7 = parseInt($("#fail7").text());
+    if if (number7 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail8").text() >= "9") {
+    var number8 = parseInt($("#fail8").text());
+    if if (number8 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail9").text() >= "9") {
+    var number9 = parseInt($("#fail9").text());
+    if if (number9 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail10").text() >= "9") {
+    var number10 = parseInt($("#fail10").text());
+    if if (number10 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail11").text() >= "9") {
+    var number11 = parseInt($("#fail11").text());
+    if if (number11 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail12").text() >= "9") {
+    var number12 = parseInt($("#fail12").text());
+    if if (number12 >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
 });
