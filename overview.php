@@ -26,31 +26,31 @@
         </tr>
         <tr>
             <td>Submitted Charge, No Response</td>
-            <td style="color: black;" id="subf"><?php echo $row2['amount']; ?></td>
+            <td style="color: black;" id="fail"><?php echo $row2['amount']; ?></td>
             <td style="color: black;"><?php echo $row2['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row2['amount']); ?>></td>
         </tr>
         <tr>
             <td>Unkown Error</td>
-            <td style="color: black;" id="netf"><?php echo $row3['amount']; ?></td>
+            <td style="color: black;" id="fail"><?php echo $row3['amount']; ?></td>
             <td style="color: black;"><?php echo $row3['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row3['amount']); ?>></td>
         </tr>
         <tr>
             <td>Processing Payment, Pending</td>
-            <td style="color: black;"><?php echo $row4['amount']; ?></td>
+            <td style="color: black;" id="fail"><?php echo $row4['amount']; ?></td>
             <td style="color: black;"><?php echo $row4['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row4['amount']); ?>></td>
         </tr>
         <tr>
             <td>Failed At Network</td>
-            <td style="color: black;"><?php echo $row5['amount']; ?></td>
+            <td style="color: black;" id="fail"><?php echo $row5['amount']; ?></td>
             <td style="color: black;"><?php echo $row5['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row5['amount']); ?>></td>
         </tr>
         <tr>
             <td>Network Error</td>
-            <td style="color: black;"><?php echo $row6['amount']; ?></td>
+            <td style="color: black;" id="fail"><?php echo $row6['amount']; ?></td>
             <td style="color: black;"><?php echo $row6['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row6['amount']); ?>></td>
         </tr>
