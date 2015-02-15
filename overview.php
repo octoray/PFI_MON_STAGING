@@ -26,31 +26,31 @@
         </tr>
         <tr>
             <td>Submitted Charge, No Response</td>
-            <td style="color: black;" id="fail"><?php echo $row2['amount']; ?></td>
+            <td style="color: black;" id="fail1"><?php echo $row2['amount']; ?></td>
             <td style="color: black;"><?php echo $row2['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row2['amount']); ?>></td>
         </tr>
         <tr>
             <td>Unkown Error</td>
-            <td style="color: black;" id="fail"><?php echo $row3['amount']; ?></td>
+            <td style="color: black;" id="fail2"><?php echo $row3['amount']; ?></td>
             <td style="color: black;"><?php echo $row3['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row3['amount']); ?>></td>
         </tr>
         <tr>
             <td>Processing Payment, Pending</td>
-            <td style="color: black;" id="fail"><?php echo $row4['amount']; ?></td>
+            <td style="color: black;" id="fail3"><?php echo $row4['amount']; ?></td>
             <td style="color: black;"><?php echo $row4['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row4['amount']); ?>></td>
         </tr>
         <tr>
             <td>Failed At Network</td>
-            <td style="color: black;" id="fail"><?php echo $row5['amount']; ?></td>
+            <td style="color: black;" id="fail4"><?php echo $row5['amount']; ?></td>
             <td style="color: black;"><?php echo $row5['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row5['amount']); ?>></td>
         </tr>
         <tr>
             <td>Network Error</td>
-            <td style="color: black;" id="fail"><?php echo $row6['amount']; ?></td>
+            <td style="color: black;" id="fail5"><?php echo $row6['amount']; ?></td>
             <td style="color: black;"><?php echo $row6['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row6['amount']); ?>></td>
         </tr>
@@ -79,25 +79,25 @@
         </tr>
         <tr>
             <td>Sent MT, No Final DR Yet</td>
-            <td style="color: black;" id="fail"><?php echo $row9['amount']; ?></td>
+            <td style="color: black;" id="fail6"><?php echo $row9['amount']; ?></td>
             <td style="color: black;"><?php echo $row9['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row9['amount']); ?>></td>
         </tr>
         <tr>
             <td>underlying connection forcibly closed</td>
-            <td style="color: black;" id="fail"><?php echo $row10['amount']; ?></td>
+            <td style="color: black;" id="fail7"><?php echo $row10['amount']; ?></td>
             <td style="color: black;"><?php echo $row10['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row10['amount']); ?>></td>
         </tr>
         <tr>
             <td>The request was aborted</td>
-            <td style="color: black;" id="fail"><?php echo $row11['amount']; ?></td>
+            <td style="color: black;" id="fail8"><?php echo $row11['amount']; ?></td>
             <td style="color: black;"><?php echo $row11['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row11['amount']); ?>></td>
         </tr>
         <tr>
             <td>The operation has timed out</td>
-            <td style="color: black;" id="fail"><?php echo $row12['amount']; ?></td>
+            <td style="color: black;" id="fail9"><?php echo $row12['amount']; ?></td>
             <td style="color: black;"><?php echo $row12['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row12['amount']); ?>></td>
         </tr>
@@ -144,7 +144,7 @@
         <tr>
             <td>IMSI</td>
             <td>Failed IMSI</td>
-            <td style="color: black;" id="fail"><?php echo $row17['amount']; ?></td>
+            <td style="color: black;" id="fail10"><?php echo $row17['amount']; ?></td>
             <td style="color: black;"><?php echo $row17['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row17['amount']); ?>></td>
         </tr>
@@ -158,7 +158,7 @@
         <tr>
             <td>STOPS</td>
             <td>Failed STOPS</td>
-            <td style="color: black;" id="fail"><?php echo $row19['amount']; ?></td>
+            <td style="color: black;" id="fail11"><?php echo $row19['amount']; ?></td>
             <td style="color: black;"><?php echo $row19['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row19['amount']); ?>></td>
         </tr>
@@ -172,7 +172,7 @@
         <tr>
             <td>Notifications</td>
             <td>Failed To Send Notifications</td>
-            <td style="color: black;" id="fail"><?php echo $row21['amount']; ?></td>
+            <td style="color: black;" id="fail12"><?php echo $row21['amount']; ?></td>
             <td style="color: black;"><?php echo $row21['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row21['amount']); ?>></td>
         </tr>
