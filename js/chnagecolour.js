@@ -1,8 +1,9 @@
 $(document).ready(function(){
+    var number = parseInt($("#fail1").text(), 10);
     if ($("#bsuc").text() < "1") {
         $(".wrapper").css("background-color", "yellow");
     }
-    if ($("#fail1").text() >= "9") {
+    if (number >= "9") {
         $(".wrapper").css("background-color", "yellow");
     }
     if ($("#fail2").text() >= "9") {
