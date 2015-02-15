@@ -32,7 +32,7 @@
         </tr>
         <tr>
             <td>Unkown Error</td>
-            <td style="color: black;" id="bob"><?php echo $row3['amount']; ?></td>
+            <td style="color: black;" id="jim"><?php echo $row3['amount']; ?></td>
             <td style="color: black;"><?php echo $row3['time']; ?></td>
             <td style="color: black;"><<?php warning_error($row3['amount']); ?>></td>
         </tr>
