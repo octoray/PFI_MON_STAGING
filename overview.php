@@ -9,7 +9,7 @@
 </script>
 <script type="text/javascript">
 $(document).ready(function(){
-if ($("#bsuc").text() < "100") {
+if ($("#bsuc").text() < "30") {
 $("div").css("background-color", "red");
 };
 });
