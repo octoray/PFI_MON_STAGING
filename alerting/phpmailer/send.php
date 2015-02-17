@@ -6,19 +6,18 @@ $mail = new PHPMailer;
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = '203.199.178.220';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'david.wintour@gmail.com';                 // SMTP username
-$mail->Password = 'Rtfm123456789';                           // SMTP password
+$mail->Username = 'alerts';                 // SMTP username
+$mail->Password = 'alert@123';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
-
-$mail->From = 'david.wintour@gmail.com';
-$mail->FromName = 'test';
+$mail->From = 'info@imimobile.com';
+$mail->FromName = 'info';
 $mail->addAddress('david.wintour@imimobile.com', 'Joe User');     // Add a recipient
 $mail->addAddress('davidwintour@imimobile.com');               // Name is optional
 // $mail->addReplyTo('info@example.com', 'Information');
-$mail->addCC('tsg@imimobile.com');
+$mail->addCC('david.wintour@imimobile.com');
 //$mail->addBCC('bcc@example.com');
 
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
