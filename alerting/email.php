@@ -96,29 +96,28 @@ $mail = new PHPMailer;
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'david.wintour@gmail.com';                 // SMTP username
-$mail->Password = 'Rtfm123456789';                           // SMTP password
-$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                    // TCP port to connect to
-
-$mail->From = 'david.wintour@gmail.com';
-$mail->FromName = 'PFI Monitor';
-$mail->addAddress('david.wintour@imimobile.com', 'Joe User');     // Add a recipient
-//$mail->addAddress('davidwintour@imimobile.com');               // Name is optional
+    $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->Host = '203.199.178.220';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    $mail->Username = 'alerts';                 // SMTP username
+    $mail->Password = 'alert@123';                           // SMTP password
+//$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+//$mail->Port = 587;                                    // TCP port to connect to
+    $mail->From = 'info@imimobile.com';
+    $mail->FromName = 'info';
+    $mail->addAddress('david.wintour@imimobile.com', 'Joe User');     // Add a recipient
+    $mail->addAddress('david.wintour@imimobile.com');               // Name is optional
 // $mail->addReplyTo('info@example.com', 'Information');
-$mail->addCC('tsg@imimobile.com');
+    $mail->addCC('david.wintour@imimobile.com');
 //$mail->addBCC('bcc@example.com');
 
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
+    $mail->isHTML(true);                                   // Set email format to HTML
 
 
 
-$mail->Subject = 'Here is the subject';
+$mail->Subject = 'PFI ALERT';
 $mail->Body    = $body;
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
@@ -136,7 +135,7 @@ if(!$mail->send()) {
 
 
 
-if($amount1 < "1"){
+if($amount1 < "9991"){
     sendemail($email1);
 } else {
     echo "<br>";
@@ -144,21 +143,21 @@ if($amount1 < "1"){
 };
 
 
-if($amount2 < "1"){
+if($amount2 < "9991"){
     sendemail($email2);
 } else {
     echo "<br>";
     echo "nothing to send";
 };
 
-if($amount3 < "10"){
+if($amount3 < "10999"){
     sendemail($email3);
 } else {
     echo "<br>";
     echo "nothing to send";
 };
 
-if($amount4 > "30"){
+if($amount4 > "0"){
     sendemail($email4);
 } else {
     echo "<br>";
@@ -166,7 +165,7 @@ if($amount4 > "30"){
 };
 
 
-if($amount5 < "1"){
+if($amount5 < "10000"){
     sendemail($email5);
 } else {
     echo "<br>";
