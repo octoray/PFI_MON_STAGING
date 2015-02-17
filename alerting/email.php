@@ -105,8 +105,9 @@ $mail = new PHPMailer;
 //$mail->Port = 587;                                    // TCP port to connect to
     $mail->From = 'info@imimobile.com';
     $mail->FromName = 'info';
-    $mail->addAddress('david.wintour@imimobile.com', 'Joe User');     // Add a recipient
-    $mail->addAddress('david.wintour@imimobile.com');               // Name is optional
+    $mail->addAddress('david.wintour@imimobile.com', 'Foobar');     // Add a recipient
+    $mail->addAddress('operations@imimobile.com');               // Name is optional
+    //$mail->addAddress('TSG@imimobile.com');               // Name is optional
 // $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('david.wintour@imimobile.com');
 //$mail->addBCC('bcc@example.com');
@@ -135,7 +136,7 @@ if(!$mail->send()) {
 
 
 
-if($amount1 < "9991"){
+if($amount1 < "1000"){
     sendemail($email1);
 } else {
     echo "<br>";
@@ -143,14 +144,14 @@ if($amount1 < "9991"){
 };
 
 
-if($amount2 < "9991"){
+if($amount2 < "1000"){
     sendemail($email2);
 } else {
     echo "<br>";
     echo "nothing to send";
 };
 
-if($amount3 < "10999"){
+if($amount3 < "10000"){
     sendemail($email3);
 } else {
     echo "<br>";
@@ -165,7 +166,7 @@ if($amount4 > "0"){
 };
 
 
-if($amount5 < "10000"){
+if($amount5 < "1000"){
     sendemail($email5);
 } else {
     echo "<br>";

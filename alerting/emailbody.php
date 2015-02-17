@@ -40,10 +40,10 @@ $email1 =
     }
 
         </style>
-    <title>PFI MonitorEmail</title>
+    <title>PFI Monitor Email</title>
     </head>
-    <body>
-    <h1>PFI Alert Test</h1>
+   <body>
+    <h1>PFI Alert</h1>
     <h2>
     Transaction Count Alert:
     </h2>
@@ -125,10 +125,10 @@ $email2 =
     }
 
         </style>
-    <title>PFI MonitorEmail2</title>
+    <title>PFI Monitor Email</title>
     </head>
-    <body>
-    <h1>PFI Alert Test2</h1>
+   <body>
+    <h1>PFI Alert</h1>
     <h2>
     Transaction Count Alert:
     </h2>
@@ -193,10 +193,10 @@ $email3 =
     }
 
         </style>
-    <title>PFI MonitorEmail</title>
+    <title>PFI Monitor Email</title>
     </head>
-    <body>
-    <h1>PFI Alert Test</h1>
+   <body>
+    <h1>PFI Alert</h1>
     <h2>
     Transaction Count Alert:
     </h2>
@@ -259,10 +259,10 @@ $email4 =
     }
 
         </style>
-    <title>PFI MonitorEmail</title>
+    <title>PFI Monitor Email</title>
     </head>
    <body>
-    <h1>PFI Alert Test</h1>
+    <h1>PFI Alert</h1>
     <h2>
     Transaction Count Alert:
     </h2>
@@ -326,10 +326,10 @@ $email5 =
     }
 
         </style>
-    <title>PFI MonitorEmail</title>
+    <title>PFI Monitor Email</title>
     </head>
    <body>
-    <h1>PFI Alert Test</h1>
+    <h1>PFI Alert</h1>
     <h2>
     Transaction Count Alert:
     </h2>
