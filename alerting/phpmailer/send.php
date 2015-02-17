@@ -10,8 +10,8 @@ $mail->Host = '203.199.178.220';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'alerts';                 // SMTP username
 $mail->Password = 'alert@123';                           // SMTP password
-$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                    // TCP port to connect to
+//$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+//$mail->Port = 587;                                    // TCP port to connect to
 $mail->From = 'info@imimobile.com';
 $mail->FromName = 'info';
 $mail->addAddress('david.wintour@imimobile.com', 'Joe User');     // Add a recipient
