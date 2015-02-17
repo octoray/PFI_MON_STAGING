@@ -15,7 +15,7 @@ $mail->Password = 'alert@123';                           // SMTP password
 $mail->From = 'info@imimobile.com';
 $mail->FromName = 'info';
 $mail->addAddress('david.wintour@imimobile.com', 'Joe User');     // Add a recipient
-$mail->addAddress('davidwintour@imimobile.com');               // Name is optional
+$mail->addAddress('david.wintour@imimobile.com');               // Name is optional
 // $mail->addReplyTo('info@example.com', 'Information');
 $mail->addCC('david.wintour@imimobile.com');
 //$mail->addBCC('bcc@example.com');
