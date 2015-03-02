@@ -42,7 +42,7 @@ while ($row2 = mysql_fetch_assoc($result2)) {
     $r2[] = $row2;
 }
 $amount2 = $r2[0]['amount'];
-$word2 = 'NO Successfull PFI Screenshots in last 45 minutes!';
+$word2 = 'NO Successfull PFI Screenshots in last 60 minutes!';
 
 
 
@@ -69,7 +69,7 @@ while ($row4 = mysql_fetch_assoc($result4)) {
     $r4[] = $row4;
 }
 $amount4 = $r4[0]['amount'];
-$word4 = 'PFI Pending Transaction count high! '.$amount4.' in last 45 minutes!';
+$word4 = 'PFI Pending Transaction count high! '.$amount4.' in last 60 minutes!';
 
 
 
