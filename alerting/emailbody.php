@@ -55,7 +55,7 @@ $email1 =
     SELECT  top 100
 		pfi.id,
 		pfi.msisdn,
-		stat1.Description as 2Flow Type",
+		stat1.Description as "Flow Type",
 		stat2.Description as "Transaction Status",
 		stat3.Description as "MNO",
 		pfi.created,
