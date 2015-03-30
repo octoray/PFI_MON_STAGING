@@ -30,6 +30,34 @@
                         "value": "'.$c1_amount1.'"
                     },
                     {
+                        "label": "-2 Days",
+                        "value": "'.$c1_amount1.'"
+                    },
+                    {
+                        "label": "-2 Days",
+                        "value": "'.$c1_amount1.'"
+                    },
+                    {
+                        "label": "-2 Days",
+                        "value": "'.$c1_amount1.'"
+                    },
+                    {
+                        "label": "-2 Days",
+                        "value": "'.$c1_amount1.'"
+                    },
+                    {
+                        "label": "-2 Days",
+                        "value": "'.$c1_amount1.'"
+                    },
+                    {
+                        "label": "-2 Days",
+                        "value": "'.$c1_amount1.'"
+                    },
+                    {
+                        "label": "-2 Days",
+                        "value": "'.$c1_amount1.'"
+                    },
+                    {
                         "label": "-1 Days",
                         "value": "'.$c2_amount1.'"
                     },
