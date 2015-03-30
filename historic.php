@@ -66,7 +66,7 @@
 <br><BR>
     <form method="post" action="<?php echo $PHP_SELF;?>" style="color: #000000">
         <select name="opt">
-            <option value="1">Billed Successfully</option>
+            <option value="6">Billed Successfully</option>
             <option value="2">Submitted Charge, No Response</option>
             <option value="3">Unkown Error</option>
             <option value="4">Processing Payment, Pending</option>
