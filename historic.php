@@ -111,8 +111,8 @@
     <br>
     <br>
     <?php if(isset($opt))
-        echo  '<div id="chartContainer_header" align="center" class="chart2"> Historic </div><div id="chartContainer" align="center"></div>';
-  // echo  '<div id="chartContainer" align="center"></div>';
+        echo  '<div id="chartContainer_header" align="center" class="chart2"> Historic </div>';
+   echo  '<div id="chartContainer" align="center"></div>';
    ?>
 
 </div>
