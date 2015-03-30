@@ -23,7 +23,7 @@
         <li><a href="/imsi.php" style="text-decoration: none" >IMSI</a></li>
         <li><a href="/stop.php" style="text-decoration: none" >STOPS</a></li>
         <li><a href="/notif.php" style="text-decoration: none" >Notifications</a></li>
-        <li><a href="/merchants.php" style="text-decoration: none" >Merchants</a></li>
+        <li><a href="/historic.php" style="text-decoration: none" >Historic</a></li>
         <li><a href="/marketing.php" style="text-decoration: none" >Marketing</a></li>
         <li><a href="/sites.php" style="text-decoration: none" >Sites</a></li>
         <li><a href="/servers.php" style="text-decoration: none" >Servers</a></li>
