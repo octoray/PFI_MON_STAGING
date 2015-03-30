@@ -77,7 +77,8 @@
         <input type=submit value="Go">
     </form>
 <br>
-
+    <br>
+    <br>
     <?php if(isset($opt))
         echo  '<div id="chartContainer_header" align="center" class="chart2"> Billed Successfully Last Hour </div>';
    echo  '<div id="chartContainer" align="center"></div>';

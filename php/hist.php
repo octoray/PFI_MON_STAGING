@@ -11,7 +11,7 @@ or die("Unable to connect to MySQL");
 mysql_select_db("PFI_MON") or die(mysql_error());
 $r1 = array();
 // chart1
-$result1 = mysql_query('SELECT 	SUM(amount) as amount FROM `PFI_MON`.`overview_count` WHERE STATUS = "'.$var1.'" AND TIME >= SYSDATE() - INTERVAL 1 DAY;')
+$result1 = mysql_query('SELECT 	SUM(amount) AS amount FROM `PFI_MON`.`overview_count` WHERE STATUS = "'.$var1.'" AND TIME >= SYSDATE() - INTERVAL 2 DAY AND TIME <= SYSDATE() - INTERVAL 1 DAY;')
 or die(mysql_error());
 
 // store the record of the "example" table into $row
