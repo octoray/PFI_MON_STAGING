@@ -145,7 +145,7 @@ table {
 table, th, td {
     border: 1px solid deepskyblue;
     border-collapse: collapse;
-    color: white;
+    color: #000000;
 }
 th, td {
     padding: 3px;
