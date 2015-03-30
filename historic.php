@@ -10,9 +10,9 @@
             dataFormat: "json",
             dataSource: {
                 "chart": {
-                    "caption": "ESC Transactions Last Hour",
+                    "caption": "Historic",
                     "subCaption": "",
-                    "xAxisName": "Time",
+                    "xAxisName": "Day",
                     "yAxisName": "Amount",
                     "canvasBgAlpha": "0",
                     "logoURL": "/images/Vitruvian_Man_Outline_50x50.png",
@@ -80,7 +80,7 @@
     <br>
     <br>
     <?php if(isset($opt))
-        echo  '<div id="chartContainer_header" align="center" class="chart2"> Billed Successfully Last Hour </div>';
+        echo  '<div id="chartContainer_header" align="center" class="chart2"> Historic </div>';
    echo  '<div id="chartContainer" align="center"></div>';
    ?>
 
