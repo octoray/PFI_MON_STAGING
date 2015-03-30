@@ -88,7 +88,7 @@ a#cont_body {
 ul#menu li {
     display:inline;
     list-style-type: none;
-    color: white;
+    color: gray;
     margin: 0;
 
     padding: 6px;
@@ -145,7 +145,7 @@ table {
 table, th, td {
     border: 1px solid deepskyblue;
     border-collapse: collapse;
-    color: #000000;
+    color: white;
 }
 th, td {
     padding: 3px;
