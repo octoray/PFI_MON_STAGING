@@ -170,6 +170,23 @@ input, select{
     color: #000000;
 }
 
-#example {
-    color: #0000ff;
+
+
+a:link {
+    color: #ffffff;
+}
+
+/* visited link */
+a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+a:hover {
+    color: greenyellow;
+}
+
+/* selected link */
+a:active {
+    color: #ffffff;
 }
