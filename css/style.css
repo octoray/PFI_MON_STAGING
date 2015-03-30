@@ -163,9 +163,13 @@ table#t01 th	{
 }
 
 textarea{
-    color: grey;
+    color: #000000;
 }
 
 input, select{
     color: #000000;
+}
+
+#example {
+    color: #0000ff;
 }
