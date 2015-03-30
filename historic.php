@@ -81,6 +81,10 @@
     $serv=$_POST['serv'];
     $id=$_POST['id'];
     echo 'You selected Service '.$serv.' with ID '.$id;
+    echo '<br>';
+    echo 'bob';
+    echo '<br>';
+    print_r($_POST);
     ?>
 
 
