@@ -2,7 +2,7 @@
 $username = "pfimonuser";
 $password = "Fa6rUCha";
 $hostname = "localhost";
-
+$var1 = $_POST['opt'];
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password)
 or die("Unable to connect to MySQL");
@@ -11,7 +11,7 @@ or die("Unable to connect to MySQL");
 mysql_select_db("PFI_MON") or die(mysql_error());
 $r1 = array();
 // chart1
-$result1 = mysql_query('SELECT 	SUM(amount) as amount FROM `PFI_MON`.`overview_count` WHERE STATUS = "'.$_POST['opt'].'" AND TIME >= SYSDATE() - INTERVAL 1 DAY;')
+$result1 = mysql_query('SELECT 	SUM(amount) as amount FROM `PFI_MON`.`overview_count` WHERE STATUS = "'.$var1.'" AND TIME >= SYSDATE() - INTERVAL 1 DAY;')
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -26,7 +26,7 @@ $c1_amount1 = $r1[0]['amount'];
 
 // chart2
 $r2 = array();
-$result2 = mysql_query('SELECT 	SUM(amount) AS amount FROM `PFI_MON`.`overview_count` WHERE STATUS = "'.$_POST['opt'].'" AND TIME >= SYSDATE() - INTERVAL 2 DAY AND TIME <= SYSDATE() - INTERVAL 1 DAY;')
+$result2 = mysql_query('SELECT 	SUM(amount) AS amount FROM `PFI_MON`.`overview_count` WHERE STATUS = "'.$var1.'" AND TIME >= SYSDATE() - INTERVAL 2 DAY AND TIME <= SYSDATE() - INTERVAL 1 DAY;')
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -40,7 +40,7 @@ $c2_amount1 = $r2[0]['amount'];
 
 // chart3
 $r3 = array();
-$result3 = mysql_query('SELECT 	SUM(amount) AS amount FROM `PFI_MON`.`overview_count` WHERE STATUS = "'.$_POST['opt'].'" AND TIME >= SYSDATE() - INTERVAL 3 DAY AND TIME <= SYSDATE() - INTERVAL 2 DAY;')
+$result3 = mysql_query('SELECT 	SUM(amount) AS amount FROM `PFI_MON`.`overview_count` WHERE STATUS = "'.$var1.'" AND TIME >= SYSDATE() - INTERVAL 3 DAY AND TIME <= SYSDATE() - INTERVAL 2 DAY;')
 or die(mysql_error());
 
 // store the record of the "example" table into $row
