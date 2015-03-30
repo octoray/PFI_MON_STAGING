@@ -1,5 +1,5 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
-<?php require("./php/hist.php"); ?>
+
 <script type="text/javascript">
    <?php echo 'FusionCharts.ready(function(){
         var revenueChart = new FusionCharts({
