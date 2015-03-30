@@ -26,31 +26,31 @@
                 },
                 "data": [
                     {
-                        "label": "-2 Days",
+                        "label": "-9 Days",
+                        "value": "'.$c2_amount1.'"
+                    },
+                    {
+                        "label": "-8 Days",
                         "value": "'.$c1_amount1.'"
                     },
                     {
-                        "label": "-2 Days",
+                        "label": "-7 Days",
+                        "value": "'.$c3_amount1.'"
+                    },
+                    {
+                        "label": "-6 Days",
                         "value": "'.$c1_amount1.'"
                     },
                     {
-                        "label": "-2 Days",
+                        "label": "-5 Days",
+                        "value": "'.$c2_amount1.'"
+                    },
+                    {
+                        "label": "-4 Days",
                         "value": "'.$c1_amount1.'"
                     },
                     {
-                        "label": "-2 Days",
-                        "value": "'.$c1_amount1.'"
-                    },
-                    {
-                        "label": "-2 Days",
-                        "value": "'.$c1_amount1.'"
-                    },
-                    {
-                        "label": "-2 Days",
-                        "value": "'.$c1_amount1.'"
-                    },
-                    {
-                        "label": "-2 Days",
+                        "label": "-3 Days",
                         "value": "'.$c1_amount1.'"
                     },
                     {
