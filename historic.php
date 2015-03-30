@@ -1,5 +1,5 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
-
+<?php require("./php/hist.php"); ?>
 <script type="text/javascript">
    <?php echo 'FusionCharts.ready(function(){
         var revenueChart = new FusionCharts({
@@ -77,10 +77,7 @@
         <input type=submit value="Go">
     </form>
 <br>
-    <?php if(isset($_POST['opt']))
-        echo  '<div id="chartContainer_header" align="center" class="chart2"> Billed Successfully Last Hour </div>'
-   echo  '<div id="chartContainer" align="center"></div>'
-   ?>
+
 
 
 </div>
