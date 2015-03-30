@@ -66,12 +66,12 @@
 <br><BR>
     <form method="post" action="<?php echo $PHP_SELF;?>" style="color: #000000">
         <select name="opt">
-            <option value="6">Billed Successfully</option>
-            <option value="2">Submitted Charge, No Response</option>
-            <option value="3">Unkown Error</option>
-            <option value="4">Processing Payment, Pending</option>
-            <option value="5">Failed At Network</option>
-            <option value="600">Network Error</option>
+            <option value="6" id="hist">Billed Successfully</option>
+            <option value="2" id="hist">Submitted Charge, No Response</option>
+            <option value="3" id="hist">Unkown Error</option>
+            <option value="4" id="hist">Processing Payment, Pending</option>
+            <option value="5" id="hist">Failed At Network</option>
+            <option value="600" id="hist">Network Error</option>
         </select>
 
         <input type=submit value="Go">
