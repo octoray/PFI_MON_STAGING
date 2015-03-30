@@ -64,7 +64,7 @@
 
 <div class="wrapper">
 <br><BR>
-    <form method="post" action="<?php echo $PHP_SELF;?>">
+    <form method="post" action="<?php echo $PHP_SELF;?>" style="color: #000000">
         <select name="opt">
             <option value="1">Billed Successfully</option>
             <option value="2">Submitted Charge, No Response</option>
@@ -73,7 +73,7 @@
             <option value="5">Failed At Network</option>
             <option value="600">Network Error</option>
         </select>
-        <input type=text name=id>
+
         <input type=submit value="Go">
     </form>
 
