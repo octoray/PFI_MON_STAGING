@@ -27,15 +27,15 @@
                 "data": [
                     {
                         "label": "-2 Days",
-                        "value": "'.$c1_amount3.'"
+                        "value": "'.$c1_amount1.'"
                     },
                     {
                         "label": "-1 Days",
-                        "value": "'.$c1_amount2.'"
+                        "value": "'.$c2_amount1.'"
                     },
                     {
                         "label": "Past 24 hours",
-                        "value": "'.$c1_amount1.'"
+                        "value": "'.$c3_amount1.'"
                     }
                    ],
    "trendlines": [
