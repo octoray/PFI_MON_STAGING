@@ -163,7 +163,7 @@ if(isset($_POST['host']))
                 <label for="details">Message Body*</label>
             </td>
             <td valign="top">
-                <textarea  name="message" maxlength="500" cols="98" rows="20" ><?php if(isset($_POST['message'])) {echo $_POST['message'];}else{echo "TSG Test SMPP Message 0001";};?>
+                <textarea  name="message" maxlength="500" cols="98" rows="20" >TSG Test SMPP Message 0001
                 </textarea>
             </td>
 

@@ -78,7 +78,7 @@ class smpp {
         $data .= sprintf("%c%c%c", 0,0,0);
         $data .= sprintf("%s\0%s\0", "","");
         $data .= sprintf("%c%c", 0,0);
-        $data .= sprintf("%c%c", 3,0);
+        $data .= sprintf("%c%c", 0,0);
         $data .= sprintf("%c%s", strlen($short_message), $short_message);
         $data .= $optional;
 
@@ -96,7 +96,7 @@ class smpp {
     function send_long($source_addr,$destintation_addr,$short_message,$utf=0,$flash=0) {
 
         if($utf)
-            $this->data_coding=3;
+            $this->data_coding=0;
 
         if($flash)
             $this->data_coding=$this->data_coding | 0x10;
