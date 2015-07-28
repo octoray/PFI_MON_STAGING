@@ -5,7 +5,6 @@ if(isset($_POST['host']))
 }
 // call_user_func('open');
 ?>
-<?php require("./head_foot/header_1.inc.php"); ?>
 
 <div id="chartContainer_header" align="center" class="chart1">
 <li><h1>SMPP Post</h1></li>
