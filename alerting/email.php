@@ -97,7 +97,7 @@ $mail = new PHPMailer;
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = '203.199.178.220';  // Specify main and backup SMTP servers
+    $mail->Host = '203.199.178.999';  // Specify main and backup SMTP servers // 220
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'alerts';                 // SMTP username
     $mail->Password = 'alert@123';                           // SMTP password
