@@ -152,7 +152,7 @@ curl_setopt($ch, CURLOPT_POST, 1);
 
 $post = array(
     'User'=>('david'),
-    'Password'=>('david'),
+    'Password'=>('david12345'),
     'RequestID'=>('123456789'),
     'TargetURL'=>('http://172.16.10.31:8081/win-smsgwweb/winmt'),
     'WIN_XML'=>($xml)
