@@ -106,7 +106,7 @@ $mail = new PHPMailer;
     $mail->From = 'pfiinfo@imimobile.com';
     $mail->FromName = 'PFI Alert';
     $mail->addAddress('david.wintour@imimobile.com', 'Foobar');     // Add a recipient
-    $mail->addAddress('operations@imimobile.com');]#               // Name is optional
+    $mail->addAddress('operations@imimobile.com');             // Name is optional
     $mail->addAddress('tsg@imimobile.com');
     //$mail->addAddress('TSG@imimobile.com');               // Name is optional
 // $mail->addReplyTo('info@example.com', 'Information');
