@@ -103,10 +103,11 @@ $mail = new PHPMailer;
     $mail->Password = 'alert@123';                           // SMTP password
 //$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 //$mail->Port = 587;                                    // TCP port to connect to
-    $mail->From = 'info@imimobile.com';
-    $mail->FromName = 'info';
+    $mail->From = 'pfiinfo@imimobile.com';
+    $mail->FromName = 'PFI Alert';
     $mail->addAddress('david.wintour@imimobile.com', 'Foobar');     // Add a recipient
-    $mail->addAddress('operations@imimobile.com');               // Name is optional
+    $mail->addAddress('operations@imimobile.com');]#               // Name is optional
+    $mail->addAddress('tsg@imimobile.com');
     //$mail->addAddress('TSG@imimobile.com');               // Name is optional
 // $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('david.wintour@imimobile.com');
