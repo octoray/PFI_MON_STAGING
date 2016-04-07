@@ -14,7 +14,7 @@ or die("Unable to connect to MySQL");
 mysql_select_db("PFI_MON") or die(mysql_error());
 $r1 = array();
 // chart1
-$result1 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_count` WHERE STATUS = '6' AND TIME >= NOW() - INTERVAL 45 MINUTE;")
+$result1 = mysql_query("SELECT SUM(amount) AS 'amount' FROM  `PFI_MON`.`overview_count` WHERE STATUS = '6' AND TIME >= NOW() - INTERVAL 33 MINUTE;")
 or die(mysql_error());
 
 // store the record of the "example" table into $row
@@ -152,7 +152,7 @@ curl_setopt($ch, CURLOPT_POST, 1);
 
 $post = array(
     'User'=>('david'),
-    'Password'=>('david12345'),
+    'Password'=>('david'),
     'RequestID'=>('123456789'),
     'TargetURL'=>('http://172.16.10.31:8081/win-smsgwweb/winmt'),
     'WIN_XML'=>($xml)
@@ -173,6 +173,8 @@ echo $info['request_header'];
 echo '<br>';
 
 echo $runy;
+echo '<br>';
+echo $info;
 }
 
 
@@ -186,17 +188,17 @@ echo $runy;
 
 
 
-if($amount2 < "1"){
-    sendmessage($new2);
-    } else {
-    echo "nothing to send";
-};
+//if($amount2 < "1"){
+//    sendmessage($new2);
+ //   } else {
+ //   echo "nothing to send";
+//};
 
-if($amount3 < "1"){
-    sendmessage($new3);
-} else {
-    echo "nothing to send";
-};
+//if($amount3 < "1"){
+//    sendmessage($new3);
+//} else {
+//    echo "nothing to send";
+//};
 
 if($amount4 > "29"){
     sendmessage($new4);
