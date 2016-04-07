@@ -144,19 +144,19 @@ if($amount1 < "1"){
 };
 
 
-if($amount2 < "1"){
-    sendemail($email2);
-} else {
-    echo "<br>";
-    echo "nothing to send";
-};
+//if($amount2 < "1"){
+//    sendemail($email2);
+//} else {
+//    echo "<br>";
+//    echo "nothing to send";
+//};
 
-if($amount3 < "10"){
-    sendemail($email3);
-} else {
-    echo "<br>";
-    echo "nothing to send";
-};
+//if($amount3 < "10"){
+//    sendemail($email3);
+//} else {
+ //   echo "<br>";
+//    echo "nothing to send";
+//};
 
 if($amount4 > "30"){
     sendemail($email4);
