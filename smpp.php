@@ -210,14 +210,6 @@ if(isset($_POST['host']))
         </td>
     </tr>
 
-    <tr>
-        <td valign="top">
-            <label for="details">Result</label>
-        </td>
-        <td valign="top">
-            <textarea  name="details" maxlength="1000" cols="80" rows="8"><?php print_r($pdu);?></textarea>
-        </td>
-    </tr>
 
     <tr>
         <td valign="top">
