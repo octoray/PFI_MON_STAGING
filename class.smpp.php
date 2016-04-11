@@ -76,7 +76,7 @@ class smpp {
         $data .= sprintf("%c%c%s\0", $_POST['source_addr_ton'], $_POST['source_addr_npi'],$source_addr);
         $data .= sprintf("%c%c%s\0", $_POST['dest_addr_ton'], $_POST['dest_addr_npi'],$destintation_addr);
         $data .= sprintf("%c%c%c", 0,0,0);
-        $data .= sprintf("%s\0%s\0", "","10"); // sched deliverys
+        $data .= sprintf("%s\0%s\0", "",$_POST['validity']); // validity
         $data .= sprintf("%c%c", 0,0);
         $data .= sprintf("%c%c", 0,0);
         $data .= sprintf("%c%s", strlen($short_message), $short_message);
