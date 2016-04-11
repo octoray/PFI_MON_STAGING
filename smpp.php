@@ -141,10 +141,11 @@ if(isset($_POST['host']))
 
         <tr>
             <td valign="top">
-                <label for="ip">validity in Relative *</label> 000000000000000
+                <label for="ip">valid in Relative*</label>
+
             </td>
             <td valign="top">
-                <input  type="text" name="validity" maxlength="80" size="20" value="<?php if(isset($_POST['validity'])) {echo $_POST['validity'];}else{echo "000000010000000";};?>">
+                <input  type="text" name="validity" maxlength="80" size="20" value="<?php if(isset($_POST['validity'])) {echo $_POST['validity'];}else{echo "160411121000000";};?>">
             </td>
         </tr>
 
