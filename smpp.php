@@ -151,6 +151,16 @@ if(isset($_POST['host']))
 
         <tr>
             <td valign="top">
+                <label for="ip">Optional*</label>
+
+            </td>
+            <td valign="top">
+                <input  type="text" name="optional" maxlength="80" size="20" value="<?php if(isset($_POST['optional'])) {echo $_POST['optional'];}else{echo "";};?>">
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="top">
                 <label for="ip">Bind Type*</label>
             </td>
             <td valign="top">
