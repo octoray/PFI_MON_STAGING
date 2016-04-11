@@ -54,7 +54,7 @@ if(isset($_POST['host']))
                 <label for="ip">System Type*</label>
             </td>
             <td valign="top">
-                <input  type="text" name="system_type" maxlength="80" size="50" value="<?php if(isset($_POST['system_type'])) {echo $_POST['system_type'];}else{echo "SMPP";};?>">Always "smpp" or null value<br><br><br>
+                <input  type="text" name="system_type" maxlength="80" size="50" value="<?php if(isset($_POST['system_type'])) {echo $_POST['system_type'];}else{echo "SMPP";};?>">value<br><br><br>
             </td>
         </tr>
 
@@ -145,7 +145,7 @@ if(isset($_POST['host']))
 
             </td>
             <td valign="top">
-                <input  type="text" name="validity" maxlength="80" size="20" value="<?php if(isset($_POST['validity'])) {echo $_POST['validity'];}else{echo "160411121000000";};?>">
+                <input  type="text" name="validity" maxlength="80" size="20" value="<?php if(isset($_POST['validity'])) {echo $_POST['validity'];}else{echo "000000000300000R";};?>"> 3 mins set default
             </td>
         </tr>
 
