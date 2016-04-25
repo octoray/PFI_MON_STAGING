@@ -69,7 +69,7 @@ if(isset($_POST['host']))
 
         <tr>
             <td valign="top">
-                <label for="ip">Destiantion*</label>
+                <label for="ip">Destination*</label>
             </td>
             <td valign="top">
                 <input  type="text" name="dst" maxlength="80" size="50" value="<?php if(isset($_POST['dst'])) {echo $_POST['dst'];}else{echo "447778045512";};?>"><br><br><br>
