@@ -2,7 +2,7 @@
 
 $username = "pfimonuser";
 $password = "Fa6rUCha";
-$hostname = "localhost";
+$hostname = "changed"; //disabled here. put back to "localhost"
 
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password)
