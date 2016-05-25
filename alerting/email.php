@@ -86,7 +86,18 @@ $amount5 = $r5[0]['amount'];
 $word5 = 'no mt delivered last hour';
 
 
+//WINPLC MAIL
+//mail.from=ngmp-report@winplc.com
+//mail.username=ngmp-report
+//mail.password=j6Zub4as
+// mail.host=192.168.60.103
 
+//HYDB MAIL
+//mail.from=info@imimobile.com
+//mail.host ="203.199.178.220"
+//mail.auth = true
+//mail.user ="alerts"
+//mail.password ="alert@123"
 
 
 
