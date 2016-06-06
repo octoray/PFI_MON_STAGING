@@ -22,14 +22,14 @@ function sendemail($body) {
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = '192.168.60.103';  // Specify main and backup SMTP servers // 220
+    $mail->Host = '203.199.178.220';  // Specify main and backup SMTP servers // 220
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'ngmp-report';                 // SMTP username
-    $mail->Password = 'j6Zub4as';                           // SMTP password
+    $mail->Username = 'alerts';                 // SMTP username
+    $mail->Password = 'alert@123';                           // SMTP password
 //$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 //$mail->Port = 587;                                    // TCP port to connect to
-    $mail->From = 'report@winplc.com';
-    $mail->FromName = 'PFI Alert';
+    $mail->From = 'alerts@imimobile.com';
+    // $mail->FromName = 'alerts@imimobile.com';
     $mail->addAddress('david.wintour@imimobile.com', 'Foobar');     // Add a recipient
     //$mail->addAddress('TSG@imimobile.com');               // Name is optional
 // $mail->addReplyTo('info@example.com', 'Information');
