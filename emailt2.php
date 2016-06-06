@@ -33,6 +33,6 @@ if(!$mail->send()) {
     echo "<br>";
     echo $body;
     echo "<br>";
-}};
+};
 sendemail($body1);
 ?>
