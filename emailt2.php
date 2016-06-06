@@ -3,7 +3,7 @@ require("./PHPMailerAutoload.php");
 
 $body1 = "Please see attached files test Night watch that had errors"
 
-function sendemail($body) {
+function sendemail() {
     $mail = new PHPMailer;
     //$mail->SMTPDebug = 3; // Enable verbose debug output
     $mail->isSMTP(); // Set mailer to use SMTP
@@ -23,7 +23,7 @@ function sendemail($body) {
     $mail->isHTML(true);
 // Set email format to HTML
 $mail->Subject = 'Test Nightwatch';
-$mail->Body = $body;
+$mail->Body = "test123";
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 if(!$mail->send()) {
     echo 'Message could not be sent.';
@@ -31,7 +31,7 @@ if(!$mail->send()) {
 } else {
     echo 'Message has been sent';
     echo "<br>";
-    echo $body;
+    echo "mehhh";
     echo "<br>";
 };
 sendemail($body1);
