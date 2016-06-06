@@ -1,6 +1,6 @@
 <?php
 
-require("./PHPMailerAutoload.php");
+require("./alerting/phpmailer/PHPMailerAutoload.php");
 
 function sendemail($body) {
 
