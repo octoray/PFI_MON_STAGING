@@ -3,7 +3,7 @@
 <head>
     <title>PFI Monitor2</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/style2.css" type="text/css">
 </head>
 <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
 <script type="text/javascript" src="fusioncharts/fusioncharts.charts.js"></script>
