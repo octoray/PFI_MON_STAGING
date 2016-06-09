@@ -14,7 +14,7 @@
 <script src="/js/jquery-2.1.1.min.js"></script>
 
 <body> <!-- onload="JavaScript:AutoRefresh(5000);"> -->
-<a href="/" id="banner"><img src="/images/Logo.png" alt="banner" class="banner"></a>
+<a href="/" id="banner"><img src="/images/ogo.png" alt="banner" class="banner"></a>
 <div id="topbanner">
     <ul id="menu">
         <li><a href="/overview.php" style="text-decoration: none" >Overview</a></li>
