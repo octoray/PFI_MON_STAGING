@@ -147,6 +147,8 @@ table, th, td {
     border-collapse: collapse;
     color: white;
 }
+
+
 th, td {
     padding: 3px;
     text-align: left;
