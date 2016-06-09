@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    font-family: Trebuchet MS;
+    font-size: 12px;
+
+}
+
+html,body {
+    font-family: Trebuchet MS;
+    background-image: url('/images/footer_lodyas.png');
+    color: white;
+    height: 100%;
+}
+
+h1 {
+    font-family: Trebuchet MS;
+    color: deepskyblue;
+    text-align: center;
+}
+
+p {
+    font-family: Trebuchet MS;
+    font-size: 15px;
+}
+
+
+
+
+#topbanner
+{
+
+    font-family: Trebuchet MS;
+    text-align: center;
+    color: white;
+    background-color: ThreeDDarkShadow;
+    margin-top: 1%;
+    width: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+#lowerbanner
+{
+
+    font-family: Trebuchet MS;
+    text-align: center;
+    color: white;
+    background-color: #d6da2d;
+    width: auto;
+    padding-bottom: 1px;
+    padding-top: 2px;
+
+}
+
+
+.wrapper {
+    font-family: Trebuchet MS;
+    #min-height: 50%;
+    height: auto;
+    height: 80%;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: center;
+    background-color: #000000;
+
+}
+
+
+
+a#cont_body {
+    font-family: Trebuchet MS;
+    color: black;
+
+}
+
+.footer{
+    font-family: Trebuchet MS;
+    height: 5em;
+    border-top-style: solid;
+    border-color: #d6da2d;
+    font-size: 9px;
+    color: #ffffff;
+    padding-top: 40px;
+    margin: 0 auto -4em;
+    background-image: url('/images/footer_lodyas.png');
+}
+
+ul#menu li {
+    display:inline;
+    list-style-type: none;
+    color: white;
+    margin: 0;
+
+    padding: 6px;
+}
+
+
+
+img.banner
+{
+    width: 10%;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 5px;
+}
+
+p.date {
+    text-align: center;
+}
+
+b {
+    font-weight: bold;
+    color: lawngreen;
+}
+
+#chartContainer_header{
+    background-image: url('/images/footer_lodyas.png');
+    color: greenyellow;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px;
+    border-style: solid;
+    border-color: grey;
+
+}
+
+table {
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    font-size: 17px;
+
+}
+
+table, th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    color: white;
+}
+
+
+th, td {
+    padding: 3px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: ThreeDDarkShadow;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: ThreeDDarkShadow;
+}
+table#t01 th	{
+    color: greenyellow;
+    background-image: url('/images/footer_lodyas.png');
+}
+
+textarea{
+    color: #000000;
+}
+
+input, select{
+    color: #000000;
+}
+
+
+
+a:link {
+    color: #ffffff;
+}
+
+/* visited link */
+a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+a:hover {
+    color: greenyellow;
+}
+
+/* selected link */
+a:active {
+    color: #ffffff;
+}
