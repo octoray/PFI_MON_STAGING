@@ -45,7 +45,7 @@ p {
     font-family: Trebuchet MS;
     text-align: center;
     color: white;
-    background-color: deepskyblue;
+    background-color: #d6da2d;
     width: auto;
     padding-bottom: 1px;
     padding-top: 2px;
@@ -77,7 +77,7 @@ a#cont_body {
     font-family: Trebuchet MS;
     height: 5em;
     border-top-style: solid;
-    border-color: deepskyblue;
+    border-color: #d6da2d;
     font-size: 9px;
     color: #ffffff;
     padding-top: 40px;
@@ -98,7 +98,7 @@ ul#menu li {
 
 img.banner
 {
-    width: 20%;
+    width: 10%;
     padding-left: 5%;
     padding-top: 1%;
 }
@@ -143,7 +143,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid deepskyblue;
+    border: 1px solid #d6da2d;
     border-collapse: collapse;
     color: white;
 }
