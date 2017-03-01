@@ -70,7 +70,7 @@ class smpp {
         return ($ret['status']==0);
     }
 
-    function submit_sm($source_addr,$destintation_addr,$short_message,$optional='test') {
+    function submit_sm($source_addr,$destintation_addr,$short_message,$optional='') {
 
         $data  = sprintf("%s\0", "");
         $data .= sprintf("%c%c%s\0", $_POST['source_addr_ton'], $_POST['source_addr_npi'],$source_addr);
@@ -117,10 +117,12 @@ class smpp {
             for($sar_segment_seqnum=1; $sar_segment_seqnum<=$sar_total_segments; $sar_segment_seqnum++) {
                 $part = substr($short_message, 0 ,130);
                 $short_message = substr($short_message, 130);
+                $prakash = 'test';
 
                 $optional  = pack('nnn', 0x020C, 2, $sar_msg_ref_num);
                 $optional .= pack('nnc', 0x020E, 1, $sar_total_segments);
                 $optional .= pack('nnc', 0x020F, 1, $sar_segment_seqnum);
+                $optional .= pack('nnc', 0x020F, 1, $prakash);
 
                 if ($this->submit_sm($source_addr,$destintation_addr,$part,$optional)===false)
                     return false;
