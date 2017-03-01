@@ -16,6 +16,7 @@ $s->open($host, $port, $system_id, $password);
 //$message = iconv('Windows-1256','UTF-16BE',$message);
 $message = iconv('UTF-8','ISO-8859-1',$message);
 $s->send_long($src, $dst, $message);
+const MESSAGE_PAYLOAD = 0x0424;
 
 
 // $utf = true;
@@ -122,8 +123,8 @@ class smpp {
                 $optional  = pack('nnn', 0x020C, 2, $sar_msg_ref_num);
                 $optional .= pack('nnc', 0x020E, 1, $sar_total_segments);
                 $optional .= pack('nnc', 0x020F, 1, $sar_segment_seqnum);
-                $optional .= pack('nnc', 0x0424, 3, $prakash, $prakash);
-                $optional .= pack('nnc', 0x0421, 2, $prakash);
+                $optional .= new SmppTag(SmppTag::MESSAGE_PAYLOAD, $prakash, strlen($prakash));
+               // $optional .= pack('nnc', 0x0424, 3, $prakash, $prakash);
 
                 if ($this->submit_sm($source_addr,$destintation_addr,$part,$optional)===false)
                     return false;
