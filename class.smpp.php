@@ -70,7 +70,7 @@ class smpp {
         return ($ret['status']==0);
     }
 
-    function submit_sm($source_addr,$destintation_addr,$short_message,$optional='') {
+    function submit_sm($source_addr,$destintation_addr,$short_message,$optional=$short_message) {
 
         $data  = sprintf("%s\0", "");
         $data .= sprintf("%c%c%s\0", $_POST['source_addr_ton'], $_POST['source_addr_npi'],$source_addr);
@@ -79,7 +79,7 @@ class smpp {
         $data .= sprintf("%s\0%s\0", "",$_POST['validity']); // validity
         $data .= sprintf("%c%c", 0,0);
         $data .= sprintf("%c%c", 0,0);
-        $data .= sprintf("%c%s", strlen($short_message), $short_message);
+        //$data .= sprintf("%c%s", strlen($short_message), $short_message);
         $data .= $optional;
         // $data .= $_POST['optional'];
         //$data .= sprintf("%c%c%s\0", "123", "321", "456");
