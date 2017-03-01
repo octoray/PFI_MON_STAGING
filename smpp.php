@@ -14,8 +14,8 @@ if(isset($_POST['host']))
 <div id="chartContainer_header" align="center" class="chart1">
 <div class="jumbotron">
       <div class="container">
-        <h1>SMPP</h1>
-        <p>SMPP PHP tool for testing SMPP protocol</p>
+        <h1>SMPP Tool</h1>
+        <img style="border: 0px;" id="mainBannerImage" title="" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.artenergy.com%2Fimages%2Fphp-logo.svg&amp;f=1" width="80px">
       </div>
     </div>
 <br>
