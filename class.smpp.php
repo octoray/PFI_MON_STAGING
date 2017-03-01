@@ -16,7 +16,6 @@ $s->open($host, $port, $system_id, $password);
 //$message = iconv('Windows-1256','UTF-16BE',$message);
 $message = iconv('UTF-8','ISO-8859-1',$message);
 $s->send_long($src, $dst, $message);
-var $message_payload;
 
 
 // $utf = true;
@@ -118,12 +117,10 @@ class smpp {
             for($sar_segment_seqnum=1; $sar_segment_seqnum<=$sar_total_segments; $sar_segment_seqnum++) {
                 $part = substr($short_message, 0 ,130);
                 $short_message = substr($short_message, 130);
-                $prakash = 'test';
 
                 $optional  = pack('nnn', 0x020C, 2, $sar_msg_ref_num);
                 $optional .= pack('nnc', 0x020E, 1, $sar_total_segments);
                 $optional .= pack('nnc', 0x020F, 1, $sar_segment_seqnum);
-                // $optional .= pack('nnc', 0x0424, 1, $prakash, strlen($prakash));
 
                 if ($this->submit_sm($source_addr,$destintation_addr,$part,$optional)===false)
                     return false;
