@@ -191,6 +191,7 @@ if(isset($_POST['host']))
     <br>
     <br>
         <tr>
+            <br><br><br>
             <td valign="top">
                 <label for="details">Message Body*</label>
             </td>
