@@ -12,7 +12,12 @@ if(isset($_POST['host']))
 ?>
 
 <div id="chartContainer_header" align="center" class="chart1">
-<li><h1>SMPP Post</h1></li>
+<div class="jumbotron">
+      <div class="container">
+        <h1>SMPP</h1>
+        <p>SMPP PHP tool for testing SMPP protocol</p>
+      </div>
+    </div>
 <br>
 <form name="htmlform" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
     <table width="550px">
@@ -22,7 +27,8 @@ if(isset($_POST['host']))
                 <label for="server">SystemID*</label>
             </td>
             <td valign="top">
-                <input  type="text" name="system_id" maxlength="80" size="50" value="<?php if(isset($_POST['system_id'])) {echo $_POST['system_id'];}else{echo "0000001181";};?>">
+                <input  type="text" name="system_id" maxlength="80" size="50" value="<?php if(isset($_POST['system_id'])) {echo $_POST['system_id'];}else{echo "0000001181";};?>" 
+                       id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
             </td>
         </tr>
 
