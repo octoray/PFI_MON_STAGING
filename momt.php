@@ -1,6 +1,7 @@
 <?php require("./head_foot/header_1.inc.php"); ?>
 <?php require("./php/momt.php"); ?>
 <script type="text/javascript">
+    //hello
     <?php echo 'FusionCharts.ready(function(){
          var revenueChart = new FusionCharts({
              type: "column2d",
