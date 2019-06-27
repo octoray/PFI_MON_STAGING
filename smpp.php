@@ -15,7 +15,7 @@ if(isset($_POST['host']))
 <div class="jumbotron">
       <div class="container">
         <h1>SMPP Tool</h1>
-        <img style="border: 0px;" id="mainBannerImage" title="" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.artenergy.com%2Fimages%2Fphp-logo.svg&amp;f=1" width="80px">
+        <img style="border: 0px;" id="mainBannerImage" title="" src="https://duckduckgo.com/i/709ae69b.png" width="80px">
       </div>
     </div>
 <br>
